@@ -1,0 +1,58 @@
+# Semântica
+
+https://www.w3schools.com/html/html5_semantic_elements.asp
+
+- section: [[Many]]
+  - Define uma seção em um documento. 
+  - Uma seção é um agrupamento temático de conteúdo, normalmente com um título. 
+  - Contém:
+    - Capítulos, 
+    - Introdução, 
+    - Notícias, 
+    - Informações de contato
+  - Elementos principais:
+    - h1, p
+- article: [[Many]]
+  - especifica conteúdo independente
+  - Um artigo deve fazer sentido por si só, e deve ser possível distribuí-lo independentemente do resto do site.
+  - Contém:
+    - Postagens no fórum
+    - Postagens do blog
+    - Comentários do usuário
+    - Cartões de produto
+    - Artigos de jornal 
+  - Elementos principais:
+    - h2, p
+- section > article, article > section: [[Many]]
+  - especifica conteúdo independente
+  - O elemento define a seção em um documento/ vice versa
+- header: [[Only one]]
+  - contêiner para conteúdo introdutório ou um conjunto de links de navegação
+  - Contém:
+    - um ou mais elementos de título (<h1> - <h6>)
+    - logotipo ou ícone
+    - Informações de autoria
+- footer: [[Many]]
+  - rodapé para um documento ou seção
+  - Contém:
+    - Informações de autoria
+    - direitos autorais informação
+    - Informações de contato
+    - Mapa do site
+    - Voltar ao topo Links
+    - Documentos relacionados
+- nav: [[Many]]
+  - conjunto de links de navegação
+  - Elementos principais:
+    - a, ul > li
+- aside:  
+  - conteúdo além do conteúdo que é colocado em (como uma barra lateral)
+  - O conteúdo deve ser indiretamente relacionado ao conteúdo circundante
+  - Elementos principais:
+    - h4, p
+- main:
+  - Especifica o conteúdo principal do documento
+- details > summary: 
+  - Recolhivel
+- menu: 
+  - Itens ul > li

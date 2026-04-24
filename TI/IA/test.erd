@@ -1,0 +1,93 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -1,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": 431,
+    "database": 4,
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "d6v6NoV1pEe_AjrIpFwU0"
+    ],
+    "relationshipIds": [],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "d6v6NoV1pEe_AjrIpFwU0": {
+        "id": "d6v6NoV1pEe_AjrIpFwU0",
+        "name": "Xpto",
+        "comment": "blabalblal balb",
+        "columnIds": [
+          "0OBR_dnM0EZXYnxThhHsB"
+        ],
+        "seqColumnIds": [
+          "0OBR_dnM0EZXYnxThhHsB"
+        ],
+        "ui": {
+          "x": 200,
+          "y": 101,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 80,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1748469273468,
+          "createAt": 1748469252867
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "0OBR_dnM0EZXYnxThhHsB": {
+        "id": "0OBR_dnM0EZXYnxThhHsB",
+        "tableId": "d6v6NoV1pEe_AjrIpFwU0",
+        "name": "id",
+        "comment": "",
+        "dataType": "INT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1748469289352,
+          "createAt": 1748469273467
+        }
+      }
+    },
+    "relationshipEntities": {},
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  }
+}

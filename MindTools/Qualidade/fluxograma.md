@@ -1,0 +1,3 @@
+# Fluxograma
+
+Representação gráfica de um determinado processo ou fluxo de trabalho, efetuado geralmente com recurso a figuras geométricas normalizadas e as setas unindo essas figuras geométricas. Através desta representação gráfica é possível compreender de forma rápida e fácil a transição de informações ou documentos entre os elementos que participam no processo em causa. O fluxograma pode ser definido também como o gráfico em que se representa o percurso ou caminho percorrido por certo elemento (por exemplo, um determinado documento), através dos vários departamentos da organização, bem como o tratamento que cada um vai lhe dando. A existência de fluxogramas para cada um dos processos é fundamental para a simplificação e racionalização do trabalho, permitindo a...

@@ -1,0 +1,16 @@
+- IANA: Internet Assigned Numbers Authority
+- CGI: Comitê Gestor da Internet no Brasil
+- CDN: Content Delivery Network
+- IEEE: Institute of Electrical and Electronic Engineers
+- SMDS: Switched Multi-megabit Data Service
+- MU-MIMO: Multi-user, Multiple Input Multiple Output
+- MU-MIMO: Single-user, Multiple Input Multiple Output
+- OFDMA: Orthogonal Frequency-Dyvision Multiple Access
+- MPLS: Multi Protocol Label Switching
+- BGP: Border Gateway Protocol
+- OSPF: Open Shortest First Protocol
+- RIP: Routing Information Protocol
+- ICMP: Internet Control Message Protocol
+- CIDR: Classless Inter-Domain Routing
+- MAC Adrress: Midia Access Control Adrress 48bits=6x8 Octetos (hex)
+- ARP: Address Resolution Protocol

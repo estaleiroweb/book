@@ -1,0 +1,299 @@
+# Texto para Teste de Expressões Regulares
+
+## Telefones
+### Brasil
+- Celular: (11) 98765-4321
+- Fixo: (21) 3456-7890
+- Formatação alternativa: 11987654321
+- Com código do país: +55 11 98765-4321
+- Brasil: (11) 98765-4321, +55 21 3456-7890, 11987654321  
+
+### Internacional
+- EUA: +1 (555) 123-4567
+- EUA: +1-800-555-0199, (305) 555-1234  
+- Reino Unido: +44 20 7946 0958
+- Japão: +81 3-1234-5678
+- Austrália: +61 2 9876 5432
+- França: +33 6 12 34 56 78  
+
+### CEP Brasil
+- Brasil: 01001-000, 99999-999, 32000-110 
+
+### Códigos Postais Internacionais
+- EUA: 90210-1234
+- Reino Unido: SW1A 1AA
+- Canadá: K1A 0B1
+- EUA (ZIP Code): 10001, 90210-1234  
+- Alemanha: 10115  
+- 01311-000
+- 70150900
+- 22.281-080
+
+## E-mails
+- pessoa@exemplo.com.br
+- usuario.nome@empresa-grande.com
+- primeiro_segundo@dominio.co.uk
+- test+label@gmail.com
+- email_123@provedor.net
+- usuario@subdominio.dominio.org
+- simples: teste@email.com  
+- complexos: user.name+tag@sub.domain.co.uk  
+
+## URLs
+- https://www.exemplo.com.br
+- http://site.com.br/pagina?parametro=valor
+- https://dominio.org/caminho/arquivo.html
+- http://192.168.1.1
+- ftp://servidor.net:8080/
+- www.site-com-hifen.com
+- https://www.exemplo.com.br  
+- http://meusite.net/path?query=123  
+- ftp://files.server.com  
+
+## Datas
+- 01/01/2023
+- 31/12/2025
+- 2023-07-15
+- 15/Jul/2023
+- 15 de julho de 2023
+- 15.07.2023
+- Formatos comuns: 01/02/2023, 2023-02-01, 01-02-23  
+- ISO 8601: 2023-02-01T14:30:00Z  
+
+## Horas
+- 08:30
+- 14:45:30
+- 23:59:59
+- 08h30min
+- 14h45m30s
+- 10:30 AM
+- 22:15 PM
+- 14:30, 23:59:59, 07:05 AM, 19h30min  
+
+## Valores Monetários
+- R$ 1.234,56
+- US$ 9,876.54
+- € 1.234,56
+- £ 45.67
+- ¥ 12345
+- R$1.234,56
+- $1,234.56
+- R$ 1.234,56, $99.99, €50,00, ¥5000  
+
+## Números
+### Inteiros
+- 123
+- -456
+- +789
+- 1.000.000
+- -10, 0, 42, +99  
+
+### Decimais
+- 123,45
+- -67,89
+- 0,123
+- 1.234,56
+- 3.1415, -0.002, 1.0E+3  
+
+### Notação Científica
+- 1.23e+4
+- 6.02e23
+- 9.81E-2
+- -3.14E+00
+
+## Texto e Formatação
+
+### Letras e Casos
+- TEXTO EM MAIÚSCULAS
+- texto em minúsculas
+- Texto Com Iniciais Maiúsculas
+- Texto com PALAVRAS em MAIÚSCULAS misturadas
+
+### Siglas e Abreviações
+- ONU
+- EUA
+- Dr.
+- Prof.ª
+- S.A.
+- etc.
+- Palavras: regex, Exemplo, Teste123  
+- Siglas: NASA, O.N.U., CNPJ  
+
+### Símbolos e Pontuação
+- Parênteses (texto entre parênteses)
+- Colchetes [texto entre colchetes]
+- Chaves {texto entre chaves}
+- "Aspas duplas"
+- 'Aspas simples'
+- `Apóstrofo ou crase`
+- Hífen-texto
+- Texto_com_underline
+
+## Estruturas de Dados
+
+### Listas Chave-Valor
+- nome: João Silva
+- idade: 30
+- e-mail: joao@exemplo.com
+- telefone: (11) 98765-4321
+
+### JSON Simples
+```json
+{
+  "id": 12345,
+  "nome": "Produto Exemplo",
+  "preço": 129.90,
+  "disponível": true,
+  "categorias": ["Eletrônicos", "Gadgets"]
+}
+```
+
+### Ini
+; Arquivo INI para teste de expressões regulares
+; Contém várias seções, chaves, valores e comentários em diferentes formatos
+
+[CONFIG_BÁSICA]
+nome=Sistema de Teste
+versão=1.2.3
+ativo=true
+data_criação=2023-08-15
+hora_execução=14:30:00
+
+; Comentário de linha única
+[USUÁRIO]
+nome_usuário = admin
+senha = $3nh@_C0mpl3x@!
+email = administrador@exemplo.com.br
+último_acesso = 15/07/2023 18:45
+tentativas_login = 3
+
+[SERVIDOR]
+host=192.168.1.100
+porta = 8080
+ssl = true
+timeout = 30.5
+; Comentário na mesma linha que o valor
+caminho_logs = /var/log/aplicacao/ ; Caminho dos logs
+
+[BANCO_DE_DADOS]
+driver = mysql
+host = db.exemplo.com
+porta=3306
+nome_banco = teste_db
+usuário = db_user
+senha = s3nh@_d0_b@nc0!
+max_conexões = 100
+timeout_conexão = 5.5
+
+[PATHS]
+temp = C:\Temp\
+logs = /var/log/
+arquivos = "D:\Arquivos de Programa\Aplicação\"
+config = /etc/app/config.json
+
+[EMAILS]
+administrador = admin@exemplo.com
+suporte = suporte@empresa.com.br
+vendas = vendas@empresa.com
+notificações = "Sistema de Notificações" <notificacoes@sistema.org>
+
+[NOTIFICAÇÕES]
+ativar = 1
+intervalo = 15
+tipos = email, sms, push
+template = "Olá {nome}, temos uma notificação para você."
+
+[LIMITES]
+máximo_tentativas = 5
+tempo_espera = 10.5
+threshold_cpu = 85%
+threshold_memória = 75%
+tamanho_máximo_arquivo = 10MB
+
+[REGEX_TESTE]
+padrão1 = ^[a-z0-9]+$
+padrão2 = \d{3}-\d{4}
+email_regex = [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
+
+[LISTA_ITENS]
+item1 = valor1
+item2 = valor2
+item3 = valor3, valor4, valor5
+cores = vermelho, verde, azul
+
+; Seção com caracteres especiais e espaços no nome
+[CONFIGURAÇÃO AVANÇADA (BETA)]
+habilitar_debug = true
+log_level = INFO
+parâmetros_extras = "--verbose --no-cache --timeout=30s"
+caminhos_alternativos = C:\Path1\;D:\Path2\;E:\Path with spaces\
+
+[EMPTY_SECTION]
+; Esta seção está vazia intencionalmente
+
+[ÇÃẼÊÕáéíóú]
+acentuação = "Testando caracteres com acentuação"
+teste = válido
+
+### Lista k-V
+item1: valor1
+item2: valor2
+item3: valor3, valor4, valor5
+cores: vermelho, verde, azul
+
+### Tabela
+| ID | Nome | E-mail | Valor |
+|----|------|--------|-------|
+| 1 | Ana Silva | ana@mail.com | R$ 123,45 |
+| 2 | Carlos Souza | carlos@empresa.com.br | R$ 67,89 |
+| 3 | MARIA OLIVEIRA | maria_o@provedor.net | R$ 750,00 |
+
+### Tabelas CSV / TSV:  
+ID, Nome, Idade  
+1, Alice, 30  
+2, Bob, 25  
+
+### Documentação XML
+```xml
+<pessoa id="123">
+  <nome>José Santos</nome>
+  <endereco>
+    <rua>Av. Principal</rua>
+    <numero>1000</numero>
+    <cep>01311-000</cep>
+  </endereco>
+  <telefones>
+    <celular>(11) 98765-4321</celular>
+    <fixo>(11) 3456-7890</fixo>
+  </telefones>
+</pessoa>
+```
+
+## Casos Especiais
+
+### CPF e CNPJ
+- CPF: 123.456.789-01
+- CNPJ: 12.345.678/0001-90
+- CPF: 123.456.789-09  
+- CNPJ: 12.345.678/0001-99  
+- Placa de Carro: ABC-1234, BRA2E19, ABC1234, BRA-2E19  
+
+### Expressões com Caracteres Especiais
+- Texto com % porcentagem
+- Texto com & e comercial
+- Texto com * asterisco
+- Expressões com ^ circunflexo e $ cifrão
+- Texto com caracteres? interrogação! exclamação.
+- Combinações: (a|b)+[c-f]{2,4}
+- 'aspas', "duplas", `crase`, (parênteses), [colchetes], {chaves}  
+
+### Espaçamento
+- Texto com    múltiplos    espaços
+- Texto com	tabulação
+- Texto com
+  quebra de linha
+
+### Caracteres Unicode
+- Texto com acentuação: áéíóúàâêôãõç
+- Símbolos: ®™©§¶†‡
+- Emoji: 😀🚀🌍🔍💡

@@ -1,0 +1,37 @@
+# Gestão das Informações
+
+- Qualidade Percebida
+  - Na Prospecção
+  - No Atendimento
+  - No Briefing
+  - No Relacionamento
+  - Nos Produtos
+- Velocidade
+  - Atendimento
+  - Briefing
+  - Proposta
+  - Planejamento
+  - Produção
+  - Pós-Venda
+- Resultado
+  - Financeiro
+  - Mercadológico
+  - Garantia de satisfação
+    - Dos Clientes
+    - Dos Acionistas
+    - Dos Funcionários
+  - Gestão
+  - Posicionamento
+- Segurança
+  - Briefing
+  - Combine-se
+    - Internos
+    - Externos
+  - Sistemas
+- Relacionamento
+  - Interno
+  - Clientes
+  - Fornecedores
+  - Parceiros
+  - Formadores de Opnião
+- Atendimento

@@ -1,0 +1,296 @@
+# Tech Evolution
+
+- old
+  - CSS 1 (1996): Primeira versão do CSS, introduzindo propriedades básicas para estilização de texto, margens, bordas, cores, e fontes. Permitindo a separação de conteúdo e apresentação.
+  - HTML 4.0 (1997): Introduziu novos elementos e atributos, com foco na estrutura semântica e acessibilidade. Três variantes foram especificadas: Strict, Transitional, e Frameset.
+  - CSS 2 (1998): Introduziu novas propriedades para layouts mais complexos, incluindo posicionamento absoluto e relativo, z-index, e suporte a media types. Melhor suporte para tabelas e listas.
+  - ES(ECMAScript) 3 (1999): Padrão JS
+  - HTML 4.01 (1999): Correção de bugs e pequenas melhorias na especificação, consolidando as diretrizes e práticas recomendadas para a construção de páginas web.
+  - XHTML 1.0 (2000): Versão reformulada do HTML 4 em XML, introduzindo regras de sintaxe mais rígidas para maior compatibilidade e consistência. Três variantes: Strict, Transitional, e Frameset.
+  - XHTML 1.1 (2001): Versão modularizada do XHTML 1.0, permitindo maior flexibilidade na criação de documentos e melhor adaptação para diferentes dispositivos.
+- 2003
+  - PHP 4.3: Sessões
+  - PHP 4.4: BugFix
+  - MySQL 4.0 (2003): Introduziu suporte a consultas complexas, incluindo consultas SQL com JOIN, suporte a cache de consultas, e melhorias de performance.
+- 2004
+  - PHP 5.0: PHPOO, XML, SOAP, DOM
+  - MySQL 4.1 (2004): Suporte a subqueries, collation sets, e o novo formato de armazenamento para dados temporais.
+  - SVN 1.0 (2004): Primeira versão oficial do Subversion, projetado para substituir o CVS. Introduziu diretórios versionados, renomeação de arquivos e diretórios, e commits atômicos.
+  - SVN 1.1 (2004): Adicionou suporte ao mecanismo de armazenamento FSFS (File System-based File System), oferecendo melhor desempenho e gerenciamento de espaço.
+- 2005
+  - PHP 5.1: PDO
+  - MySQL 5.0 (2005): Adicionou suporte a Stored Procedures, Triggers, Views, e um novo modo de armazenamento INFORMATION_SCHEMA.
+  - SVN 1.2 (2005): Introduziu bloqueios (lock) para controle de acesso a arquivos em edição, suporte a propriedades versionadas, e aprimoramentos no desempenho.
+  - Git 1.0 (2005): Primeira versão pública do Git, criado por Linus Torvalds para gerenciar o desenvolvimento do kernel do Linux. Introduziu o sistema de versionamento distribuído.
+- 2006
+  - PHP 5.2: JSON
+  - SVN 1.3 (2006): Melhorias na performance, novos comandos, e otimizações em operações comuns.
+  - SVN 1.4 (2006): Suporte a armazenamento de dados Berkeley DB 4.4, melhorias no svnserve e na biblioteca de cliente.
+  - jQuery 1.0 (2006): Lançamento inicial, introduzindo uma API simplificada para manipulação de DOM, eventos, e efeitos visuais.
+- 2007
+  - Git 1.5 (2007): Melhorias na interface de usuário, suporte a git stash, git bisect, e operações mais intuitivas.
+  - jQuery 1.1 (2007): Melhorias na performance, introdução de novos métodos e maior compatibilidade com diferentes navegadores.
+  - jQuery 1.2 (2007): Remoção de funcionalidades redundantes, melhorias na manipulação de eventos e efeitos, adição de suporte a JSON.
+- 2008
+  - MySQL 5.1 (2008): Introduziu Particionamento, Event Scheduler, e melhorias no Row-based Replication.
+  - SVN 1.5 (2008): Introduziu Merge Tracking, facilitando o trabalho com ramificações e fusões, e suporte a sparse checkouts.
+- 2009
+  - PHP 5.3: Namespaces, closures, garbage collection, mysqlnd, Heredoc (<<<EOT xxx EOT;), Newdoc
+  - ES5: Introduziu 'strict mode', suporte a JSON nativo, novos métodos de arrays (forEach, map, filter, reduce, some, every), propriedades de objeto (Object.defineProperty, Object.keys), e melhorias em herança de objetos.
+  - MariaDB 5.1 (2009): Primeira versão do MariaDB, bifurcada do MySQL 5.1, com foco em compatibilidade e melhoria de desempenho.
+  - SVN 1.6 (2009): Melhorias em Merge Tracking, suporte a propriedades de diretório, e aprimoramentos na interface de linha de comando.
+  - Git 1.6 (2008): Melhorias na interface de linha de comando, suporte a repositórios bare, e novos comandos como git rebase.
+  - jQuery 1.3 (2009): Introdução do mecanismo Sizzle para seleção de elementos, melhorias no suporte a Ajax e performance geral.
+- 2010
+  - MySQL 5.5 (2010): Adoção do InnoDB como mecanismo de armazenamento padrão, suporte ao Semi-synchronous Replication, e melhorias significativas de desempenho e escalabilidade
+  - MariaDB 5.2 (2010): Introduziu novas funcionalidades como o User Statistics, Microsecond Support, e novos mecanismos de armazenamento.
+  - Git 1.7 (2010): Introduziu git add -u, git commit --amend, e suporte a configuração de aliases para comandos.
+  - jQuery 1.4 (2010): Melhorias em Ajax, eventos, manipulação de atributos e CSS, além de melhorias significativas de desempenho.
+- 2011
+  - ES5.1: Correções menores e alinhamento com a especificação ECMAScript Internationalization API.
+  - MariaDB 5.3 (2011): Melhorias significativas na otimização de consultas, suporte a subqueries mais rápidas, e introdução do HandlerSocket.
+  - SVN 1.7 (2011): Novo formato de metadados centralizados, melhorando a velocidade e simplificando a estrutura de diretórios .svn.
+  - jQuery 1.5 (2011): Novo sistema de Deferreds para melhor controle de operações assíncronas.
+  - jQuery 1.6 (2011): Melhorias na manipulação de atributos e propriedades de elementos DOM.
+  - jQuery 1.7 (2011): Introdução de on() e off() para melhor gerenciamento de eventos.
+  - CSS 2.1 (2011): Revisão do CSS 2, corrigindo bugs e removendo funcionalidades problemáticas. Estabilizou a especificação e melhorou a interoperabilidade entre navegadores.
+  - CSS3 (módulos separados, desde 2011): Divisão do CSS em módulos menores, permitindo o desenvolvimento e implementação incremental de novas funcionalidades. Principais módulos incluem:
+    - Selectores Level 3: Novos seletores avançados (:nth-child, :not, etc.).
+    - Box Model: Melhor controle sobre o box model e comportamento de caixas.
+    - Backgrounds and Borders: Suporte a múltiplos backgrounds, bordas arredondadas (border-radius), e sombras (box-shadow).
+    - Text Effects: Novas propriedades de tipografia e efeitos de texto (text-shadow, word-wrap, text-overflow).
+    - Animations and Transitions: Suporte a animações (@keyframes) e transições suaves entre estados (transition).
+    - Flexbox: Layout flexível para melhor alinhamento e distribuição de espaço entre itens.
+    - Grid Layout: Sistema de layout em grade para criação de layouts bidimensionais complexos.
+    - Media Queries: Adaptação de estilos para diferentes dispositivos e tamanhos de tela.
+- 2012
+  - PHP 5.4: Traits, [], -safe_mode, -register_globals
+  - TypeScript: Superset de JavaScript que adiciona tipagem estática e outras funcionalidades avançadas.
+  - Git 1.8 (2012): Suporte a submódulos, melhorias no sistema de hooks, e aprimoramentos na interface de usuário.
+  - jQuery 1.8 (2012): Melhorias na modularização do código e performance.
+  - AngularJS 1.0 (2012): Lançamento inicial, introduzindo um framework MVC (Model-View-Controller) para facilitar o desenvolvimento de aplicações web dinâmicas.
+- 2013
+  - PHP 5.5: Generators (yield), finally, try-catch, password_hash, ext old MySQL
+  - MySQL 5.6 (2013): Introduziu melhorias em InnoDB, Performance Schema, Partitioning, Replication, suporte a full-text search em InnoDB, e melhorias na otimização de consultas
+  - SVN 1.8 (2013): Melhorias no Merge Tracking, novas funcionalidades de shelving e checkpointing, e aprimoramentos de desempenho.
+  - jQuery 1.9 (2013): Remoção de funcionalidades obsoletas e introdução de um plugin de compatibilidade.
+  - jQuery 2.0 (2013): Foco na remoção de suporte a navegadores antigos (como IE 6-8), resultando em um código base mais limpo e melhorias de performance.
+  - AngularJS 1.1 - 1.2 (2012-2013): Melhorias no desempenho, novas diretivas, suporte a animações, e melhorias no sistema de rotas.
+  - React 0.3 (2013): Lançamento inicial por Facebook, introduzindo um novo paradigma para construção de interfaces de usuário com base em componentes.
+  - Node.js 0.10 (2013): Melhorias no sistema de streams, e adição de vários novos módulos core.
+- 2014
+  - HTML5 (2014): Grande atualização do HTML, introduzindo novos elementos semânticos (<article>, <section>, <nav>, <header>, <footer>), novos elementos de multimídia (<audio>, <video>), e APIs avançadas para interação com o navegador (como Canvas, Web Storage, Geolocation, e Web Workers). Foco em fornecer uma experiência web mais rica e interativa.
+  - PHP 5.6: Variadic functions (function fn(int ...$nums): int), argument unpacking (fn(...[1, 2, 3]);fn(1, 2, 3, ...$args2);), exponentiação  **, constantes escalares
+  - MariaDB 10.0 (2014): Introduziu Global Transaction IDs (GTID), Multi-source Replication, e novos mecanismos de armazenamento como TokuDB.
+  - Git 1.9 (2014): Melhorias em git pull e git clone, suporte a configuração de fetch para múltiplos repositórios remotos.
+  - Git 2.0 (2014): Mudanças na configuração padrão para comandos mais seguros, melhorias no git push, e aprimoramentos no desempenho.
+  - jQuery 2.1 (2014): Melhorias na compatibilidade e performance, mantendo o foco em navegadores modernos.
+  - TypeScript 1.0 (2014): Primeira versão estável, introduzindo tipagem estática opcional e transpilação para JavaScript.
+- 2015
+  - PHP 7.0: desempenho, operador ??, declarações de tipo escalares e de retorno
+  - ES6 / ES2015: Grande atualização, introduziu let e const para escopo de bloco, arrow functions, classes, modules (import/export), template literals, destructuring, Promises, iterators, generators, Map e Set, Symbol, e Proxy.
+  - MySQL 5.7 (2015): Melhorias em JSON, desempenho, segurança, otimizações de consultas, e gerenciamento de grandes volumes de dados.
+  - MariaDB 10.1 (2015): Adicionou suporte ao Encryption, Galera Cluster 4, e melhorias em Replication.
+  - SVN 1.9 (2015): Otimizações no sistema de cache, melhorias em shelving e checkpointing, e suporte a algoritmos de difusão aprimorados.
+  - React 0.14 (2015): Introduziu ReactDOM para separar o DOM do core do React, e suporte a componentes funcionais sem estado.
+  - Vue 1.0 (2015): Lançamento inicial, introduzindo uma framework progressiva para construção de interfaces de usuário com componentes reativos.
+  - Node.js 0.12 (2015): Introdução do Cluster Module, melhorias em performance e no sistema de EventEmitter.
+  - Node.js 4.0 (2015): Primeira versão unificada após a fusão com io.js, suporte a ES6, e melhorias no V8 engine.
+- 2016
+  - PHP 7.1: Nullable types, void return type, iterable pseudo-type
+  - ES2016: Inclusão de duas funcionalidades: Array.prototype.includes e o operador de exponenciação (**).
+  - Git 2.1 - 2.7 (2014-2016): Introdução de novas funcionalidades como git worktree, melhorias no sistema de difusão e merge, e otimizações de desempenho.
+  - Git 2.8 - 2.11 (2016): Melhorias na interface de linha de comando, suporte a novos sistemas de arquivos, e aprimoramentos na manipulação de grandes repositórios.
+  - jQuery 3.0 (2016): Introdução de promessas compatíveis com ES6, melhorias no desempenho de seletores e animações, e melhor compatibilidade com navegadores modernos.
+  - AngularJS 1.3 - 1.5 (2014-2016): Novos componentes como ngMessages, melhorias em form validation, e introdução de component-based architecture.
+  - Angular 2.0 (2016): Reescrita completa do framework, introduzindo uma arquitetura baseada em componentes, TypeScript como linguagem principal, e melhorias significativas de performance.
+  - Angular 2.1 - 2.4 (2016): Melhorias incrementais na API e correções de bugs.
+  - React 15.0 (2016): Melhorias na renderização do servidor e atualização incremental de DOM.
+  - Vue 2.0 (2016): Melhorias significativas em desempenho, Virtual DOM, e introdução do novo sistema de componentes.
+  - Node.js 6.0 (2016): Suporte aprimorado a ES6, melhorias na performance e estabilidade.
+  - TypeScript 1.5 - 1.8 (2015-2016): Suporte a ES6, módulos, decorators, e integração aprimorada com ferramentas de desenvolvimento.
+  - TypeScript 2.0 (2016): Introdução de null e undefined como tipos explícitos, e suporte a módulos Node.js.
+  - HTML 5.1 (2016): Melhorias incrementais e refinamentos da especificação HTML5, com novos elementos e atributos para acessibilidade e melhor suporte a tecnologias emergentes.
+- 2017
+  - PHP 7.2: Libsodium (criptografia), object type, Melhoria superglobais
+  - ES2017: Introduziu async/await para facilitar o trabalho com Promises, Object.values, Object.entries, Object.getOwnPropertyDescriptors, e padding de strings (padStart, padEnd).
+  - MariaDB 10.2 (2017): Suporte a Window Functions, Common Table Expressions (CTEs), JSON, e InnoDB aprimorado.
+  - Git 2.12 - 2.15 (2017): Introdução de fsmonitor, melhorias em git diff e git log, e suporte a novos protocolos de transporte.
+  - Angular 4.0 (2017): Salto de versão para alinhar com a versão do router, melhorias em performance e compatibilidade, e novos recursos como ngIf e ngFor com else.
+  - Angular 5.0 (2017): Introdução de melhorias no build optimizer, suporte a progressive web apps, e aprimoramentos no suporte a Material Design.
+  - React 16.0 (2017): Reescrita do core, introduzindo Fiber Architecture, melhorando a performance e possibilitando renderizações assíncronas.
+  - Node.js 8.0 (2017): Introdução do async_hooks e melhorias no Buffer e File System API.
+  - HTML 5.2 (2017): Adição de novas APIs, melhorias em segurança e privacidade, e refinamentos adicionais nos elementos e atributos existentes.
+- 2018
+  - PHP 7.3: Heredoc arrays, referências em list()
+  - ES2018: Inclusão de rest/spread properties para objetos, melhorias em regex (s flag, lookbehind assertions), Promise.prototype.finally, e iterações assíncronas (for-await-of).
+  - MySQL 8.0 (2018): Adicionou suporte a operações atômicas com Transactional Data Dictionary, melhorias significativas em JSON, Window Functions, Common Table Expressions (CTEs), novas funções de índice espacial, e melhorias de performance e segurança. Também introduziu o suporte a Unicode 9.0 e melhorias no InnoDB.
+  - MariaDB 10.3 (2018): Adição de System-Versioned Tables, Sequence Storage Engine, e suporte a Oracle PL/SQL.
+  - SVN 1.10 (2018): Melhorias na performance de merge e diff, novas opções de autenticação, e otimizações na compressão de dados.
+  - SVN 1.11 (2018): Correções de bugs e aprimoramentos menores de desempenho e estabilidade.
+  - Git 2.16 - 2.18 (2018): Suporte a novos comandos como git rebase -i com melhorias, otimizações no desempenho de operações comuns, e melhorias na integração com ferramentas externas.
+  - Angular 6.0 (2018): Introdução do ng update e ng add, melhorias no Angular CLI, e suporte a RxJS 6.
+  - Angular 7.0 (2018): Melhorias na performance de grandes listas com Virtual Scrolling, novo esquema de drag-and-drop, e aprimoramentos no CLI.
+  - React 16.3 (2018): Introduziu o novo Context API e StrictMode.
+  - Node.js 10.0 (2018): Tornou-se uma LTS release, melhorias na performance do HTTP e streams.
+  - TypeScript 2.1 - 2.9 (2016-2018): Melhorias no sistema de tipos, incluindo mapeamento de tipos, tipos condicionalmente genéricos, e inferência de tipos.
+  - TypeScript 3.0 (2018): Suporte a project references, melhorias em tuples e tipos genéricos.
+- 2019
+  - PHP 7.4: Typed properties, arrow functions, null coalescing assignment operator (??=), preloading.
+  - ES2019: Métodos Array.prototype.flat e Array.prototype.flatMap, Object.fromEntries, String.prototype.trimStart e trimEnd, optional catch binding, e melhorias em Symbol.prototype.description.
+  - MariaDB 10.4 (2019): Introduziu Ed25519 para autenticação, MyRocks Storage Engine, e melhorias de segurança.
+  - SVN 1.12 (2019): Melhorias de desempenho, suporte adicional a hooks, e correções de segurança.
+  - Git 2.19 - 2.23 (2018-2019): Introdução de funcionalidades como git switch e git restore, melhorias na manipulação de submódulos, e aprimoramentos na segurança.
+  - Angular 8.0 (2019): Suporte ao Ivy Renderer (experimental), lazy loading com dynamic imports, e melhorias no CLI.
+  - Node.js 12.0 (2019): Suporte ao ES6 modules, introdução de Worker Threads e melhorias no diagnostic reporting.
+  - React 16.8 (2019): Introdução dos Hooks, permitindo o uso de estado e outros recursos do React em componentes funcionais.
+  - Vue 2.1 - 2.6 (2016-2019): Melhorias incrementais em performance, ferramentas de desenvolvimento, e compatibilidade.
+  - HTML Living Standard (desde 2019): Desenvolvido pelo WHATWG, HTML agora é uma especificação viva que é continuamente atualizada. Esta abordagem permite que a linguagem evolua com mais rapidez e responda melhor às necessidades da comunidade web. Melhorias incluem suporte a novos elementos, APIs, e melhores práticas de segurança e desempenho.
+- 2020
+  - PHP 8.0: JIT (Just-In-Time) compilation, Union Types, Named Arguments, Nullsafe Operator (?->), match expression, melhorias significativas de performance
+  - ES2020: Introdução do operador de encadeamento opcional (?.), operador de coalescência nula (??), BigInt para números inteiros maiores que Number.MAX_SAFE_INTEGER, Promise.allSettled, globalThis, e dynamic import.
+  - MariaDB 10.5 (2020): Melhorias em desempenho, novas funcionalidades como ColumnStore e Spider, e suporte a ARM e PowerPC.
+  - Git 2.24 - 2.29 (2019-2020): Melhorias no suporte a repositórios monolíticos, aprimoramentos na performance de operações de merge e rebase, e novos comandos para facilitar fluxos de trabalho.
+  - Angular 9.0 (2020): Lançamento do Ivy como padrão, melhorando a compilação e o desempenho da aplicação.
+  - AngularJS 1.6 - 1.8 (2016-2020): Melhorias contínuas de performance e usabilidade, além de suporte estendido e correções de bugs.
+  - Angular 10.0 (2020): Melhorias na performance e qualidade, novas ferramentas para controle de versões, e atualizações de dependências.
+  - Angular 11.0 (2020): Melhorias em performance, ferramentas de desenvolvimento, e suporte ao Webpack 5.
+  - React 17.0 (2020): Focado em facilitar a atualização gradual, sem novas funcionalidades significativas, mas com melhorias na compatibilidade de versões.
+  - Vue 3.0 (2020): Reescrita completa com foco em performance, introdução de Composition API, e melhorias na capacidade de manutenção e escalabilidade.
+  - Node.js 14.0 (2020): Tornou-se LTS, introdução do Diagnostic Report e Async Local Storage API.
+  - TypeScript 3.1 - 3.9 (2018-2020): Introdução de optional chaining, nullish coalescing, e aprimoramentos na performance e usabilidade.
+  - TypeScript 4.0 (2020): Melhorias no controle de fluxo, inferência de tipos, e suporte aprimorado a editores.
+- 2021
+  - PHP 8.1: Fibers (suporte para coroutines), Enums, Array unpacking com chaves string, funções readonly e never.
+  - ES2021: Adição de String.prototype.replaceAll, métodos lógicos (&&=, ||=, ??=), WeakRefs, e melhoria no tratamento de Promises rejeitadas.
+  - MariaDB 10.6 (2021): Introduziu suporte a Invisible Columns, PL/SQL Compatibility, e melhorias de performance.
+  - Git 2.30 (2021): Melhorias em git bisect, suporte a novos algoritmos de compressão, e aprimoramentos na interface de linha de comando.
+  - Git 2.31 (2021): Melhorias no sistema de indexação, suporte a novos formatos de armazenamento, e otimizações de desempenho.
+  - Git 2.32 (2021): Introdução de funcionalidades de segurança adicionais, melhorias na manipulação de grandes repositórios, e aprimoramentos na integração com sistemas de CI/CD.
+  - Git 2.33 (2021): Melhorias no sistema de difusão, otimizações na performance de git grep, e suporte a novos recursos de configuração.
+  - jQuery 3.1 - 3.6 (2016-2021): Melhorias contínuas de performance, correções de bugs, e pequenas adições de funcionalidades.
+  - Angular 12.0 (2021): Atualizações no Ivy, melhorias no CLI, e suporte a TypeScript 4.2.
+  - Angular 13.0 (2021): Remoção de suporte a ViewEngine, melhorias na compatibilidade e performance, e suporte a TypeScript 4.4.
+  - Vue 3.1 - 3.2 (2021): Melhorias em Composition API, ferramentas de desenvolvimento, e suporte a TypeScript.
+  - Node.js 16.0 (2021): Suporte ao Apple Silicon, melhorias em streams, e atualização do V8 engine.
+- 2022
+  - PHP 8.2: Read-only classes, melhorias de desempenho, novos recursos para melhorar a tipagem, Depreciação de dinâmicas propriedades.
+  - ES2022: Introduziu class fields e private methods, top-level await, Error.cause para detalhamento de erros, e melhorias no suporte a módulos.
+  - Git 2.34 - 2.36 (2022): Melhorias no suporte a forks, aprimoramentos na segurança e performance, e introdução de novos comandos para facilitar fluxos de trabalho.
+  - React 18.0 (2022): Introduziu Concurrent Rendering, Suspense aprimorado, e melhorias na renderização do servidor.
+  - Node.js 18.0 (2022): Tornou-se LTS, introdução do fetch API e melhorias na compatibilidade e performance.
+  - TypeScript 4.1 - 4.6 (2020-2022): Suporte a templates de string, melhor inferência de tipos, e novas funcionalidades como labeled tuple elements.
+  - TypeScript 4.7 - 4.9 (2022): Suporte a módulos ES, melhorias em desempenho e tipos, e novas funcionalidades para controle de fluxo.
+- 2023
+  - PHP 8.3:
+  - Git 2.37 - 2.39 (2022-2023): Novos recursos como merge-ort para melhorias de merge, otimizações de desempenho, e suporte a novas opções de configuração
+  - CSS4 (em desenvolvimento): Não é uma versão oficial, mas um conjunto de módulos CSS3 avançados e em desenvolvimento contínuo. Inclui novos seletores, propriedades de layout avançadas, e aprimoramentos nas funcionalidades existentes.
+
+
+# ed
+
+- 2003
+  - HTML 4.1 + CSS 2 + ES3
+  - PHP 4.3: Sessões
+  - MySQL 4.0: JOIN
+- 2004
+  - PHP 5.0: PHPOO, XML, SOAP, DOM
+  - MySQL 4.1: subqueries
+  - SVN 1.1
+- 2005
+  - (PHP 5.1: PDO)
+  - MySQL 5.0: Stored Procedures, Triggers, Views
+- 2006
+  - PHP 5.2: JSON
+  - SVN 1.3: Melhorias na performance, novos comandos, e otimizações em operações comuns.
+  - SVN 1.4 (2006): Suporte a armazenamento de dados Berkeley DB 4.4, melhorias no svnserve e na biblioteca de cliente.
+  - jQuery 1.0 (2006): Lançamento inicial, introduzindo uma API simplificada para manipulação de DOM, eventos, e efeitos visuais.
+- 2007
+  - jQuery 1.1 (2007): Melhorias na performance, introdução de novos métodos e maior compatibilidade com diferentes navegadores.
+  - jQuery 1.2 (2007): Remoção de funcionalidades redundantes, melhorias na manipulação de eventos e efeitos, adição de suporte a JSON.
+- 2008
+  - MySQL 5.1 (2008): Introduziu Particionamento, Event Scheduler, e melhorias no Row-based Replication.
+  - SVN 1.5 (2008): Introduziu Merge Tracking, facilitando o trabalho com ramificações e fusões, e suporte a sparse checkouts.
+- 2009
+  - PHP 5.3: Namespaces, closures, garbage collection, mysqlnd, Heredoc (<<<EOT xxx EOT;), Newdoc
+  - ES5: Introduziu 'strict mode', suporte a JSON nativo, novos métodos de arrays (forEach, map, filter, reduce, some, every), propriedades de objeto (Object.defineProperty, Object.keys), e melhorias em herança de objetos.
+  - MariaDB 5.1 (2009): Primeira versão do MariaDB, bifurcada do MySQL 5.1, com foco em compatibilidade e melhoria de desempenho.
+  - SVN 1.6 (2009): Melhorias em Merge Tracking, suporte a propriedades de diretório, e aprimoramentos na interface de linha de comando.
+  - jQuery 1.3 (2009): Introdução do mecanismo Sizzle para seleção de elementos, melhorias no suporte a Ajax e performance geral.
+- 2010
+  - MySQL 5.5 (2010): Adoção do InnoDB como mecanismo de armazenamento padrão, suporte ao Semi-synchronous Replication, e melhorias significativas de desempenho e escalabilidade
+  - MariaDB 5.2 (2010): Introduziu novas funcionalidades como o User Statistics, Microsecond Support, e novos mecanismos de armazenamento.
+  - jQuery 1.4 (2010): Melhorias em Ajax, eventos, manipulação de atributos e CSS, além de melhorias significativas de desempenho.
+- 2011
+  - ES5.1: Correções menores e alinhamento com a especificação ECMAScript Internationalization API.
+  - MariaDB 5.3 (2011): Melhorias significativas na otimização de consultas, suporte a subqueries mais rápidas, e introdução do HandlerSocket.
+  - jQuery 1.5 (2011): Novo sistema de Deferreds para melhor controle de operações assíncronas.
+  - CSS3 (módulos separados, desde 2011): Divisão do CSS em módulos menores, permitindo o desenvolvimento e implementação incremental de novas funcionalidades. Principais módulos incluem:
+- 2012
+  - PHP 5.4: Traits, [], -safe_mode, -register_globals
+  - jQuery 1.8 (2012): Melhorias na modularização do código e performance.
+- 2013
+  - PHP 5.5: Generators (yield), finally, try-catch, password_hash, ext old MySQL
+  - MySQL 5.6 (2013): Introduziu melhorias em InnoDB, Performance Schema, Partitioning, Replication, suporte a full-text search em InnoDB, e melhorias na otimização de consultas
+  - SVN 1.8 (2013): Melhorias no Merge Tracking, novas funcionalidades de shelving e checkpointing, e aprimoramentos de desempenho.
+  - jQuery 1.9 (2013): Remoção de funcionalidades obsoletas e introdução de um plugin de compatibilidade.
+  - jQuery 2.0 (2013): Foco na remoção de suporte a navegadores antigos (como IE 6-8), resultando em um código base mais limpo e melhorias de performance.
+- 2014
+  - HTML5 (2014): Grande atualização do HTML, introduzindo novos elementos semânticos (<article>, <section>, <nav>, <header>, <footer>), novos elementos de multimídia (<audio>, <video>), e APIs avançadas para interação com o navegador (como Canvas, Web Storage, Geolocation, e Web Workers). Foco em fornecer uma experiência web mais rica e interativa.
+  - PHP 5.6: Variadic functions (function fn(int ...$nums): int), argument unpacking (fn(...[1, 2, 3]);fn(1, 2, 3, ...$args2);), exponentiação  **, constantes escalares
+  - MariaDB 10.0 (2014): Introduziu Global Transaction IDs (GTID), Multi-source Replication, e novos mecanismos de armazenamento como TokuDB.
+  - Git 2.0 (2014): Mudanças na configuração padrão para comandos mais seguros, melhorias no git push, e aprimoramentos no desempenho.
+  - jQuery 2.1 (2014): Melhorias na compatibilidade e performance, mantendo o foco em navegadores modernos.
+- 2015
+  - PHP 7.0: desempenho, operador ??, declarações de tipo escalares e de retorno
+  - ES6 / ES2015: Grande atualização, introduziu let e const para escopo de bloco, arrow functions, classes, modules (import/export), template literals, destructuring, Promises, iterators, generators, Map e Set, Symbol, e Proxy.
+  - MySQL 5.7 (2015): Melhorias em JSON, desempenho, segurança, otimizações de consultas, e gerenciamento de grandes volumes de dados.
+  - MariaDB 10.1 (2015): Adicionou suporte ao Encryption, Galera Cluster 4, e melhorias em Replication.
+  - SVN 1.9 (2015): Otimizações no sistema de cache, melhorias em shelving e checkpointing, e suporte a algoritmos de difusão aprimorados.
+- 2016
+  - PHP 7.1: Nullable types, void return type, iterable pseudo-type
+  - ES2016: Inclusão de duas funcionalidades: Array.prototype.includes e o operador de exponenciação (**).
+  - Git 2.1 - 2.7 (2014-2016): Introdução de novas funcionalidades como git worktree, melhorias no sistema de difusão e merge, e otimizações de desempenho.
+  - Git 2.8 - 2.11 (2016): Melhorias na interface de linha de comando, suporte a novos sistemas de arquivos, e aprimoramentos na manipulação de grandes repositórios.
+  - jQuery 3.0 (2016): Introdução de promessas compatíveis com ES6, melhorias no desempenho de seletores e animações, e melhor compatibilidade com navegadores modernos.
+- 2017
+  - PHP 7.2: Libsodium (criptografia), object type, Melhoria superglobais
+  - ES2017: Introduziu async/await para facilitar o trabalho com Promises, Object.values, Object.entries, Object.getOwnPropertyDescriptors, e padding de strings (padStart, padEnd).
+  - MariaDB 10.2 (2017): Suporte a Window Functions, Common Table Expressions (CTEs), JSON, e InnoDB aprimorado.
+  - Git 2.12 - 2.15 (2017): Introdução de fsmonitor, melhorias em git diff e git log, e suporte a novos protocolos de transporte.
+- 2018
+  - PHP 7.3: Heredoc arrays, referências em list()
+  - ES2018: Inclusão de rest/spread properties para objetos, melhorias em regex (s flag, lookbehind assertions), Promise.prototype.finally, e iterações assíncronas (for-await-of).
+  - MySQL 8.0 (2018): Adicionou suporte a operações atômicas com Transactional Data Dictionary, melhorias significativas em JSON, Window Functions, Common Table Expressions (CTEs), novas funções de índice espacial, e melhorias de performance e segurança. Também introduziu o suporte a Unicode 9.0 e melhorias no InnoDB.
+  - MariaDB 10.3 (2018): Adição de System-Versioned Tables, Sequence Storage Engine, e suporte a Oracle PL/SQL.
+  - SVN 1.10 (2018): Melhorias na performance de merge e diff, novas opções de autenticação, e otimizações na compressão de dados.
+  - SVN 1.11 (2018): Correções de bugs e aprimoramentos menores de desempenho e estabilidade.
+  - Git 2.16 - 2.18 (2018): Suporte a novos comandos como git rebase -i com melhorias, otimizações no desempenho de operações comuns, e melhorias na integração com ferramentas externas.
+- 2019
+  - PHP 7.4: Typed properties, arrow functions, null coalescing assignment operator (??=), preloading.
+  - ES2019: Métodos Array.prototype.flat e Array.prototype.flatMap, Object.fromEntries, String.prototype.trimStart e trimEnd, optional catch binding, e melhorias em Symbol.prototype.description.
+  - MariaDB 10.4 (2019): Introduziu Ed25519 para autenticação, MyRocks Storage Engine, e melhorias de segurança.
+  - SVN 1.12 (2019): Melhorias de desempenho, suporte adicional a hooks, e correções de segurança.
+  - Git 2.19 - 2.23 (2018-2019): Introdução de funcionalidades como git switch e git restore, melhorias na manipulação de submódulos, e aprimoramentos na segurança.
+- 2020
+  - PHP 8.0: JIT (Just-In-Time) compilation, Union Types, Named Arguments, Nullsafe Operator (?->), match expression, melhorias significativas de performance
+  - ES2020: Introdução do operador de encadeamento opcional (?.), operador de coalescência nula (??), BigInt para números inteiros maiores que Number.MAX_SAFE_INTEGER, Promise.allSettled, globalThis, e dynamic import.
+  - MariaDB 10.5 (2020): Melhorias em desempenho, novas funcionalidades como ColumnStore e Spider, e suporte a ARM e PowerPC.
+  - Git 2.24 - 2.29 (2019-2020): Melhorias no suporte a repositórios monolíticos, aprimoramentos na performance de operações de merge e rebase, e novos comandos para facilitar fluxos de trabalho.
+- 2021
+  - PHP 8.1: Fibers (suporte para coroutines), Enums, Array unpacking com chaves string, funções readonly e never.
+  - ES2021: Adição de String.prototype.replaceAll, métodos lógicos (&&=, ||=, ??=), WeakRefs, e melhoria no tratamento de Promises rejeitadas.
+  - MariaDB 10.6 (2021): Introduziu suporte a Invisible Columns, PL/SQL Compatibility, e melhorias de performance.
+  - Git 2.30 (2021): Melhorias em git bisect, suporte a novos algoritmos de compressão, e aprimoramentos na interface de linha de comando.
+  - Git 2.31 (2021): Melhorias no sistema de indexação, suporte a novos formatos de armazenamento, e otimizações de desempenho.
+  - Git 2.32 (2021): Introdução de funcionalidades de segurança adicionais, melhorias na manipulação de grandes repositórios, e aprimoramentos na integração com sistemas de CI/CD.
+  - Git 2.33 (2021): Melhorias no sistema de difusão, otimizações na performance de git grep, e suporte a novos recursos de configuração.
+  - jQuery 3.1 - 3.6 (2016-2021): Melhorias contínuas de performance, correções de bugs, e pequenas adições de funcionalidades.
+- 2022
+  - PHP 8.2: Read-only classes, melhorias de desempenho, novos recursos para melhorar a tipagem, Depreciação de dinâmicas propriedades.
+  - ES2022: Introduziu class fields e private methods, top-level await, Error.cause para detalhamento de erros, e melhorias no suporte a módulos.
+  - Git 2.34 - 2.36 (2022): Melhorias no suporte a forks, aprimoramentos na segurança e performance, e introdução de novos comandos para facilitar fluxos de trabalho.
+- 2023
+  - PHP 8.3:
+  - Git 2.37 - 2.39 (2022-2023): Novos recursos como merge-ort para melhorias de merge, otimizações de desempenho, e suporte a novas opções de configuração
+  - CSS4 (em desenvolvimento): Não é uma versão oficial, mas um conjunto de módulos CSS3 avançados e em desenvolvimento contínuo. Inclui novos seletores, propriedades de layout avançadas, e aprimoramentos nas funcionalidades existentes.

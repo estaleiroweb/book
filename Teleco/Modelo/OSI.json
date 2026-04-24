@@ -1,0 +1,2157 @@
+{
+	"classes": {
+		"default": {
+			"shape": "square",
+			"Direction": "LR",
+			"align": "center",
+			"font-size": 10,
+			"color": "#000",
+			"background": "#FFF",
+			"line-color": "#DDD",
+			"line-width": 1,
+			"line-style": "solid"
+		},
+		"phisical": {
+			"shape": "square",
+			"direction": "LR",
+			"align": "center",
+			"font-size": 10,
+			"color": "#000",
+			"background": "#FFF",
+			"line-color": "#DDD",
+			"line-width": 1,
+			"line-style": "solid"
+		},
+		"logical": {
+			"shape": "square",
+			"Direction": "LR",
+			"align": "center",
+			"font-size": 10,
+			"color": "#000",
+			"background": "#FFF",
+			"line-color": "#DDD",
+			"line-width": 1,
+			"line-style": "solid"
+		}
+	},
+	"layers": {
+		"1": {
+			"descr": "Physical",
+			"class": "default",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"2": {
+			"descr": "Data Link",
+			"class": "default",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"3": {
+			"descr": "Network",
+			"class": "default",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"4": {
+			"descr": "Transport",
+			"class": "default",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"5": {
+			"descr": "Session",
+			"class": "default",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"6": {
+			"descr": "Presentation",
+			"class": "default",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"7": {
+			"descr": "Application",
+			"class": "default",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		}
+	},
+	"tech": {
+		"LAN": {
+			"descr": "LAN",
+			"class": "phisical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"WAN": {
+			"descr": "WAN",
+			"class": "phisical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"ATM": {
+			"descr": "ATM",
+			"class": "phisical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"FR": {
+			"descr": "Frame Relay",
+			"class": "phisical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"ISDN": {
+			"descr": "ISDN",
+			"class": "phisical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"PPP": {
+			"descr": "PPP",
+			"class": "phisical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"IP": {
+			"descr": "IP",
+			"class": "logical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"VoIP": {
+			"descr": "VoIP",
+			"class": "logical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"SS7": {
+			"descr": "Phone: SS7",
+			"class": "logical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"UMTS": {
+			"descr": "Phone: UMTS",
+			"class": "logical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"GPRS": {
+			"descr": "Phone: GPRS",
+			"class": "logical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"CDMA2000": {
+			"descr": "Phone: CDMA2000",
+			"class": "logical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"WAP": {
+			"descr": "Phone: WAP",
+			"class": "logical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"V5": {
+			"descr": "Phone: V5",
+			"class": "logical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"X25": {
+			"descr": "X25",
+			"class": "logical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		},
+		"ISO": {
+			"descr": "ISO",
+			"class": "logical",
+			"style": {
+				"color": "#000",
+				"background": "#FFF",
+				"line-color": "#DDD"
+			}
+		}
+	},
+	"sufix": {
+		"": {
+			"type": "protocol",
+			"descr": "reserved",
+			"class": "protocol"
+		},
+		"@": {
+			"type": "group",
+			"descr": "Group of protocols",
+			"class": "group"
+		},
+		"!": {
+			"type": "link",
+			"descr": "Link bar to link cross way",
+			"class": "link"
+		},
+		"#": {
+			"type": "pointer",
+			"descr": "Pointer bullet to link cross way",
+			"class": "pointer"
+		},
+		":": {
+			"type": "joint",
+			"descr": "A bullet to join protocols and groups",
+			"class": "joint"
+		},
+		"$": {
+			"type": "reserved",
+			"descr": "reserved",
+			"class": "reserved"
+		},
+		"%": {
+			"type": "reserved",
+			"descr": "reserved",
+			"class": "reserved"
+		}
+	},
+	"protocols": {
+		"1": {
+			"!VET": {
+				"type": "link",
+				"label": "V,E,T Series",
+				"OSI": [
+					1
+				],
+				"link-to": [],
+				"url": ""
+			},
+			"@BASE-T": {
+				"link-to": [],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"10-BASE-T": {
+				"label": "10 BASE-T",
+				"group": "@BASE-T",
+				"tech": [
+					"LAN"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"100-BASE-T": {
+				"label": "100 BASE-T",
+				"group": "@BASE-T",
+				"tech": [
+					"LAN"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"1000-BASE-T": {
+				"label": "1000 BASE-T",
+				"group": "@BASE-T",
+				"tech": [
+					"LAN"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"@GBE": {
+				"label": "GBE",
+				"descr": "IEEE 802.3z Gigabit Ethernet",
+				"link-to": [],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"1000-BASE-LX": {
+				"label": "1000 BASE-LX",
+				"group": "@GBE",
+				"tech": [
+					"LAN"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"1000-BASE-SX": {
+				"label": "1000 BASE-SX",
+				"group": "@GBE",
+				"tech": [
+					"LAN"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"1000-BASE-CX": {
+				"label": "1000 BASE-CX",
+				"group": "@GBE",
+				"tech": [
+					"LAN"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"10GBE": {
+				"label": "10 GBE",
+				"tech": [
+					"WAN"
+				],
+				"link-to": [],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"@PLCP": {
+				"link-to": [],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"DSO-PLCP": {
+				"label": "DSO PLCP",
+				"descr": "DSO PLCP 64 Kbps",
+				"group": "@PLCP",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"G.703-PLCP": {
+				"label": "G.703 PLCP",
+				"descr": "G.703 PLCP",
+				"group": "@PLCP",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"DS1-PLCP": {
+				"label": "DS1 PLCP OS1",
+				"descr": "DS1 PLCP OS1 1.544 Mbps",
+				"group": "@PLCP",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"DS3-PLCP": {
+				"label": "DS3 PLCP OS3",
+				"descr": "DS3 PLCP OS3 45 Mbps",
+				"group": "@PLCP",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			":SDH-SONET": {
+				"label": "SDH/SONET",
+				"link-to": []
+			},
+			"@SDH": {
+				"label": "SDH",
+				"link-to": [
+					":SDH-SONET"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"STM-1": {
+				"descr": "STM-1 155.520 Mbps",
+				"group": "@SDH",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"STM-4": {
+				"descr": "STM-4 622 Mbps",
+				"group": "@SDH",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"STM-16": {
+				"descr": "STM-16 2488 Gbps",
+				"group": "@SDH",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"STM-48": {
+				"descr": "STM-48 7.6 Gbps",
+				"group": "@SDH",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"STM-192": {
+				"descr": "STM-192 40 Gbps",
+				"group": "@SDH",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"@SONET": {
+				"label": "SONET",
+				"link-to": [
+					":SDH-SONET"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"OC-1": {
+				"descr": "OC-1 51.840 Mbps",
+				"group": "@SONET",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"OC-3": {
+				"descr": "OC-3 155.520 Mbps",
+				"group": "@SONET",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"OC-12": {
+				"descr": "OC-12 622 Mbps",
+				"group": "@SONET",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"OC-48": {
+				"descr": "OC-48 2488 Gbps",
+				"group": "@SONET",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"OC-192": {
+				"descr": "OC-192 7.6 Gbps",
+				"group": "@SONET",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"OC-768": {
+				"descr": "OC-768 40 Gbps",
+				"group": "@SONET",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"@ATM-PLCP": {
+				"label": "PLCP",
+				"link-to": [],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"@PDH": {
+				"label": "PDH G.804",
+				"group": "@ATM-PLCP",
+				"link-to": [],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"DS1": {
+				"descr": "DS1 1.544 Mbps",
+				"group": "@PDH",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"DS2": {
+				"label": "DS2/d2",
+				"descr": "DS2/d2 6.24 Mbps",
+				"group": "@PDH",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"DS3": {
+				"descr": "DS3 45 Mbps",
+				"group": "@PDH",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"DS4": {
+				"descr": "DS4 140 Mbps",
+				"group": "@ATM-PLCP",
+				"tech": [
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"E1": {
+				"descr": "E1 2 Mbps",
+				"group": "@PDH",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"E3": {
+				"descr": "E3 34 Mbps",
+				"group": "@PDH",
+				"tech": [
+					"WAN",
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"MTP1": {
+				"descr": "MTP1 Message Transfer Part Level 1",
+				"tech": [
+					"SS7"
+				],
+				"link-to": [],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"@xDSL": {
+				"group": "@xxx",
+				"link-to": [],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"HDSL": {
+				"descr": "HDSL High Bit Rate DSL",
+				"group": "@xDSL",
+				"tech": [
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"ADSL": {
+				"descr": "ADSL Asymmetric DSL",
+				"group": "@xDSL",
+				"tech": [
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"SHDSL": {
+				"descr": "SHDSL Symetric DSL",
+				"group": "@xDSL",
+				"tech": [
+					"ATM"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"ATM": {
+				"descr": "ATM 25 Mbps",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"@Interface": {
+				"label": "Interface Standards",
+				"link-to": [],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.24": {
+				"label": "V.24 or RS-232",
+				"group": "@Interface",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.36": {
+				"label": "V.36 or RS-449",
+				"group": "@Interface",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.35": {
+				"label": "V.35",
+				"group": "@Interface",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"RS-530": {
+				"label": "RS-530",
+				"group": "@Interface",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.11": {
+				"label": "V.11 or X.21",
+				"group": "@Interface",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"HSSI": {
+				"descr": "HSSI High Speed Serial Interface",
+				"group": "@Interface",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"@Modem": {
+				"label": "Modem Standards",
+				"link-to": [
+					"@Interface"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.21": {
+				"label": "V.21 AT&T",
+				"descr": "V.21 AT&T 103 300 bps",
+				"group": "@Modem",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"AT&T209": {
+				"label": "AT&T 209",
+				"descr": "AT&T 209 9600 bps",
+				"group": "@Modem",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.22AT&T": {
+				"label": "V.22 AT&T",
+				"descr": "V.22 AT&T 212 1200 bps",
+				"group": "@Modem",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.22": {
+				"label": "V.22 bis",
+				"descr": "V.22 bis 2400 bps",
+				"group": "@Modem",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.26": {
+				"descr": "V.26 2400 bps",
+				"group": "@Modem",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.26b": {
+				"label": "xxV.26 bisxx",
+				"descr": "V.26 bis 2400 bps",
+				"group": "@Modem",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.27": {
+				"descr": "V.27 bis 4800 bps",
+				"group": "@Modem",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.29": {
+				"descr": "V.29 9600 bps",
+				"group": "@Modem",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.32": {
+				"descr": "V.32 9600 bps",
+				"group": "@Modem",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.33": {
+				"descr": "V.33 14.4 kbps",
+				"group": "@Modem",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.42": {
+				"group": "@Modem",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"V.42b": {
+				"label": "V.42 bis",
+				"group": "@Modem",
+				"tech": [
+					"FR"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"@ISDN": {
+				"group": "@ISDN",
+				"link-to": [],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"ISDN-B": {
+				"descr": "ISDN-B 64 Kbps",
+				"group": "@ISDN",
+				"tech": [
+					"ISDN"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"ISDN-D": {
+				"descr": "ISDN-D 16 Kbps BRI 64 Kbps PRI",
+				"group": "@ISDN",
+				"tech": [
+					"ISDN"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"ISDN-HO": {
+				"descr": "ISDN-HO 384 Kbps",
+				"group": "@ISDN",
+				"tech": [
+					"ISDN"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"ISDN-H11": {
+				"descr": "ISDN-H11 1.563 Kbps",
+				"group": "@ISDN",
+				"tech": [
+					"ISDN"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"ISDN-H12": {
+				"descr": "ISDN-H12 1.920 Kbps",
+				"group": "@ISDN",
+				"tech": [
+					"ISDN"
+				],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"#PPP": {
+				"link-to": [],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"#LAPB": {
+				"link-to": [],
+				"OSI": [
+					1
+				],
+				"url": ""
+			},
+			"#FR": {
+				"label": "Frame Relay",
+				"link-to": [],
+				"OSI": [
+					1
+				],
+				"url": ""
+			}
+		},
+		"2": {
+			"!ISO9577": {
+				"type": "link",
+				"descr": "ISO 9577",
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"!ETHERTYPE": {
+				"type": "link",
+				"descr": "Ethertype",
+				"link-to": [
+					"#PPP",
+					"@AddressResolution",
+					"IPv4"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"!LLC802.2": {
+				"type": "link",
+				"descr": "LLC 802.2",
+				"link-to": [
+					"BPDU",
+					"SNAP",
+					"!ETHERTYPE",
+					"IPv4"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"@Tunneling": {
+				"link-from": [
+					"#TCP"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"L2F": {
+				"label": "L2F Layer 2 Forwarding Protocol",
+				"group": "@Tunneling",
+				"tech": [
+					"IP"
+				],
+				"link-to": [
+					"#PPP"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"PPTP": {
+				"label": "PPTP Point to Point Tunneling Protocol",
+				"group": "@Tunneling",
+				"tech": [
+					"IP"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"L2TP": {
+				"label": "L2TP Layer 2 Tunneling Protocol",
+				"group": "@Tunneling",
+				"tech": [
+					"IP"
+				],
+				"link-to": [
+					"#PPP"
+				],
+				"link-from": [
+					"#IP"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"BPDU": {
+				"label": "BPDU Bridge Spanning Tree Protocol",
+				"tech": [
+					"LAN"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"IEEE802.3CSMA/CD": {
+				"label": "IEEE 802.3 CSMA/CD",
+				"tech": [
+					"LAN"
+				],
+				"link-to": [
+					"!LLC802.2"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"IEEE802.3AB": {
+				"label": "IEEE 802.3 AB",
+				"tech": [
+					"LAN"
+				],
+				"link-to": [
+					"!LLC802.2"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"IEEE802.1p": {
+				"label": "IEEE 802.1p",
+				"tech": [
+					"LAN"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"IEEE802.1Q": {
+				"label": "IEEE 802.1Q",
+				"tech": [
+					"LAN"
+				],
+				"link-to": [
+					"IEEE802.1p",
+					"!LLC802.2",
+					"!ETHERTYPE"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"SNAP": {
+				"label": "SNAP Sub-Network Access Protocol",
+				"tech": [
+					"LAN"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"@AddressResolution": {
+				"label": "Address Resolution",
+				"link-from": [
+					"#TCP"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"ARP": {
+				"label": "ARP Address Resolution Protocol",
+				"group": "@AddressResolution",
+				"tech": [
+					"IP"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"RARP": {
+				"label": "RARP Reverse Address Resolution Protocol",
+				"group": "@AddressResolution",
+				"tech": [
+					"IP"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"IARP": {
+				"label": "IARP Inverse Address Resolution Protocol",
+				"group": "@AddressResolution",
+				"tech": [
+					"IP"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"SLARP": {
+				"label": "SLARP Cisco Serial Line Address Resolution Protocol",
+				"group": "@AddressResolution",
+				"tech": [
+					"IP"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"LAPv5DL": {
+				"label": "LAP v 5DL",
+				"tech": [
+					"VoIP"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"H.223": {
+				"label": "H.223",
+				"tech": [
+					"VoIP"
+				],
+				"link-to": [],
+				"link-from": [
+					"#ATM(AAL2)"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"@V5": {
+				"label": "Address Resolution",
+				"link-from": [
+					"#TCP"
+				],
+				"OSI": [
+					2,
+					3
+				],
+				"url": ""
+			},
+			"LAPV5": {
+				"group": "@V5",
+				"tech": [
+					"V5"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"V5": {
+				"group": "@V5",
+				"tech": [
+					"V5"
+				],
+				"link-to": [
+					"LAPV5"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"MTP2": {
+				"label": "MTP2 Message Transfer Part Level 2",
+				"tech": [
+					"SS7"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"MAC": {
+				"label": "MAC Medium Access Control",
+				"tech": [
+					"UMTS"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"FP": {
+				"label": "FP Frame Protocol",
+				"tech": [
+					"UMTS"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"CIF": {
+				"label": "CIF Cell in Frames",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"ILMI(ATM)": {
+				"label": "ILMI (ATM) Interim Local Management Interface",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"MPOA": {
+				"label": "MPOA Multi Protocol Over ATM",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"link-from": [
+					"#SNAP"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"CES": {
+				"label": "CES Circuit Emulation Service",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"@LANE_ATM": {
+				"direction": "LR",
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"LANE(ATM)": {
+				"label": "LANE (ATM) LAN Emulation",
+				"group": "@LANE_ATM",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"Q.93B": {
+				"group": "@LANE_ATM",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"Q.2140": {
+				"label": "Q.2140 (SS7)",
+				"group": "@LANE_ATM",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"Q.SAAL": {
+				"group": "@LANE_ATM",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"@AAL": {
+				"direction": "TD",
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"AAL1": {
+				"group": "@AAL",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"AAL2": {
+				"group": "@AAL",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"AAL3/4": {
+				"group": "@AAL",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"AAL5": {
+				"group": "@AAL",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"ATMCells": {
+				"label": "ATM Cells",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"link-from": [
+					"#T1",
+					"#T3",
+					"#E1",
+					"#E3",
+					"#SMDS"
+				],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"IMA": {
+				"label": "IMA Inverse Multiplexing ATM",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"@Signaling": {
+				"direction": "TD",
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"UNI/NNI(ATM)": {
+				"label": "Signaling UNI/NNI (ATM)",
+				"group": "@Signaling",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"Q.2971": {
+				"group": "@Signaling",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"Q.2931": {
+				"group": "@Signaling",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"SSCOP": {
+				"label": "SSCOP Service-Specific Connection-Oriented Protocol",
+				"group": "@xxx",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"PNNI(ATM)": {
+				"label": "PNNI (ATM) Private Network-to-Network Interface",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"OAM(ATM)": {
+				"label": "OAM (ATM) Operations and Maintenance",
+				"tech": [
+					"ATM"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"@FR_L2": {
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"T1.617": {
+				"label": "T1.617 Annex D",
+				"group": "@FR_L2",
+				"tech": [
+					"FR"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"Q.933": {
+				"label": "Q.933 Annex A",
+				"group": "@FR_L2",
+				"tech": [
+					"FR"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"SVC(FR)": {
+				"label": "SVC (Frame Relay) Switched Virtual Connection Control Message",
+				"group": "@FR_L2",
+				"tech": [
+					"FR"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"LMI(FR)": {
+				"label": "LMI (Frame Relay) Local Management Interface",
+				"group": "@FR_L2",
+				"tech": [
+					"FR"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"LAPF": {
+				"label": "Frame Relay Link Access Procedure to Frame Mode Bearer Services",
+				"tech": [
+					"FR"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"@FRF": {
+				"direction": "TD",
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"CLLM": {
+				"label": "CLLM Consolidated Link Layer Management",
+				"group": "@FRF",
+				"tech": [
+					"FR"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"FRF9": {
+				"label": "FRF 9",
+				"group": "@FRF",
+				"tech": [
+					"FR"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"FRF11": {
+				"label": "FRF 11",
+				"group": "@FRF",
+				"tech": [
+					"FR"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"FRF12": {
+				"label": "FRF 12",
+				"group": "@FRF",
+				"tech": [
+					"FR"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"HDLC": {
+				"label": "HDLC High-level Data-Link Control",
+				"tech": [
+					"FR"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"LAPB": {
+				"label": "LAPB Link Access Procedure Balanced",
+				"tech": [
+					"FR"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"CiscoSLE": {
+				"label": "Cisco SLE Cisco Serial Line Encoding",
+				"tech": [
+					"FR"
+				],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"BSSGP": {
+				"label": "BSSGP Base Station System GRPS Protocol",
+				"tech": ["GPRS"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"NS": {
+				"label": "NS-Network",
+				"tech": ["GPRS"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"RLC/MAC": {
+				"label": "RLC Radio Link Control/MAC Medium Access Control",
+				"tech": ["GPRS"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"PCU": {
+				"label": "PCU Packet Control Unit",
+				"tech": ["GPRS"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"Q.931": {
+				"label": "Q.931",
+				"tech": ["ISDN"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"LAPD": {
+				"label": "LAPD Link Access Procedure D Channel",
+				"tech": ["ISDN"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"@Grp2_PPP1": {
+				"direction": "TD(2)",
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"PAP": {
+				"label": "PAP Password Authentication Protocol",
+				"group": "@Grp2_PPP1",
+				"tech": ["PPP"],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"LQR": {
+				"label": "LQR Link Quality Report",
+				"group": "@Grp2_PPP1",
+				"tech": ["PPP"],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"LEX_LAN": {
+				"label": "LEX LAN Extension Protocol",
+				"group": "@Grp2_PPP1",
+				"tech": ["PPP"],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"LCP": {
+				"label": "LCP Link Control Protocol",
+				"group": "@Grp2_PPP1",
+				"tech": ["PPP"],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"SDTP": {
+				"label": "SDTP PPP Serial Data Transport Protocol",
+				"group": "@Grp2_PPP1",
+				"tech": ["PPP"],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"EAP": {
+				"label": "EAP Extensible Authentication Protocol",
+				"group": "@Grp2_PPP1",
+				"tech": ["PPP"],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"BAP": {
+				"label": "BAP Bandwidth Allocation Protocol",
+				"group": "@Grp2_PPP1",
+				"tech": ["PPP"],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"CHAP": {
+				"label": "CHAP Challenge Handshake Authentication Protocol",
+				"group": "@Grp2_PPP1",
+				"tech": ["PPP"],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"PPP": {
+				"label": "PPP Point-to Point Protocol",
+				"tech": ["PPP"],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"@Grp2_PPP2": {
+				"direction": "TD(2)",
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"MPPC": {
+				"label": "MPPC Microsoft PPP Compression Protocol",
+				"group": "@Grp2_PPP2",
+				"tech": ["PPP"],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"MLP(PPP)": {
+				"label": "MLP (PPP) Multi-Link Protocol",
+				"group": "@Grp2_PPP2",
+				"tech": ["PPP"],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"LZS": {
+				"label": "LZS Compression Protocol for PPP",
+				"group": "@Grp2_PPP2",
+				"tech": ["PPP"],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"PPP-BPDU": {
+				"label": "PPP-BPDU PPP Bridging Protocol",
+				"tech": ["PPP"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"@ControlProtocols": {
+				"label":"Control Protocols",
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"IPXCP": {
+				"label": "IPXCP Internetwork Packet Exchange Control Protocol",
+				"group": "@ControlProtocols",
+				"tech": ["PPP"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"OSINLCP": {
+				"label": "OSINLCP OSI Network Layer Control Protocol",
+				"group": "@ControlProtocols",
+				"tech": ["PPP"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"CSCP": {
+				"label": "CSCP Cisco Systems Control Protocol",
+				"group": "@ControlProtocols",
+				"tech": ["PPP"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"BCP": {
+				"label": "BCP Bridging Control Protocol",
+				"group": "@ControlProtocols",
+				"tech": ["PPP"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"ECP": {
+				"label": "ECP Encryption Control Protocol",
+				"group": "@ControlProtocols",
+				"tech": ["PPP"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"SDCP": {
+				"label": "SDCP PPP Serial Data Control Protocol",
+				"group": "@ControlProtocols",
+				"tech": ["PPP"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"LEXCP": {
+				"label": "LEXCP LAN Extension Control Protocol",
+				"group": "@ControlProtocols",
+				"tech": ["PPP"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"SPCP": {
+				"label": "SPCP Stream Protocol Control Protocol",
+				"group": "@ControlProtocols",
+				"tech": ["PPP"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"BACP": {
+				"label": "BACP Bandwidth Allocation Control Protocol",
+				"group": "@ControlProtocols",
+				"tech": ["PPP"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"CCP": {
+				"label": "CCP Compression Control Protocol",
+				"group": "@ControlProtocols",
+				"tech": ["PPP"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"IPCP": {
+				"label": "IPCP Internet Protocol Control Protocol",
+				"group": "@ControlProtocols",
+				"tech": ["PPP"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			},
+			"MLP(X25)": {
+				"label": "MLP (X.25) Multi-Link Protocol",
+				"tech": ["X25"],
+				"link-to": [],
+				"OSI": [
+					2
+				],
+				"url": ""
+			}
+		},
+		"3": {
+			"xxxx": {
+				"label": "xxxx",
+				"descr": "xxxx",
+				"group": "@xxx",
+				"tech": [],
+				"link-to": [],
+				"OSI": [
+					3
+				],
+				"url": ""
+			}
+		},
+		"4": {
+			"xxxx": {
+				"label": "xxxx",
+				"descr": "xxxx",
+				"group": "@xxx",
+				"tech": [],
+				"link-to": [],
+				"OSI": [
+					4
+				],
+				"url": ""
+			}
+		},
+		"5": {
+			"xxxx": {
+				"label": "xxxx",
+				"descr": "xxxx",
+				"group": "@xxx",
+				"tech": [],
+				"link-to": [],
+				"OSI": [
+					5
+				],
+				"url": ""
+			}
+		},
+		"6": {
+			"xxxx": {
+				"label": "xxxx",
+				"descr": "xxxx",
+				"group": "@xxx",
+				"tech": [],
+				"link-to": [],
+				"OSI": [
+					6
+				],
+				"url": ""
+			}
+		},
+		"7": {
+			"xxxx": {
+				"label": "xxxx",
+				"descr": "xxxx",
+				"group": "@xxx",
+				"tech": [],
+				"link-to": [],
+				"OSI": [
+					7
+				],
+				"url": ""
+			}
+		}
+	}
+}

@@ -1,0 +1,5 @@
+# ST_GeometryN
+
+![ST_GEOMETRYN](imgs/ST_GEOMETRYN01.png)
+
+![ST_GEOMETRYN](imgs/ST_GEOMETRYN02.png)

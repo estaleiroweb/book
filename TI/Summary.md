@@ -1,0 +1,105 @@
+# Summary
+
+1. Algoritmos e estruturas de dados.
+   - Estruturas de controle básicas.
+   - Elaboração de algoritmos.
+   - Análise de complexidade de algoritmos.
+   - Representação e manipulação de matrizes, listas, filas, pilhas e árvores.
+   - Pesquisa em memória primária e secundária.
+   - Algoritmos de ordenação.
+2. Linguagens e técnicas de programação.
+   - Programação estruturada.
+   - Conceitos básicos de orientação a objetos.
+   - Programação orientada a objetos.
+      - Abstração
+      - identidade: nome único no sistema sem conflito [pacote_namespace/]classe
+      - propriedades: características
+      - métodos: ações
+      - Encapsulamento
+      - vizibilidade das propriedades e métodos + getters e setters
+      - Herança
+      - herda características (propriedades e métodos) de classes pai
+      - Polimorfismo
+      - alteração do funcionamento interno de um método herdado de um objeto pai
+   - Programação shell script, AWK, Power Shell.
+     - AWK
+     - Sintaxe:
+     - awk [-F separador] [-v var=valor] ['progrma'] [-f arquivo_programa] [arquivo]
+     - <https://terminalroot.com.br/2014/12/tutorial-basico-de-awk.html>
+     - <https://www.gnu.org/software/gawk/manual/gawk.html>
+     - Exemplos:
+     - awk '{n=4;print $2 "+" n}' arquivo.txt
+     - awk '{n=4;print $2 + n}' arquivo.txt
+     - awk '{print}' arquivo.txt # imprime tudo
+     - awk '{print $0}' arquivo.txt # imprime todas as linhas
+     - awk '{n=4;print $2" "$4}' arquivo.txt
+     - awk '{n=4;print $2,$4}' arquivo.txt
+     - ls -l | awk '(NR > 1) {print $1,$3}'
+     - ls -l | awk 'BEGIN {OFS="->"} (NR > 1) {print $1,$3}'
+     - ls -l | awk 'BEGIN {OFS="->";FS="[ \t]"} (NR > 1) {print NR,FNR,$1,$9}'
+     - ls -l | awk 'END {OFS="->";FS="[ \t]"} (NR > 1) {print NR,FNR,$1,$9}'
+     - ls -l | awk 'END {print NR,FNR,$1,$9}'
+     - ls -1 | awk '/^d/ {print NR,FNR,$1}'
+     - ls -1 | awk 'BEGIN {FS="[ \t]"} /^[Dd]/ {print NR,FNR,$1}'
+     - ls -l | awk 'BEGIN {FS="[ \t]+"} $9~"^[dD]" {print NR,FNR,$9}'
+     - ls -l | awk 'BEGIN {FS="[ \t]+";OFS="\t";print "NR","FNR","File"} $9~"^[dD]" {print NR,FNR,$9}'
+     - ls -l | awk 'BEGIN {FS="[ \t]+"} FNR>1 {print $1}' | awk '!x[$0]++'
+     - Variáveis internas:
+     - ARGV: vetor de parametros
+     - FILENAME: arquivo atual
+     - FNR: Número do registro atual
+     - NR: Quantidade de registros/linhas em processamento
+     - OFMT: Formato de saída num. Default %.6g
+     - OFS: Separador campos na saída. Default ''
+     - ORS: Separador registros/linhas na saída. Default LF
+     - FS: Separador campos na entrada. Default [\t ]+
+     - RS: Separador registros/linhas na entrada. Default LF
+   - Noções das linguagens Java e PHP.
+3. Sistemas operacionais.
+   - Conceitos, funções, estrutura.
+   - Processos: escalonamento, comunicação interprocessos.
+   - Gerência de recursos, deadlocks.
+   - Gerência de memória.
+   - Sistemas operacionais Linux, Microsoft Windows Server 2022 e Microsoft Windows 10.
+   - Noções dos sistemas operacionais Android e iOS.
+   - Instalação e configuração dos principais serviços.
+   - Logs dos sistemas e dos serviços.
+   - Gerenciamento de usuários.
+   - Diretórios/pastas/compartilhamentos, segurança, direitos de acesso e quota.
+   - Windows Registry.
+4. Sistemas de arquivos
+5. Organização e arquitetura de computadores.
+   - Processadores: monoprocessamento, multiprocessamento.
+   - Hierarquia de memória.
+   - Entrada e saída.
+   - Lógica digital.
+   - Virtualização.
+   - Unidades de armazenamento.
+   - Replicação.
+   - Cloud computing.
+   - Mobile computing.
+6. Segurança.
+   - Conceitos de segurança da informação.
+   - Classificação da informação, segurança física e - segurança lógica.
+   - Análise e gerenciamento de riscos.
+   - Ameaça, tipos de ataques e vulnerabilidade.
+   - Ataques e proteções relativos a hardware, sistemas - operacionais, aplicações, bancos de dados e redes.
+   - Firewall, DMZ, proxy, IDS.
+   - Vírus de computador, malware, cavalo de Troia, worm, - spoof e negação de serviço.
+   - Sistemas de backup.
+   - Tipos de backup. Planos de contingência.
+   - Meios de armazenamento para backups.
+   - Criptografia, assinatura digital e autenticação:
+   - conceitos básicos de criptografia;
+   - sistemas criptográficos simétricos e assimétricos;
+   - certificação digital;
+   - protocolos criptográficos.
+7. Fundamentos sobre aplicações web.
+   - Conceitos sobre HTML, XML, Javascript.
+   - Conceitos sobre protocolo HTTP/HTTPS.
+   - Noções sobre o servidor web Apache e o servidor de - aplicações Tomcat.
+   - Arquitetura de aplicações web.
+8. Governança de TI.
+   - Conceitos gerais sobre ITIL v3 e LGPD.
+   - ITIL
+   - LGPD

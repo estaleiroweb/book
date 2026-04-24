@@ -1,0 +1,133 @@
+# Summary
+
+<https://mariadb.com/docs/server/reference/sql-structure/geometry>
+
+<https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors>
+
+- Spatial Operators: Spatial operators produce new geometries
+  - ST_UNION(g1, g2)
+  - ST_INTERSECTION(g1, g2)
+  - ST_SYMDIFFERENCE(g1, g2)
+  - ST_BUFFER(g, r)
+- Predicates: Predicates return a boolean result of the spatial relationship between geometries
+  - ST_INTERSECTS(g1, g2)
+  - ST_CROSSES(g1, g2)
+  - ST_EQUALS(g1, g2)
+  - ST_WITHIN(g1, g2)
+  - ST_CONTAINS(g1, g2)
+  - ST_DISJOINT(g1, g2)
+  - ST_TOUCHES(g1, g2)
+- Constructors: This section details SQL functions for creating spatial data types like points, lines, and polygons, enabling geospatial data management.
+  - GEOMETRYCOLLECTION
+  - LINESTRING
+  - MULTILINESTRING
+  - MULTIPOINT
+  - MULTIPOLYGON
+  - POINT
+  - POLYGON
+  - ST_BUFFER/BUFFER
+  - ST_CONVEXHULL/CONVEXHULL
+  - ST_INTERSECTION
+  - ST_POINTONSURFACE/PointOnSurface
+  - ST_SYMDIFFERENCE
+  - ST_UNION
+  - ST_AsGeoJSON
+  - ST_GeomFromGeoJSON
+- Properties: This section details SQL functions for retrieving attributes of spatial objects, such as area, length, and bounding box, essential for geospatial analysis.
+  - ST_BOUNDARY/BOUNDARY
+  - ST_DIMENSION/DIMENSION
+  - ST_ENVELOPE/ENVELOPE
+  - ST_GEOMETRYN/GeometryN
+  - ST_GEOMETRYTYPE/GeometryType
+  - ST_ISCLOSED/IsClosed
+  - ST_ISEMPTY/IsEmpty
+  - ST_IsRing/IsRing
+  - ST_IsSimple/IsSimple
+  - ST_NUMGEOMETRIES/NumGeometries
+  - ST_RELATE
+  - ST_SRID/SRID
+- Relations: This section details SQL functions for determining spatial relationships between geometric objects, such as ST_Intersects and ST_Contains.
+  - ST_CONTAINS/CONTAINS
+  - ST_CROSSES/CROSSES
+  - ST_DIFFERENCE
+  - ST_DISJOINT/DISJOINT
+  - ST_DISTANCE
+  - ST_DISTANCE_SPHERE
+  - ST_EQUALS/EQUALS
+  - ST_INTERSECTS/INTERSECTS
+  - ST_LENGTH
+  - ST_OVERLAPS/OVERLAPS
+  - ST_TOUCHES/TOUCHES
+  - ST_WITHIN/WITHIN
+- Point Properties: This section details SQL functions for retrieving attributes of point spatial objects, such as their X and Y coordinates.
+  - ST_X/X
+  - ST_Y/Y
+- LineString Properties: Learn about LINESTRING properties in MariaDB Server. This section details SQL functions for retrieving attributes of linear spatial objects, such as length, number of points, and start/end points.
+  - ST_LENGTH/GLENGTH
+  - ST_ENDPOINT/ENDPOINT
+  - ST_NUMPOINTS/NumPoints
+  - ST_POINTN/PointN
+  - ST_STARTPOINT/STARTPOINT
+- Polygon Properties: This section details SQL functions for retrieving attributes of polygonal spatial objects, such as area, perimeter, and the number of rings.
+  - ST_AREA/AREA
+  - ST_CENTROID/CENTROID
+  - ST_ExteriorRing/ExteriorRing
+  - ST_InteriorRingN/InteriorRingN
+  - ST_NumInteriorRings/NumInteriorRings
+- MBR (Minimum Bounding Rectangle): This section details how to calculate and use MBRs for spatial indexing and efficient querying of geometric data.
+  - MBR Definition: ((MINX MINY, MAXX MINY, MAXX MAXY, MINX MAXY, MINX MINY))
+  - MBRContains: MBRContains(g1,g2)
+  - MBRCoveredBy: MBRCoveredBy(g1,g2)
+  - MBRDisjoint: MBRDisjoint(g1,g2)
+  - MBREqual: MBREqual(g1,g2)
+  - MBRIntersects: MBRIntersects(g1,g2)
+  - MBROverlaps: MBROverlaps(g1,g2)
+  - MBRTouches: MBRTouches(g1,g2)
+  - MBRWithin: MBRWithin(g1,g2)
+- Miscellaneous GIS functions: This section details various SQL functions that support geographic information system operations and spatial data analysis.
+  - ST_Collect
+  - ST_GeoHash
+  - ST_IsValid
+  - ST_LatFromGeoHash
+  - ST_LongFromGeoHash
+  - ST_PointFromGeoHash
+  - ST_Simplify
+  - ST_Validate
+- WKT: Learn about Well-Known Text (WKT) in MariaDB Server. This section details how to represent and store geometric data in a text format, essential for human-readable spatial data exchange.
+  - [WKT Definition](https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/wkt-definition)
+  - ST_AsText/AsText
+  - ST_ASWKT/AsWKT
+  - ST_GeomCollFromText/GeomCollFromText
+  - ST_GeometryCollectionFromText/GeometryCollectionFromText
+  - ST_GeometryFromText/GeometryFromText
+  - ST_GeomFromText/GeomFromText
+  - ST_LineFromText/LineFromText
+  - ST_LineStringFromText/LineStringFromText
+  - ST_MPointFromText/MPointFromText
+  - ST_MPolyFromText/MPolyFromText
+  - ST_MultiLineStringFromText/MultiLineStringFromText
+  - ST_MultiPointFromText/MultiPointFromText
+  - ST_MultiPolygonFromText/MultiPolygonFromText
+  - ST_PointFromText/PointFromText
+  - ST_PolyFromText/PolyFromText
+  - ST_PolygonFromText/PolygonFromText
+  - ST_MLineFromText/MLineFromText
+- WKB: Learn about Well-Known Binary (WKB) in MariaDB Server. This section details how to represent and store geometric data in a binary format, essential for efficient spatial data exchange and storage.
+  - MLineFromWKB
+  - MultiLineStringFromWKB
+  - ST_AsBinary/AsBinary
+  - ST_AsWKB/AsWKB
+  - ST_GeomCollFromWKB/GeomCollFromWKB
+  - ST_GeometryCollectionFromWKB/GeometryCollectionFromWKB
+  - ST_GeometryFromWKB/GeometryFromWKB
+  - ST_GeomFromWKB/GeomFromWKB
+  - ST_LineFromWKB/LineFromWKB
+  - ST_LineStringFromWKB/LineStringFromWKB
+  - ST_MPointFromWKB/MPointFromWKB
+  - ST_MPolyFromWKB/MPolyFromWKB
+  - ST_MultiPointFromWKB/MultiPointFromWKB
+  - ST_MultiPolygonFromWKB/MultiPolygonFromWKB
+  - ST_PointFromWKB/PointFromWKB
+  - ST_PolyFromWKB/PolyFromWKB
+  - ST_PolygonFromWKB/PolygonFromWKB
+  - [(WKB) Format](https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/well-known-binary-wkb-format)

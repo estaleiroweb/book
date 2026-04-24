@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css"
+			href="sr_sbc.css" />
+		<script src="sr_sbc.js" lang="javascript"></script>
+	</head>
+	<body>
+		<div class="descr"></div>
+		<!-- <?xml version="1.0" encoding="UTF-8" standalone="no"?> -->
+		<svg
+			xmlns:svg="http://www.w3.org/2000/svg"
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="0 0 1050 430"
+			version="1.1">
+			<defs>
+				<path id="eqto_arrow_l" class="eqto_draw" d="m 0,0 l15,-12.2 0,24 z" />
+				<use id="eqto_arrow_r" xlink:href="#eqto_arrow_l" transform="scale(-1, 1)" />
+				<use id="eqto_arrow_t" xlink:href="#eqto_arrow_l" transform="rotate(90)" />
+				<circle id="eqto_ball" class="eqto_draw" cx="0" cy="0" r="8" />
+				<g id="box_base">
+					<rect class="eqto_box" width="170" height="150" x="66" y="-75" ry="20"
+						transform="rotate(45)" />
+					<rect class="eqto_border" width="150" height="150" x="66" y="-75" ry="20"
+						transform="rotate(45)" />
+					<rect class="eqto_board" width="140" height="140" x="71" y="-70" ry="20"
+						transform="rotate(45)" />
+				</g>
+				<g id="sr_base">
+					<use xlink:href="#box_base" x="0" y="0" />
+
+					<g id="sr_arrow">
+						<use xlink:href="#eqto_ball" x="80" y="40" />
+
+						<use xlink:href="#eqto_arrow_t" x="80" y="50" />
+						<rect class="eqto_draw" width="15" height="20" x="73" y="60" />
+						<rect class="eqto_draw" width="80" height="15" x="73" y="74" />
+						<rect class="eqto_draw" width="15" height="20" x="138" y="88" />
+					</g>
+					<use xlink:href="#sr_arrow" transform="rotate(180,100,100)" />
+				</g>
+				<g id="sbc_base">
+					<use xlink:href="#box_base" x="0" y="0" />
+
+					<rect id="sbc_bar" class="eqto_draw" width="15" height="120" x="74" y="40" />
+					<use xlink:href="#sbc_bar" x="37.5" y="0" />
+
+					<use xlink:href="#eqto_ball" x="100" y="60" />
+					<use xlink:href="#eqto_ball" x="100" y="86.5" />
+					<use xlink:href="#eqto_ball" x="100" y="113" />
+					<use xlink:href="#eqto_ball" x="100" y="139.5" />
+
+					<g id="arrow_lr">
+						<rect class="eqto_draw" width="20" height="15" x="34" y="92.5" />
+						<use xlink:href="#eqto_arrow_l" x="20" y="100" />
+						<use xlink:href="#eqto_arrow_r" x="66" y="100" />
+					</g>
+					<use xlink:href="#arrow_lr" x="113" />
+				</g>
+				<g id="sr">
+					<use xlink:href="#sr_base" x="0" y="0" />
+					<text class="eqto_label" x="0" y="234" transform="rotate(-45)">SR</text>
+				</g>
+				<g id="sr_peer_grp">
+					<use xlink:href="#sr_base" x="0" y="0" />
+					<text class="eqto_label" x="0" y="234" transform="rotate(-45)">SR Peer</text>
+				</g>
+				<g id="sr_core_grp">
+					<use xlink:href="#sr_base" x="0" y="0" />
+					<text class="eqto_label" x="0" y="234" transform="rotate(-45)">SR Core</text>
+				</g>
+				<g id="sbc">
+					<use xlink:href="#sbc_base" x="0" y="0" />
+					<text class="eqto_label" x="0" y="234" transform="rotate(-45)">SBC</text>
+				</g>
+				<g id="sbc1">
+					<use xlink:href="#sbc_base" x="0" y="0" />
+					<text class="eqto_label" x="0" y="234" transform="rotate(-45)">SBC 1</text>
+				</g>
+				<g id="sbc2">
+					<use xlink:href="#sbc_base" x="0" y="0" />
+					<text class="eqto_label" x="0" y="234" transform="rotate(-45)">SBC 2</text>
+				</g>
+				<g id="sbc3">
+					<use xlink:href="#sbc_base" x="0" y="0" />
+					<text class="eqto_label" x="0" y="234" transform="rotate(-45)">SBC 3</text>
+				</g>
+				<g id="sbc4">
+					<use xlink:href="#sbc_base" x="0" y="0" />
+					<text class="eqto_label" x="0" y="234" transform="rotate(-45)">SBC 4</text>
+				</g>
+				<g id="sbc5">
+					<use xlink:href="#sbc_base" x="0" y="0" />
+					<text class="eqto_label" x="0" y="234" transform="rotate(-45)">SBC 5</text>
+				</g>
+				<g id="sbc6">
+					<use xlink:href="#sbc_base" x="0" y="0" />
+					<text class="eqto_label" x="0" y="234" transform="rotate(-45)">SBC 6</text>
+				</g>
+				<g id="sbc7">
+					<use xlink:href="#sbc_base" x="0" y="0" />
+					<text class="eqto_label" x="0" y="234" transform="rotate(-45)">SBC 7</text>
+				</g>
+				<g id="sbc8">
+					<use xlink:href="#sbc_base" x="0" y="0" />
+					<text class="eqto_label" x="0" y="234" transform="rotate(-45)">SBC 8</text>
+				</g>
+				<g id="sbcn">
+					<use xlink:href="#sbc_base" x="0" y="0" />
+					<text class="eqto_label" x="0" y="234" transform="rotate(-45)">SBC n</text>
+				</g>
+			</defs>
+			<g id='ev' transform="translate(5,10)">
+				<g><!-- Box -->
+					<rect class="peer_side" width="490" height="400" x="0" y="0" />
+					<rect class="core_side" width="520" height="400" x="490" y="0" />
+					<text class="side" x="245" y="30">Peer Side</text>
+					<text class="side" x="750" y="30">Core Side</text>
+				</g>
+				<g> <!-- Links -->
+					<!-- peer_sip      x peer_peer_sip -->
+					<path class="ifSIP" fill="transparent" d="m 50,120 120,0 " />
+					<!-- peer_core_sip x sbc_peer_sip -->
+					<path class="ifSIP" fill="transparent" d="m 300,120 90,0 " />
+					<!-- sbc_core_sip  x core_peer_sip -->
+					<path class="ifSIP" fill="transparent" d="m 590,120 90,0 " />
+					<!-- core_core_sip x core_sip -->
+					<path class="ifSIP" fill="transparent" d="m 810,120 140,0 " />
+
+					<!-- peer_rtp      x sbc_peer_rtp -->
+					<path class="ifRTP" fill="transparent" d="m 50,240 0,80 340,0 " />
+					<!-- sbc_core_rtp  x core_rtp -->
+					<path class="ifRTP" fill="transparent" d="m 950,240 0,80 -350,0 " />
+				</g>
+				<g transform="translate(0,80)"> <!-- OLO -->
+					<circle id="if_peer_sip" class="ifSIP ip eqto_event" data-link='{"Device":0,"Side":0,"Protocol":0}' cx="50" cy="40" r="8"
+						title="Peer SIP" />
+					<circle id="if_peer_rtp" class="ifRTP ip eqto_event" data-link='{"Device":0,"Side":0,"Protocol":1}' cx="50" cy="160" r="8"
+						title="Peer RTP" />
+					<rect class="eqto_box" width="100" height="100" x="0" y="50" ry="20" />
+					<text class="eqto_label" x="50" y="105">OLO</text>
+					<rect id="olo" class="eqto_event" data-link='{"Device":0,"Side":0}' width="100" height="100" x="0" y="50"
+						ry="20" title="OLO" />
+				</g>
+				<g transform="translate(140,80)"> <!-- sr_peer -->
+					<circle id="if_peer_peer_sip" class="ifSIP ipAny eqto_event" data-link='{"Device":0,"Side":0,"Protocol":0}' cx="40"
+						cy="40" r="8" title="Peer Peer SIP" />
+					<circle id="if_peer_core_sip" class="ifSIP ipVRF eqto_event" data-link='{"Device":0,"Side":1,"Protocol":0}' cx="160"
+						cy="40" r="8" title="Peer Core SIP" />
+					<use xlink:href="#sr_peer_grp" />
+					<rect id="sr_peer" class="eqto_event" data-link='{"Device":0}' width="170" height="150" x="66"
+						y="-75" ry="20"
+						transform="rotate(45)" title="SR Peer" />
+				</g>
+				<g transform="translate(390,0)"> <!-- sbc_pool -->
+					<circle id="if_sbc_core_sip" class="ifSIP ipSR eqto_event" data-link='{"Device":2,"Side":1,"Protocol":0}' cx="0" cy="120"
+						r="8" title="SBC Peer SIP" />
+					<circle id="if_sbc_peer_sip" class="ifSIP ipSR eqto_event" data-link='{"Device":2,"Side":0,"Protocol":0}' cx="205"
+						cy="120" r="8" title="SBC Core SIP" />
+					<circle id="if_sbc_core_rtp" class="ifRTP ipVRF eqto_event" data-link='{"Device":2,"Side":1,"Protocol":1}' cx="0" cy="320"
+						r="8" title="SBC Peer RTP" />
+					<circle id="if_sbc_peer_rtp" class="ifRTP ipSR eqto_event" data-link='{"Device":2,"Side":0,"Protocol":1}' cx="205"
+						cy="320" r="8" title="SBC Core RTP" />
+
+					<rect class="eqto_box" width="184" height="384" x="10" y="0" ry="20" />
+					<rect class="eqto_border" width="180" height="360" x="12" y="2" ry="20" />
+					<text class="eqto_label" x="105" y="380">SBC Pool</text>
+					<!-- <rect class="eqto_border" width="460" height="880" x="0" y="0" ry="20" />
+					<g id='ev_sbc2' transform="translate(220,0)"><use xlink:href="#sbc2" /></g> -->
+					<g transform="scale(.4,.4) translate(35,10)">
+						<g transform="translate(0,0)">
+							<use xlink:href="#sbc1" />
+							<use xlink:href="#sbc2" x="220" />
+						</g>
+						<g transform="translate(0,220)">
+							<use xlink:href="#sbc3" />
+							<use xlink:href="#sbc4" x="220" />
+						</g>
+						<g transform="translate(0,440)">
+							<use xlink:href="#sbc5" />
+							<use xlink:href="#sbc6" x="220" />
+						</g>
+						<g transform="translate(0,660)">
+							<use xlink:href="#sbc7" />
+							<use xlink:href="#sbc8" x="220" />
+						</g>
+					</g>
+					<rect id="sbc_pool" class="eqto_event" data-link='{"Device":2}' width="184" height="384" x="10"
+						y="0" ry="20" title="SBC Pool" />
+				</g>
+				<g transform="translate(640,80)"> <!-- sr_core -->
+					<circle id="if_core_core_sip" class="ifSIP ipSR eqto_event" data-link='{"Device":1,"Side":1,"Protocol":0}' cx="40" cy="40"
+						r="8" title="Core Peer SIP" />
+					<circle id="if_core_peer_sip" class="ifSIP ipAny eqto_event" data-link='{"Device":1,"Side":0,"Protocol":0}' cx="160"
+						cy="40" r="8" title="Core Core SIP" />
+					<use xlink:href="#sr_core_grp" />
+					<rect id="sr_core" class="eqto_event" data-link='{"Device":1}' width="170" height="150" x="66"
+						y="-75" ry="20"
+						transform="rotate(45)" title="SR Core" />
+				</g>
+				<g transform="translate(900,80)"> <!-- Core -->
+					<circle id="if_core_sip" class="ifSIP ip eqto_event" data-link='{"Device":1,"Side":1,"Protocol":0}' cx="50" cy="40" r="8"
+						title="Core SIP" />
+					<circle id="if_core_rtp" class="ifRTP ip eqto_event" data-link='{"Device":1,"Side":1,"Protocol":1}' cx="50" cy="160" r="8"
+						title="Core RTP" />
+					<rect class="eqto_box" width="100" height="100" x="0" y="50" ry="20" />
+					<text class="eqto_label" x="50" y="105">Core</text>
+					<rect id="core" class="eqto_event" data-link='{"Device":0,"Side":0}' width="100" height="100" x="0" y="50"
+						ry="20" title="Core" />
+				</g>
+				<g transform="translate(500,410)"> <!-- Subtitles -->
+					<circle class="ifSIP ip" cx="0" cy="0" r="8" />
+					<text class="subtitle_label" x="15" y="7">SIP</text>
+					<circle class="ifRTP ip" cx="100" cy="0" r="8" />
+					<text class="subtitle_label" x="115" y="7">RTP</text>
+
+					<circle class="if ipAny" cx="200" cy="00" r="8" />
+					<text class="subtitle_label" x="215" y="7">IP Any</text>
+					<circle class="if ipVRF" cx="300" cy="00" r="8" />
+					<text class="subtitle_label" x="315" y="7">IP VRF</text>
+					<circle class="if ipSR" cx="400" cy="00" r="8" />
+					<text class="subtitle_label" x="415" y="7">IP SR</text>
+				</g>
+			</g>
+		</svg>
+	</body>
+</html>

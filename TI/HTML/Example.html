@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CSS Template</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="John Doe">
+		<meta name="generator" content="example">
+		<meta name="application-name" content="example">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<base href="https://www.w3schools.com/" target="_blank">
+		<style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Style the header */
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px; /* only for demonstration, should be removed */
+      }
+
+      /* Clear floats after the columns */
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        nav, article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+	</head>
+	<body>
+		<header>
+			<h2>Cities</h2>
+		</header>
+
+		<main>
+			<div alt="use case code">
+				<p>code: Defines a piece of computer code</p>
+				<p>samp: Defines a sample output from a computer program</p>
+				<p>kbd: Defines keyboard input</p>
+				<p>var: Defines a variable</p>
+				<p>pre: Defines preformatted text</p>
+			</div>
+
+			<div alt="groups">
+				<nav>
+					<a href="https://www.w3schools.com/html/">HTML</a> |
+					<a href="https://www.w3schools.com/css/">CSS</a> |
+					<a href="https://www.w3schools.com/js/">JavaScript</a> |
+					<a href="https://www.w3schools.com/jquery/">jQuery</a>
+				</nav>
+
+				<div alt="hgroup">
+					<hgroup>
+						<h2>Norway</h2>
+						<p>The land with the midnight sun.</p>
+					</hgroup>
+				</div>
+
+				<blockquote cite="http://www.worldwildlife.org/who/index.html">
+					For 50 years, WWF has been protecting the future of nature. The world's
+					leading conservation organization, WWF works in 100 countries and is
+					supported by 1.2 million members in the United States and close to 5
+					million globally.
+				</blockquote>
+
+				<address>
+					Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+					Visit us at:<br>
+					Example.com<br>
+					Box 564, Disneyland<br>
+					USA
+				</address>
+
+				<details>
+					<summary>Epcot Center</summary>
+					<p>Epcot is a theme park at Walt Disney World Resort featuring exciting
+						attractions, international pavilions, award-winning fireworks and
+						seasonal special events.</p>
+				</details>
+
+				<section>
+					<nav>
+						<ul>
+							<li><a href="#">London</a></li>
+							<li><a href="#">Paris</a></li>
+							<li><a href="#">Tokyo</a></li>
+						</ul>
+					</nav>
+
+					<article>
+						<h1>London</h1>
+						<p>London is the capital city of England. It is the most populous city
+							in the United Kingdom, with a metropolitan area of over 13 million
+							inhabitants.</p>
+						<p>Standing on the River Thames, London has been a major settlement for
+							two millennia, its history going back to its founding by the Romans,
+							who named it Londinium.</p>
+						<p>Test <time datetime="2008-02-14 20:00">Valentines day</time> de datas
+							<time>21:00</time></p>
+					</article>
+				</section>
+
+				<dl>
+					<dt>Coffee</dt>
+					<dd>Black hot drink</dd>
+					<dt>Milk</dt>
+					<dd>White cold drink</dd>
+				</dl>
+
+				<ul>
+					<li>Coffee</li>
+					<li>Tea</li>
+					<li>Milk</li>
+				</ul>
+
+				<style>
+					.custom-list {
+					  counter-reset: custom-counter 49; /* Define o valor inicial (49, porque o primeiro item será 50) */
+					}
+					
+					.custom-list li {
+					  list-style: none; /* Remove o estilo padrão */
+					  counter-increment: custom-counter; /* Incrementa o contador */
+					}
+					
+					.custom-list li::before {
+					  content: counter(custom-counter) ". "; /* Adiciona o número com o ponto antes do texto */
+					}
+				</style>
+
+				<ol class='custom-list'>
+					<li>Coffee</li>
+					<li>Tea</li>
+					<li>Milk</li>
+				</ol>
+
+				<ol>
+					<li>Coffee</li>
+					<li>Tea</li>
+					<li>Milk</li>
+				</ol>
+
+				<ol start="50">
+					<li>Coffee</li>
+					<li>Tea</li>
+					<li>Milk</li>
+				</ol>
+
+			</div>
+
+			<div alt="xxxxxxxx">
+			</div>
+
+			<div alt="others">
+				<div alt="map">
+					<img src="https://www.w3schools.com/tags/workplace.jpg" alt="Workplace"
+						usemap="#workmap" width="400"
+						height="379">
+
+					<map name="workmap">
+						<area shape="rect" coords="34,44,270,350" alt="Computer"
+							href="https://www.w3schools.com/tags/computer.htm">
+						<area shape="rect" coords="290,172,333,250" alt="Phone"
+							href="https://www.w3schools.com/tags/phone.htm">
+						<area shape="circle" coords="337,300,44" alt="Cup of coffee"
+							href="https://www.w3schools.com/tags/coffee.htm">
+					</map>
+				</div>
+
+				<div alt="cite">
+					<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+				</div>
+
+				<div alt="data">
+					<ul>
+						<li><data value="21053">Cherry Tomato</data></li>
+						<li><data value="21054">Beef Tomato</data></li>
+						<li><data value="21055">Snack Tomato</data></li>
+					</ul>
+				</div>
+
+				<div alt="meter">
+					<label for="disk_c">Disk usage C:</label>
+					<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+					<label for="disk_d">Disk usage D:</label>
+					<meter id="disk_d" value="0.6">60%</meter>
+				</div>
+
+				<div alt="dfn">
+					<p><dfn id="html-def">HTML</dfn> <q>is the standard markup language for
+							creating web pages.</q></p>
+
+					<p>This is some text...</p>
+					<p>This is some text...</p>
+					<p>Learn <a href="#html-def">HTML</a> now.</p>
+				</div>
+
+				<div alt="progress">
+					<label for="file">Downloading progress:</label>
+					<progress id="file" value="32" max="100"> 32% </progress>
+				</div>
+
+				<div alt="ruby">
+					<p>
+						<ruby>
+							漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+						</ruby>
+					</p>
+					<p>
+						tag pode ser usada para fornecer parênteses em torno de um texto ruby,
+						para
+						ser mostrado por navegadores que não suportam anotações ruby.rp
+					</p>
+
+					<p>
+						Use em conjunto com ruby e rt: O elemento ruby consiste em um ou
+						mais caracteres que precisam de um explicação/pronúncia, e um elemento
+						rt que fornece essa informação, e Um elemento opcional que define o
+						que mostrar para navegadores que não suportam anotações ruby.rp
+					</p>
+
+					<p>
+						<ruby>
+							aaaaa <rt> bbbbbb </rt>
+						</ruby>
+					</p>
+				</div>
+
+				<div alt="search">
+					<search>
+						<form>
+							<input name="fsrch" id="fsrch" placeholder="Search W3Schools">
+						</form>
+					</search>
+				</div>
+
+				<div alt="bdo-bdi">
+					<p><bdo dir="ltr">This paragraph will go left-to-right.</bdo></p>
+					<p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p>
+
+					<p><bdi dir="ltr">This paragraph will go left-to-right.</bdi></p>
+					<p><bdi dir="rtl">This paragraph will go left-to-right.</bdi></p>
+				</div>
+
+				<div alt="template">
+					<p>Click the button below to display the hidden content from the template
+						element.</p>
+
+					<button onclick="showContent()">Show hidden content</button>
+
+					<template>
+						<h2>Flower</h2>
+						<img src="img_white_flower.jpg" width="214" height="204">
+					</template>
+
+					<script>
+						function showContent() {
+							let temp = document.getElementsByTagName("template")[0];
+							let clon = temp.content.cloneNode(true);
+							document.body.appendChild(clon);
+						}
+					</script>
+				</div>
+			</div>
+
+			<table>
+				<caption>Monthly savings</caption>
+				<colgroup>
+					<col style="background-color:red">
+					<col style="background-color:yellow">
+				</colgroup>
+
+				<thead>
+					<tr>
+						<th>Month</th>
+						<th>Savings</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>January</td>
+						<td>$100</td>
+					</tr>
+					<tr>
+						<td>Feb</td>
+						<td>$100</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>Total</th>
+						<td>$200</td>
+					</tr>
+				</tfoot>
+			</table>
+
+			<div alt="forms">
+				<form alt="fieldset">
+					<fieldset>
+						<legend>Personalia:</legend>
+						<label for="fname">First name:</label>
+						<input type="text" id="fname" name="fname"><br><br>
+						<label for="lname">Last name:</label>
+						<input type="text" id="lname" name="lname"><br><br>
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email"><br><br>
+						<label for="birthday">Birthday:</label>
+						<input type="date" id="birthday" name="birthday"><br><br>
+					</fieldset>
+
+					<input type="submit" value="Submit">
+				</form>
+
+				<form alt="datalist">
+					<label for="browser">Choose your browser from the list:</label>
+					<input list="browsers" name="browser" id="browser">
+					<datalist id="browsers">
+						<option value="Edge">Descrição</option>
+						<option value="Firefox"></option>
+						<option value="Chrome"></option>
+						<option value="Opera"></option>
+						<option value="Safari"></option>
+					</datalist>
+
+					<input type="submit" value="Submit">
+				</form>
+
+				<form alt="examples">
+					<label>Termos: </label><label><input type="checkbox" name="aceito">
+						Aceito
+						os termos e condições</label><br>
+
+					<label>Sexo: </label>
+					<label><input type="radio" name="genero" value="masculino">
+						Masculino</label>
+					<label><input type="radio" name="genero" value="feminino">
+						Feminino</label><br>
+
+					<label>color: <input type="color" name="cor"
+							value="#ff0000"></label><br>
+
+					<label>date: <input type="date" name="data"></label><br>
+					<label>datetime-local: <input type="datetime-local"
+							name="datahora"></label><br>
+					<label>month: <input type="month" name="mes"></label><br>
+					<label>time: <input type="time" name="horario"></label><br>
+					<label>week: <input type="week" name="semana"></label><br>
+					<label>email: <input type="email" name="email"
+							placeholder="exemplo@dominio.com"></label><br>
+					<label>file: <input type="file" name="arquivo"></label><br>
+					<label>image: <input type="image"
+							src="https://www.w3schools.com/tags/botao.png" alt="Enviar"
+							width="100"
+							height="30"></label><br>
+					<label>number: <input type="number" name="quantidade" min="1"
+							max="10"></label><br>
+					<label>password: <input type="password" name="senha"></label><br>
+					<label>range: <input type="range" name="volume" min="0"
+							max="100"></label><br>
+					<label>search: <input type="search" name="pesquisa"
+							placeholder="Buscar no site"></label><br>
+					<label>tel: <input type="tel" name="telefone"
+							placeholder="(xx) xxxx-xxxx"></label><br>
+					<label>text: <input type="text" name="nome"
+							placeholder="Digite seu nome"></label><br>
+					<label>url: <input type="url" name="site"
+							placeholder="https://exemplo.com"></label><br>
+					<label>hidden: <input type="hidden" name="usuarioID"
+							value="12345"></label><br>
+					<textarea id="w3review" name="w3review" rows="4" cols="50">
+						At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+					</textarea><br>
+
+					<label for="cars">select:</label>
+					<select name="cars" id="cars">
+						<optgroup label="Swedish Cars">
+							<option value="volvo">Volvo</option>
+							<option value="saab">Saab</option>
+						</optgroup>
+						<optgroup label="German Cars">
+							<option value="mercedes">Mercedes</option>
+							<option value="audi">Audi</option>
+						</optgroup>
+					</select><br>
+
+					<label for="cars">list:</label>
+					<select name="cars2[]" id="cars" multiple>
+						<optgroup label="Swedish Cars">
+							<option value="volvo">Volvo</option>
+							<option value="saab">Saab</option>
+						</optgroup>
+						<optgroup label="German Cars">
+							<option value="mercedes">Mercedes</option>
+							<option value="audi">Audi</option>
+						</optgroup>
+					</select><br>
+
+					<button type="button">Click Me!</button>
+					<input type="button" value="Clique Aqui"
+						onclick="alert('Botão clicado!')">
+					<input type="reset" value="Redefinir">
+					<input type="submit" value="Enviar Formulário">
+				</form>
+
+				<form alt="output" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+					<input type="range" id="a" value="50">
+					+<input type="number" id="b" value="25">
+					=<output name="x" for="a b"></output>
+				</form>
+			</div>
+
+			<div alt="media">
+				<figure>
+					<img src="https://www.w3schools.com/tags/pic_trulli.jpg"
+						alt="Trulli"
+						style="width:100%">
+					<figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+				</figure>
+
+				<picture>
+					<source media="(min-width:650px)"
+						srcset="https://www.w3schools.com/tags/img_pink_flowers.jpg">
+					<source media="(min-width:465px)"
+						srcset="https://www.w3schools.com/tags/img_white_flower.jpg">
+					<img src="https://www.w3schools.com/tags/img_orange_flowers.jpg"
+						alt="Flowers" style="width:auto;">
+				</picture>
+
+				<svg width="100" height="100">
+					<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4"
+						fill="yellow" />
+					Sorry, your browser does not support inline SVG.
+				</svg>
+
+				<div alt="canvas">
+					<canvas id="myCanvas">
+						Your browser does not support the canvas tag.
+					</canvas>
+
+					<script>
+						const c = document.getElementById("myCanvas");
+						const ctx = c.getContext("2d");
+						ctx.fillStyle = "red";
+						ctx.fillRect(20, 20, 75, 50);
+
+						//Turn transparency on
+						ctx.globalAlpha = 0.2;
+						ctx.fillStyle = "blue"; 
+						ctx.fillRect(50, 50, 75, 50); 
+						ctx.fillStyle = "green"; 
+						ctx.fillRect(80, 80, 75, 50);
+					</script>
+				</div>
+				<audio controls>
+					<source src="https://www.w3schools.com/tags/horse.ogg"
+						type="audio/ogg">
+					<source src="https://www.w3schools.com/tags/horse.mp3"
+						type="audio/mpeg">
+					Your browser does not support the audio tag.
+				</audio>
+
+				<video width="320" height="240" controls>
+					<source src="https://www.w3schools.com/tags/forrest_gump.mp4"
+						type="video/mp4">
+					<source src="https://www.w3schools.com/tags/forrest_gump.ogg"
+						type="video/ogg">
+					<track src="https://www.w3schools.com/tags/fgsubtitles_en.vtt"
+						kind="subtitles" srclang="en"
+						label="English">
+					<track src="https://www.w3schools.com/tags/fgsubtitles_no.vtt"
+						kind="subtitles" srclang="no"
+						label="Norwegian">
+				</video>
+
+				<object data="https://www.w3schools.com/tags/snippet.html"
+					width="500"
+					height="200"></object>
+				<object data="https://www.w3schools.com/tags/video.mp4" width="400"
+					height="300"></object>
+				<object data="https://www.w3schools.com/tags/pic_trulli.jpg"
+					width="300"
+					height="200"></object>
+				<object data="https://www.w3schools.com/tags/horse.wav">
+					<param name="autoplay" value="true">
+				</object>
+			</div>
+
+			<xmp>
+				<tags> qualquer serão apresentados</tags>
+			</xmp>
+		</main>
+
+		<footer>
+			<p>Footer</p>
+		</footer>
+	</body>
+</html>

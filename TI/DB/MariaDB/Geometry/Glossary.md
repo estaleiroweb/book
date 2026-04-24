@@ -1,0 +1,23 @@
+# Glossário
+
+- point: Um par de coordenadas (x, y) representando um local específico
+- x (longitude): Valor numérico (DOUBLE) que representa a coordenada X (longitude)
+- y (latitude): Valor numérico (DOUBLE) que representa a coordenada Y (latitude)
+- r (raio): Valor numérico (DOUBLE) que representa a distância/rádio do buffer.
+  - Deve ser **positivo** na maioria dos casos (expande).  
+  - **Negativo** funciona em polígonos (faz “buffer interno” ou contração), mas o comportamento não é documentado oficialmente no MariaDB — teste sempre no seu ambiente.
+- g ou g[[n]] (geometria): Uma geometria válida (POINT, LINESTRING, POLYGON, MULTI*, GEOMETRYCOLLECTION, etc.). Pode vir de `ST_GEOMFROMTEXT`, `ST_GEOMFROMWKB`, coluna `GEOMETRY`, etc.
+- json (Java Script Object Notation): formato leve de troca de dados, fácil de ler e escrever
+- GeoJSON (formato JSON para dados geoespaciais): <https://geojson.org/>
+- WKT (Well-Known Text): formato de texto para geometria
+- WKB (Well-Known Binary): formato binário para geometria
+- KNN (K-Nearest Neighbors): K vizinhos mais próximos
+- MBR (Minimum Bounding Rectangle): retângulo mínimo que envolve uma geometria
+- SRID (Spatial Reference System Identifier): identificador do sistema de referência espacial
+  - SRID = 0 (padrão do MariaDB): sistema cartesiano plano. Distância em unidades arbitrárias (graus, metros, etc., depende do que você armazenou).
+  - SRID geográfico (ex.: 4326 = WGS84): o MariaDB **não** faz buffer geodésico (curvatura da Terra). Ele trata tudo como plano. Para buffers precisos em grandes distâncias, considere reprojetar para um SRID projetado (ex.: UTM) antes de usar `ST_BUFFER`.
+- OGC (Open Geospatial Consortium): consórcio aberto de geoespacial
+- GIS (Geographic Information System): sistema de informação geográfica
+- Geometria: representação de formas espaciais (pontos, linhas, polígonos, etc.)
+- Geoprocessamento: manipulação e análise de dados geoespaciais
+- Geofencing: criar uma “cerca virtual” ao redor de uma área

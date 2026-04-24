@@ -1,0 +1,17 @@
+# Técnica Delphi
+
+A técnica Delphi é um método utilizado para estimar a probabilidade e o impacto  de acontecimentos futuros e incertos. No Delphi, por exemplo, um grupo de  peritos é consultado para auxiliar na identificação de riscos e suposições e  premissas a eles associados, e cada um individualmente apresenta suas  estimativas e premissas para um facilitador, que analisa os dados e emite um  relatório de síntese. Na sequencia, os membros do grupo discutem a analisam o relatório de síntese e  individualmente apresentam novamente suas estimativas e premissas, agora  atualizada e influencia pela opinião dos demais participantes, para este  processo continua até que todos os participantes cheguem a um consenso....
+
+1. **Escolha um Facilitador**: O primeiro passo é escolher um facilitador. O gerente mesmo pode querer assumir  esse papel, mas pode ser mais interessante utilizar outra pessoa da  organização, com uma postura de neutralidade em relação aos objetivos e  resultados do projeto. É importante que o facilitador esteja familiarizado com  pesquisas investigatórias e coleta e tratamento de dados
+
+2. **Identifique seus especialistas**: A técnica Delphi é um painel com especialistas. Este painel pode ser a sua  equipe de projeto, incluindo o cliente, representantes das partes  interessadas, e até mesmo outros especialistas de sua organização ou  indústria.Um especialista é “qualquer pessoa com conhecimentos e experiência  relevantes de um tópico em particular.”
+
+3. **Definir o problema**: Qual é o problema ou assunto que você está procurando entender? Para isto é  crucial que você forneça uma definição clara e abrangente, para garantir que  os peritos entendam exatamente o que estão comentando.
+
+4. **Primeira rodada de perguntas**: São aplicadas perguntas gerais para garantir uma compreensão ampla das opiniões  dos peritos sobre os eventos futuros. As perguntas podem ser feitas sob a  forma de questionários ou de enquetes, de forma a resumir as respostas e assim  evitar conteúdos e comentários irrelevantes e facilitar o alinhamento de  pontos em comum entre as opiniões.
+
+5. **Segunda rodada de perguntas**: A segunda rodada deve aprofundar o tema e esclarecer questões especificas,  identificadas a partir das respostas da primeira rodada. Da mesma forma, pode-se utilizar questionários e enquetes. Novamente, é  necessário reunir e resumir os resultados, remover conteúdos irrelevantes e  fixar o olhar no terreno comum, a convergência entre as opiniões. Lembre-se,  estamos trabalhando para construir o consenso.
+
+6. **Terceira rodada de perguntas**: O questionário final deve se concentrar em apoiar a tomada de decisão em  relação ao escopo e aos riscos  associados no projeto. E deve concentrar-se na  convergência das opiniões, nos pontos em que os especialistas estão de acordo.  Em casos mais complexos pode ser interessante, ou necessário, fazer mais de  três rodadas para se chegar ao consenso ou ao nível de segurança suficiente à  tomada de decisão.
+
+7. **A tomada de decisão**: Espera-se que ao final das várias rodadas os especialistas tenham chegado a um  consenso, e a uma visão convergente dos acontecimentos futuros aos quais o  projeto está exposto. Agora é hora de analisar muito bem os resultados, e considerá-los na tomada de  decisão em relação ao gerenciamento dos riscos negativos e a exploração dos  riscos positivos e das oportunidades do seu projeto.

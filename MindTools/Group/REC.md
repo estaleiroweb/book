@@ -1,0 +1,5 @@
+# REC
+
+- Relacionamento
+- Entretenimento
+- Conhecimento

@@ -1,0 +1,5 @@
+# ST_IsClosed
+
+![ST_ISCLOSED](imgs/ST_ISCLOSED01.png)
+
+![ST_ISCLOSED](imgs/ST_ISCLOSED02.png)

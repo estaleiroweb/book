@@ -1,0 +1,52 @@
+# Telecom
+
+- Crédito pré pago (saldo)
+  - Tim
+    - *222=ouvir
+    - *222#=Ver tela
+  - Vivo
+    - *5005=ouvir (custa R$ 0,15 por ligação);
+    - *8000=receber SMS;
+    - *445=receber SMS depois de cada ligação efetuada;
+  - Claro
+    - SMS 1052 com a palavra Claro e escolha a opção 2 (saldo e recarga) e depois a opção 1 (consultar saldo);
+    - *1052#, escolha a opção 2 (saldo e recarga) e depois a opção 1 (consultar saldo) para ver o saldo na tela do celular;
+    - *544#=Ver tela
+    - *555=ouvir
+  - Oi
+    - *804=ouvir
+    - SMS 1050 com a palavra SALDO para para receber o seu saldo por mensagem;
+    - *610 (cliente Nextel Pós) ou *613 (cliente Controle) para ouvir seu saldo. Informe seus dados e digite a opção 2;
+Outros
+  - *100=cx postal
+  - *144=Operadora
+  - *234=
+  - *244=Recarga pré pago
+  - *255=Cadastro de Cartão de Crédito para pagamento automático 
+Encaminhamento
+  - Call Foward:
+    - Não-atendimento:
+      - Desprov: #61# <enviar>
+      - Apaga:   ##61# <enviar>
+      - Prov:    *61* + 0 + CSP + CN + N8/N9 + # <Enviar>
+      - ExPrv:   *61* 041 11931477737#
+    - Fora de Alcance:
+      - Desprov: #62# <enviar>
+      - Apaga:   ##62# <enviar>
+      - Prov:    *62* + 0 + CSP + CN + N8/N9 + # <Enviar>
+      - ExPrv:   *62* 041 11931477737#
+    - Ocupado:
+      - Desprov: #67# <enviar>
+      - Apaga:   ##67# <enviar>
+      - Prov:    *67* + 0 + CSP + CN + N8/N9 + # <Enviar>
+      - ExPrv:   *67* 041 11931477737#
+    - Incondicional:
+      - Desprov: #21# <enviar>
+      - Apaga:   ##21# <enviar>
+      - Prov:    *21* + 0 + CSP + CN + N8/N9 + # <Enviar>
+      - ExPrv:   *21* 041 11931477737#
+    - Cx Postal:
+      - Desprov: #21# <enviar>
+      - Apaga:   ##21# <enviar>
+      - Prov:    *21 <Enviar>
+    - Para enviar todas as chamadas a um número, digite: *21* + 0 + C  CSP + código de área + <número destino> # <enviar>. Se quiser desprogramar, digite #21# <enviar>.

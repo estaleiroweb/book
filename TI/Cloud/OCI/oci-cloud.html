@@ -1,0 +1,1570 @@
+<!DOCTYPE html><html><head>
+      <title>oci-cloud</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\F8034906\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.19\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      <script type="text/javascript" src="file:///c:\Users\F8034906\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.19\crossnote\dependencies\mermaid\mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="oci---oracle-cloud-infrastructure">OCI - Oracle Cloud Infrastructure </h1>
+<p>até 30/10 certificação orcle professional free</p>
+<h2 id="cloud">Cloud </h2>
+<ul>
+<li>
+<p><a href="https://mylearn.oracle.com">https://mylearn.oracle.com</a></p>
+</li>
+<li>
+<p><a href="https://mylearn.oracle.com/ou/learning-path/become-an-oci-foundations-associate-2025/148056/?source=:pm:qr:::::RC_CORP250813P00041:OracleCertificationsWorkshopTIM_QRCodeOCIFoundations">https://mylearn.oracle.com/ou/learning-path/become-an-oci-foundations-associate-2025/148056/?source=:pm:qr:::::RC_CORP250813P00041:OracleCertificationsWorkshopTIM_QRCodeOCIFoundations</a></p>
+</li>
+<li>
+<p><a href="https://tinyurl.com/494mms25">https://tinyurl.com/494mms25</a></p>
+</li>
+<li>
+<p><a href="https://cloud.oracle.com">https://cloud.oracle.com</a></p>
+</li>
+<li>
+<p>Platform<br>
+<img src="image.png" alt="alt text"></p>
+<ul>
+<li>Cloud regions, MultiCloud, Dedicated Regions, Cloud@Customer
+<ul>
+<li>Developer Services
+<ul>
+<li>Low Code: APEX</li>
+<li>AppDec: Visual Builder Studio, GraaIVM, Helidon, SQL Developer, Shell, APIs/CLI/SDKs/Docs</li>
+<li>Infrastructure as Code: Resouce Manager, Terraform, Ansible</li>
+</ul>
+</li>
+<li>Governance &amp; Administration
+<ul>
+<li>Cloud Ops: IAM, Compartments, Tagging Console, Cost Advisor</li>
+<li>Security: Cloud Guard, Security Zones, Vault, KMS, Data Safe, DDoS, WAF</li>
+<li>Observability: Minitoring, Logging, Logging Analytics,Notifications, Events, Operations Insights, APM, Management Cloud</li>
+</ul>
+</li>
+<li>Infrastructure
+<ul>
+<li>Compute: Bare metal, VM, CPUs, GPUs, HPC</li>
+<li>Containers: Docker, Kubernets, Service Mesh, Registry</li>
+<li>OS, VMware: Autonomous Linux, OS Mgmt Service, Marketplace</li>
+<li>Storage: NVMe, Block File, Object, Archive, Data Transfer</li>
+<li>Networking: VCN, LB, Service Gateway, FC, VPN, Cluster Networking</li>
+</ul>
+</li>
+<li>Databases
+<ul>
+<li>Oracle: ATP, ADW, DBCS VM/BM, JSON, Dedicated Exadata, Exadata C@C</li>
+<li>Distributed &amp; OSS Databases: HeatWave, MySQL, Cache, PostgreSQL, OpenSearch</li>
+</ul>
+</li>
+<li>Data &amp; AI
+<ul>
+<li>Big Data, Data Flow, Data Integration, Data Catalog, Golden Gate</li>
+<li>AI services: Data Science, Vision Language, Speech, Doc Understanding</li>
+<li>Generative AI: Generative AI, Generative AI Agents, Code Assist</li>
+</ul>
+</li>
+<li>Analitics
+<ul>
+<li>Business Analytics: Analytics Cloud, Fusion Analytics</li>
+</ul>
+</li>
+<li>Appications
+<ul>
+<li>Serverless: Events, Functions, API Gateway</li>
+<li>App Integration: Integration Cloud, Workflow, Notifications, Email Delivery</li>
+<li>Business &amp; Industry SaaS: ERP, HCM, SCM, Sales, MArketing, Service, Vertical Industry</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Architecture<br>
+<img src="image-34.png" alt="alt text"></p>
+<ul>
+<li>Topology
+<ul>
+<li>Regions: Localized Geographic Area (Region Pair para desaster recovery)<br>
+<img src="image-36.png" alt="alt text">
+<ul>
+<li>Availability Domains (AD) [&gt;=1&lt;=3]: Fault tolerant, Within a region, Low latency, High bandwidth (proteção de falhas inteiras)<br>
+<img src="image-37.png" alt="alt text">
+<ul>
+<li>Fault Domains (FD) [3]: Hardware + infrastructure, Logical datacenters (proteção de um domínio)<br>
+<img src="image-38.png" alt="alt text"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Choosing a Region
+<ul>
+<li>Location: Choose a region closest to your users for lowwst latency and highest perfonce</li>
+<li>Data Residency &amp; Compliance: Many countries have strict data residency requiments</li>
+<li>Service Availability: New cloud service are made available based on regional demand, regulatory compliance, resource availability and other factors</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>IAM - Identity and Access Management Service</p>
+<div class="mermaid">flowchart LR
+   subgraph Identity Domain
+      Users --&gt; Groups
+   end
+   Groups --&gt; Polices --&gt; Compartments --&gt; Resouces
+</div><p><img src="image-1.png" alt="alt text"></p>
+<ul>
+<li>
+<p>Fine-grained Access Control</p>
+</li>
+<li>
+<p>AuthN - Who are you?</p>
+</li>
+<li>
+<p>AuthZ - What permitions do you have?</p>
+</li>
+<li>
+<p>OCI Identity Concepts<br>
+OCID=<code>ocid1</code>.<code>&lt;RESOUCE TYPE&gt;</code>.<code>&lt;REALM&gt;</code>.<code>[REGION][.FUTURE USE]</code>.<code>&lt;UNIQUE ID&gt;</code></p>
+<ul>
+<li>
+<p>Identity Domains</p>
+<ul>
+<li>Users</li>
+<li>Groups</li>
+<li>Dynamic Groups</li>
+</ul>
+</li>
+<li>
+<p>Principals<br>
+<img src="image-4.png" alt="alt text"></p>
+<ul>
+<li>IAM Users
+<ul>
+<li>AuthN=Autenticação
+<ul>
+<li>User+Pass</li>
+<li>API Signing Key</li>
+<li>Auth Tokens</li>
+</ul>
+</li>
+<li>AuthZ=Autorização/Permissão
+<ul>
+<li>Polices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resource Principals</li>
+<li>Group</li>
+</ul>
+</li>
+<li>
+<p>Polices<br>
+<img src="image-3.png" alt="alt text"></p>
+<ul>
+<li>
+<p>Rules</p>
+<ul>
+<li>Allow group <code>&lt;domain_name&gt;</code>/<code>&lt;group_name&gt;</code> to <code>&lt;verb&gt;</code> <code>&lt;resouce-type&gt;</code> in tenancy</li>
+<li>Allow group <code>&lt;domain_name&gt;</code>/<code>&lt;group_name&gt;</code> to <code>&lt;verb&gt;</code> <code>&lt;resouce-type&gt;</code> in compartment [where <code>&lt;conditions&gt;</code>]</li>
+<li>Allow group <code>&lt;domain_name&gt;</code>/<code>&lt;group_name&gt;</code> to <code>&lt;verb&gt;</code> <code>&lt;resouce-type&gt;</code> in <code>&lt;location&gt;</code> where <code>&lt;conditions&gt;</code></li>
+</ul>
+</li>
+<li>
+<p>Vebs</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Verb</th>
+<th style="text-align:left">Tipo de Acesso (Access Type)</th>
+<th style="text-align:left">Usuário-Alvo Típico (Target User)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>inspect</strong></td>
+<td style="text-align:left">Capacidade de <strong>listar</strong> recursos. Permite ver apenas metadados do recurso, mas exclui metadados confidenciais ou especificados pelo usuário.</td>
+<td style="text-align:left">Auditores de Terceiros</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>read</strong></td>
+<td style="text-align:left">Inclui <strong>inspect</strong> mais a capacidade de <strong>obter (get)</strong> o recurso em si e metadados especificados pelo usuário.</td>
+<td style="text-align:left">Auditores Internos, Usuários que precisam apenas visualizar detalhes.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>use</strong></td>
+<td style="text-align:left">Inclui <strong>read</strong> mais a capacidade de <strong>trabalhar</strong> com o recurso (as ações variam por tipo de recurso), geralmente permitindo <strong>atualizar</strong>. <strong>Exclui</strong> a capacidade de <strong>criar</strong> ou <strong>deletar</strong> o recurso.</td>
+<td style="text-align:left">Usuários Finais (Desenvolvedores, Engenheiros) configurando recursos existentes.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>manage</strong></td>
+<td style="text-align:left">Inclui <strong>todos</strong> os verbos anteriores e todas as permissões para o recurso, incluindo <strong>criar</strong> e <strong>deletar</strong>.</td>
+<td style="text-align:left">Administradores (Admins)</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Aggregate resouce-type</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Aggregate resouce-type</th>
+<th style="text-align:left">Descrição</th>
+<th style="text-align:left">Exemplos de Recursos Individuais Incluídos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>all-resources</strong></td>
+<td style="text-align:left">Cobre <em>todos</em> os recursos em um <strong>Compartment</strong> ou <strong>Tenancy</strong>.</td>
+<td style="text-align:left">Qualquer recurso: <code>instance</code>, <code>vcn</code>, <code>volume</code>, <code>bucket</code>, etc.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>instance-family</strong></td>
+<td style="text-align:left">Cobre todos os recursos relacionados à instância de computação (Compute).</td>
+<td style="text-align:left"><code>instances</code>, <code>instance-images</code>, <code>volume-attachments</code>, <code>console-histories</code>, etc.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>volume-family</strong></td>
+<td style="text-align:left">Cobre todos os recursos de Block Volume.</td>
+<td style="text-align:left"><code>volumes</code>, <code>volume-attachments</code>, <code>volume-backups</code>, <code>boot-volume-backups</code>, etc.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>virtual-network-family</strong></td>
+<td style="text-align:left">Cobre todos os recursos de rede em uma Virtual Cloud Network (VCN).</td>
+<td style="text-align:left"><code>vcns</code>, <code>subnets</code>, <code>route-tables</code>, <code>security-lists</code>, <code>internet-gateways</code>, etc.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>object-family</strong></td>
+<td style="text-align:left">Cobre todos os recursos de Object Storage.</td>
+<td style="text-align:left"><code>buckets</code>, <code>objects</code>, <code>multipart-uploads</code>, etc.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>database-family</strong></td>
+<td style="text-align:left">Cobre recursos do serviço Database.</td>
+<td style="text-align:left"><code>databases</code>, <code>db-systems</code>, <code>backups</code>, etc.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>load-balancers</strong></td>
+<td style="text-align:left">Tipos de recurso para o serviço Load Balancer.</td>
+<td style="text-align:left"><code>load-balancers</code>, <code>backend-sets</code>, <code>listeners</code>, etc.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>cluster-family</strong></td>
+<td style="text-align:left">Cobre recursos relacionados ao Container Engine for Kubernetes (OKE).</td>
+<td style="text-align:left"><code>clusters</code>, <code>cluster-node-pools</code>, etc.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Aggregate resouce-type</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Service</th>
+<th style="text-align:left">Resource Type</th>
+<th style="text-align:left">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Compute</strong></td>
+<td style="text-align:left"><code>instances</code></td>
+<td style="text-align:left">Instâncias de Máquina Virtual (VM) ou Bare Metal.</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>instance-images</code></td>
+<td style="text-align:left">Imagens personalizadas usadas para lançar instâncias.</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>volume-attachments</code></td>
+<td style="text-align:left">Conexões de Block Volumes a instâncias.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Networking</strong></td>
+<td style="text-align:left"><code>vcns</code></td>
+<td style="text-align:left">Virtual Cloud Networks (Redes Virtuais).</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>subnets</code></td>
+<td style="text-align:left">Sub-redes dentro de uma VCN.</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>security-lists</code></td>
+<td style="text-align:left">Listas de regras de segurança de rede.</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>route-tables</code></td>
+<td style="text-align:left">Tabelas de roteamento para direcionar o tráfego.</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>load-balancers</code></td>
+<td style="text-align:left">Load Balancers.</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>network-security-groups</code></td>
+<td style="text-align:left">Grupos de Segurança de Rede (NSGs).</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Storage (Block)</strong></td>
+<td style="text-align:left"><code>volumes</code></td>
+<td style="text-align:left">Block Volumes.</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>volume-backups</code></td>
+<td style="text-align:left">Backups de Block Volumes.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Storage (Object)</strong></td>
+<td style="text-align:left"><code>buckets</code></td>
+<td style="text-align:left">Buckets de Object Storage.</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>objects</code></td>
+<td style="text-align:left">Objetos (arquivos) armazenados em Buckets.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Database</strong></td>
+<td style="text-align:left"><code>db-systems</code></td>
+<td style="text-align:left">Sistemas de Banco de Dados.</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>autonomous-databases</code></td>
+<td style="text-align:left">Bancos de Dados Autônomos.</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>db-backups</code></td>
+<td style="text-align:left">Backups de Banco de Dados.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>IAM</strong></td>
+<td style="text-align:left"><code>users</code></td>
+<td style="text-align:left">Usuários do serviço IAM.</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>groups</code></td>
+<td style="text-align:left">Grupos de usuários do IAM.</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>policies</code></td>
+<td style="text-align:left">Políticas de acesso do IAM.</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>compartments</code></td>
+<td style="text-align:left">Compartimentos.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Functions</strong></td>
+<td style="text-align:left"><code>fn-functions</code></td>
+<td style="text-align:left">Funções sem servidor (Serverless Functions).</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>fn-applications</code></td>
+<td style="text-align:left">Aplicações de Functions.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Monitoring</strong></td>
+<td style="text-align:left"><code>alarms</code></td>
+<td style="text-align:left">Alarmes de monitoramento.</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>metrics</code></td>
+<td style="text-align:left">Métricas de telemetria.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Container Engine</strong></td>
+<td style="text-align:left"><code>clusters</code></td>
+<td style="text-align:left">Clusters do Kubernetes (OKE).</td>
+</tr>
+<tr>
+<td style="text-align:left">^^</td>
+<td style="text-align:left"><code>cluster-node-pools</code></td>
+<td style="text-align:left">Pools de Nós (Node Pools) do cluster.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+<li>
+<p>Compartments<br>
+<img src="image-2.png" alt="alt text"></p>
+</li>
+<li>
+<p>Federation</p>
+</li>
+<li>
+<p>Resource</p>
+</li>
+<li>
+<p>Network Sources</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Networking</p>
+<ul>
+<li>VCN - Virtual Cloud Network
+<ul>
+<li>Private Network<br>
+<img src="image-5.png" alt="alt text"><br>
+<img src="image-8.png" alt="alt text">
+<ul>
+<li>Public Subnet (CIDR)
+<ul>
+<li>Route Tables</li>
+</ul>
+</li>
+<li>Privite Subnet (CIDR)
+<ul>
+<li>Route Tables</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Secure Communication<br>
+<img src="image-6.png" alt="alt text"><br>
+<img src="image-7.png" alt="alt text"></li>
+<li>Lives in Region</li>
+<li>Highly Available</li>
+<li>Scalable</li>
+<li>Secure</li>
+</ul>
+</li>
+<li>Peerings
+<ul>
+<li>LPG - Local Peering Gateway
+<ul>
+<li>VCN A (Region X) - VCN B (Region X) [1-1]</li>
+</ul>
+</li>
+<li>DRG - Dynamic Routing Gateway v1
+<ul>
+<li>VCN A (Region X) - VCN B (Region Y) [1-1]</li>
+</ul>
+</li>
+<li>DRG - Dynamic Routing Gateway v2
+<ul>
+<li>VCN A - VCN B [3-300]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SL - Security Lists
+<ul>
+<li>Firewall Rules</li>
+</ul>
+</li>
+<li>Network Security Groups (NSG)
+<ul>
+<li>Group of CIDR</li>
+</ul>
+</li>
+<li>LB - Load Balancer Services<br>
+<img src="image-9.png" alt="alt text"><br>
+<img src="image-11.png" alt="alt text">
+<ul>
+<li>Layer 7 HTTP, HTTPS, TCP socket</li>
+<li>coust</li>
+<li>Config
+<ul>
+<li>Visibility: Public/Private</li>
+<li>Assign IP: Ephemeral/Reserved</li>
+<li>Shapes: bandwidth min/max</li>
+<li>IPv6?</li>
+<li>VCN, Subnet</li>
+<li>backends: weighted round robin, IP hash, Laest connections</li>
+<li>heath check: HTTP/80, HTTPS/443 + interval + timeout + retries + HTTP Status Code + URL [+ response regex]</li>
+<li>listener
+<ul>
+<li>HTTPS|HTTP|HTTP/2|TCP</li>
+<li>Port</li>
+<li>SSL Certificate</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Network Load Balancer<br>
+<img src="image-10.png" alt="alt text">
+<ul>
+<li>Layer 3/4 TCP &amp; UDP</li>
+<li>free</li>
+<li>mais rápido</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Conputing</p>
+<ul>
+<li>Características
+<ul>
+<li>Flexible Shapes
+<ul>
+<li>CPUs</li>
+<li>Memory</li>
+</ul>
+</li>
+<li>Sizing
+<ul>
+<li>Small</li>
+<li>Medium</li>
+<li>Large</li>
+</ul>
+</li>
+<li>Types
+<ul>
+<li>VM - Virtual Machine</li>
+<li>Bare Metal</li>
+<li>Deticated Host</li>
+</ul>
+</li>
+<li>Processores <code>(RPS/R$)</code>
+<ul>
+<li>Ampere <code>(1116.644)</code></li>
+<li>AMD <code>(843.535)</code></li>
+<li>Intel <code>(659.041)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Objects
+<ul>
+<li>Instance<br>
+<img src="image-12.png" alt="alt text">
+<ul>
+<li>Instance Basic VCN (network)/AD(Subnet)/VNIC+Private IP</li>
+<li>Remote Storage: boot + data</li>
+<li>OS</li>
+<li>Live Migrate between hosts</li>
+</ul>
+</li>
+<li>Scaling
+<ul>
+<li>Up/Down (+/-): Instance Shapes, stop before resizing</li>
+<li>Autoscaling (horizontal scaling) out/in (+/-): VMs
+<ol>
+<li>Running Instance + Config (OS, metadata, shapes, vNICs, Storage, subnets)</li>
+<li>Instance pool (put in different availability domanis, manage all together, stop, start, terminate)</li>
+<li>Scaling Rules (before / after): init/min/max size</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Kubernets - Container Engine for Kubernets (OKE)
+<ul>
+<li>Container orchestration
+<ul>
+<li>Deploy</li>
+<li>Manage</li>
+<li>Connect</li>
+<li>Scale up/down</li>
+</ul>
+</li>
+<li>características
+<ul>
+<li>FAst boot time</li>
+<li>Lightweight</li>
+<li>Portable</li>
+<li>any-scale without downtime</li>
+<li>auto-scale</li>
+<li>self-heal</li>
+<li>simplifies deployment</li>
+<li>Docker / CRI-O / OKE</li>
+</ul>
+</li>
+<li>elements
+<ul>
+<li>Containers</li>
+<li>Pods</li>
+<li>Nodes
+<ul>
+<li>worker</li>
+<li>control plane
+<ul>
+<li>kube-controler manager</li>
+<li>cloud-controler manager</li>
+<li>kube-APIsever</li>
+<li>kube-scheduler</li>
+<li>etcd (database key-value)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>NodePool</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Functions as-a-Service<br>
+<img src="image-13.png" alt="alt text"><br>
+<img src="image-14.png" alt="alt text"></li>
+</ul>
+</li>
+<li>
+<p>Storage</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Característica</th>
+<th style="text-align:left">Local NVMe SSDs</th>
+<th style="text-align:left">Block Volume</th>
+<th style="text-align:left">File Storage</th>
+<th style="text-align:left">Object Storage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Descrição</strong></td>
+<td style="text-align:left">Storage de Instância</td>
+<td style="text-align:left">Armazenamento em Bloco</td>
+<td style="text-align:left">Armazenamento de Arquivos</td>
+<td style="text-align:left">Key-Value DB</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Persistência</strong></td>
+<td style="text-align:left"><strong>Não Persistente</strong></td>
+<td style="text-align:left"><strong>Persistente</strong></td>
+<td style="text-align:left"><strong>Persistente</strong></td>
+<td style="text-align:left"><strong>Super Persistente</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Vicnulados à instância</strong></td>
+<td style="text-align:left"><strong>Sim</strong></td>
+<td style="text-align:left"><strong>Não</strong></td>
+<td style="text-align:left"><strong>Não</strong></td>
+<td style="text-align:left"><strong>Não</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Tipo de Dados Recomendado</strong></td>
+<td style="text-align:left"><strong>FS, App, DB, Caches, OLTP, OLAP</strong></td>
+<td style="text-align:left"><strong>FS boot/data, App, DB</strong></td>
+<td style="text-align:left"><strong>shared, /home, repos, Lift-and-Shift</strong></td>
+<td style="text-align:left"><strong>Media, Big Data, Spark, Hadoop, Bin, archive/bkp, Logs, archives, Data Analitics</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Performance (IOPS)</strong></td>
+<td style="text-align:left"><strong>Extremamente Alto</strong> (Milhões)</td>
+<td style="text-align:left"><strong>Lower Cost, Balanced, Higher, Ultra High</strong> (2,60,75,90-225/GB)</td>
+<td style="text-align:left"><strong>Alto</strong> (escalável &lt; Block)</td>
+<td style="text-align:left"><strong>Variável/Alto</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Latência</strong></td>
+<td style="text-align:left"><strong>Extremamente Baixa</strong></td>
+<td style="text-align:left"><strong>Baixa</strong></td>
+<td style="text-align:left"><strong>Média</strong></td>
+<td style="text-align:left"><strong>Alta</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Capacidade</strong></td>
+<td style="text-align:left"><strong>Média</strong> (+-TBs)</td>
+<td style="text-align:left"><strong>Alto</strong> (&lt;=32 TB/volume)</td>
+<td style="text-align:left"><strong>Alto</strong> (PBs)</td>
+<td style="text-align:left"><strong>Ilimitada</strong> (petabytes++)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Limitação</strong></td>
+<td style="text-align:left"><strong>HW</strong> da instância</td>
+<td style="text-align:left"><strong>pode vários volumes/instância</strong></td>
+<td style="text-align:left"><strong>Escalável</strong></td>
+<td style="text-align:left"><strong>Não</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Durabilidade (Cópias)</strong></td>
+<td style="text-align:left"><strong>Baixa</strong> (só da instância)</td>
+<td style="text-align:left"><strong>Média</strong> (3, 1 por FD)</td>
+<td style="text-align:left"><strong>Média</strong> (3, 1 por FD)</td>
+<td style="text-align:left"><strong>Alta</strong> (Múltiplas em 3 AD-Região)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Conectividade</strong></td>
+<td style="text-align:left"><strong>Local Storage</strong></td>
+<td style="text-align:left"><strong>Network Storage</strong></td>
+<td style="text-align:left"><strong>Network Storage</strong></td>
+<td style="text-align:left"><strong>Network Storage</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Acesso</strong></td>
+<td style="text-align:left"><strong>Disco interno tradicional</strong> ex. <code>/dev/sdb</code></td>
+<td style="text-align:left"><strong>Disco via iSCSI ou Paravirtualized</strong> ex. <code>/dev/sdb</code></td>
+<td style="text-align:left"><strong>Diretório de rede</strong> ex. <code>/mnt/fs</code></td>
+<td style="text-align:left"><strong>Acessado por URL</strong> via SDKs ou APIs REST</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Protocolo</strong></td>
+<td style="text-align:left"><strong>Block</strong> (Acesso em nível de bloco pelo SO)</td>
+<td style="text-align:left"><strong>Block</strong> (Conecta o volume como um disco em bloco)</td>
+<td style="text-align:left"><strong>File</strong> (Protocolo <strong>NFS v3</strong>)</td>
+<td style="text-align:left"><strong>HTTP/HTTPS</strong> (Baseado em objeto)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Local NVMe SSDs</li>
+<li>Block Volume<br>
+<img src="image-16.png" alt="alt text"><br>
+<img src="image-17.png" alt="alt text">
+<ul>
+<li>Create and attach disks</li>
+<li>Detach and Delete Disks</li>
+<li>Keep Data even after you Delete the Instance</li>
+<li>Data Encryption
+<ul>
+<li>by Default</li>
+<li>Storage and Transmition</li>
+<li>can use own key or oracle key</li>
+</ul>
+</li>
+<li>Read/Write Shareable</li>
+<li>Online Resizing</li>
+<li>Replicate across regions
+<ul>
+<li>Disater Recovery</li>
+<li>Migration</li>
+<li>Business Expansion</li>
+<li>Asynchronous</li>
+</ul>
+</li>
+<li>Groups
+<ul>
+<li>Easy management</li>
+<li>time consistent backups</li>
+<li>backup multiple volumes</li>
+<li>across multiple instances</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>File Storage<br>
+<img src="image-18.png" alt="alt text"><br>
+<img src="image-19.png" alt="alt text"><br>
+<img src="image-20.png" alt="alt text">
+<ul>
+<li>Hierarchical Collection of Document Organized into Named Directories</li>
+<li>Use Cases
+<ul>
+<li>EBS: Oracle Applications Lif and Shift</li>
+<li>General Purpose File Systems</li>
+<li>Micro Services and Containers</li>
+<li>Scale Out Apps</li>
+<li>Analitics</li>
+</ul>
+</li>
+<li>Snapshots</li>
+<li>Data Encryption
+<ul>
+<li>by Default</li>
+<li>Storage and Transmition</li>
+<li>can use own key or oracle key</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Object Storage<br>
+<img src="image-15.png" alt="alt text">
+<ul>
+<li>URLs
+<ul>
+<li><code>https://&lt;resource_type&gt;.&lt;region&gt;.oraclecloud.com[/p/&lt;pre_autenticated_key]/n/&lt;namespace&gt;/b/&lt;bucket&gt;/o/&lt;object&gt;</code></li>
+<li><code>https://objectstorage.us-sanjose-1.oraclecloud.com/n/xpto/b/development/o/log.zip</code></li>
+<li><code>https://objectstorage.us-sanjose-1.oraclecloud.com/p/alsef0_879yq34tal-Gsidufh/n/xpto/b/development/o/log.zip</code></li>
+</ul>
+</li>
+<li>Object Storage Tiers (Nível de Armazenamento de Objetos)
+<ul>
+<li>Esses níveis são criados para que você possa armazenar seus dados da maneira mais econômica possível, alinhando o custo ao padrão de acesso dos dados (com que frequência os dados são acessados).</li>
+<li>Níveis de Armazenamento de Objetos da OCI
+<ol>
+<li>Standard Tier (Hot)
+<ul>
+<li><strong>Uso Ideal:</strong> Dados acessados ativamente e frequentemente (objetos "quentes").</li>
+<li><strong>Melhor para:</strong> Conteúdo de sites, mídias frequentemente acessadas, dados de Big Data em tempo real e qualquer dado que exija desempenho e baixa latência constantes.</li>
+<li><strong>Acesso:</strong> Acesso imediato (milissegundos).</li>
+<li><strong>Custo:</strong> O mais alto. O custo por gigabyte (GB) é o mais alto dos três, mas não há taxas para acessar ou excluir os dados após serem armazenados.</li>
+<li><strong>Custos de Recuperação (Egress/Retirada):</strong> Não há.</li>
+</ul>
+</li>
+<li>IA-Infrequent Access (Cool)
+<ul>
+<li><strong>Uso Ideal:</strong> Dados que são acessados ocasionalmente, mas precisam de acesso imediato quando necessários (objetos "frios").</li>
+<li><strong>Melhor para:</strong> Backups de curto prazo, dados de log que precisam ser retidos por meses, mas raramente são analisados.</li>
+<li><strong>Acesso:</strong> Acesso imediato (milissegundos).</li>
+<li><strong>Custo:</strong> Mais baixo que o Standard. O preço de armazenamento por GB é mais baixo que o Standard, mas você paga uma pequena taxa de retirada (recuperação) sempre que acessa os dados e deve manter os objetos armazenados por um mínimo de 31 dias.</li>
+<li><strong>Custos de Recuperação (Egress/Retirada):</strong> Há taxas de retirada e um período de retenção mínima de <strong>31 dias</strong>.</li>
+</ul>
+</li>
+<li>Archive (Deep Cool)
+<ul>
+<li><strong>Uso Ideal:</strong> Dados de longo prazo que são raramente ou nunca acessados (arquivamento profundo).</li>
+<li><strong>Melhor para:</strong> Conformidade regulatória de longo prazo, dados de arquivo históricos ou backups de desastres que são mantidos por anos e têm acesso mínimo ou zero.</li>
+<li><strong>Acesso:</strong> Não é imediato.
+<ul>
+<li>Objetos precisam de ser restaurados (restore) antes do download</li>
+<li>Tempo do processo de Restore: <strong>1 hora</strong></li>
+<li>Após restaurado temporariamente para o nível Standard tem <strong>24 horas</strong> como padrão para consumir os dados</li>
+<li>Não atualizável</li>
+</ul>
+</li>
+<li><strong>Custo:</strong> O mais baixo. O custo de armazenamento por GB é o mais baixo de todos. No entanto, ele tem a maior taxa de retirada e um período de retenção mínima de 90 dias.</li>
+<li><strong>Custos de Recuperação (Egress/Retirada):</strong> Há taxas de retirada e um período de retenção mínima de <strong>90 dias</strong>.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>Como a OCI Otimiza o Uso (Object Lifecycle Management)
+<ul>
+<li>A OCI permite que você use o recurso <strong>Object Lifecycle Management</strong> (Gerenciamento do Ciclo de Vida de Objetos) para automatizar a transição entre esses níveis.</li>
+<li>Por exemplo, você pode configurar uma regra que diz: "Mover todos os objetos do nível <strong>Standard</strong> para o nível <strong>Infrequent Access</strong> 30 dias após sua criação, e depois movê-los para o <strong>Archive</strong> após 90 dias."</li>
+<li>Isso garante que seus dados sejam armazenados no nível mais econômico automaticamente à medida que envelhecem e se tornam menos acessados.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Auto-Tiering
+<ul>
+<li>Pode ser habilitado/desabilitado</li>
+<li>Simplifica o uso dos Níveis de Armazenamento de Objetos Standard/Infrequent Access.</li>
+<li>Em vez de você ter que configurar regras manuais, o Auto-Tiering faz a escolha por você, <strong>otimizando o custo automaticamente com base no padrão de acesso aos dados.</strong></li>
+<li>O Auto-Tiering opera monitorando ativamente a frequência com que cada objeto é acessado e movendo-o para o nível mais apropriado.</li>
+<li>Ele se baseia em um princípio de <strong>movimento unidirecional</strong> em direção ao custo mais baixo.</li>
+<li>Fluxo de trabalho detalhado:
+<ul>
+<li>
+<ol>
+<li>Ingestão (Tudo Começa no Standard)</li>
+</ol>
+<ul>
+<li>Quando você faz o upload de um objeto para um <em>bucket</em> onde o Auto-Tiering está ativado, o objeto é inicialmente classificado no nível <strong>Standard</strong>.</li>
+</ul>
+</li>
+<li>
+<ol start="2">
+<li>Monitoramento de Acesso</li>
+</ol>
+<ul>
+<li>A OCI monitora a atividade de acesso a cada objeto no <em>bucket</em>.</li>
+<li>Se um objeto for acessado (lido) frequentemente, ele permanece no nível <strong>Standard</strong>, que oferece o melhor desempenho.</li>
+</ul>
+</li>
+<li>
+<ol start="3">
+<li>Transição Automática para IA (Scale Down de Custo)</li>
+</ol>
+<ul>
+<li>Se um objeto no nível <strong>Standard</strong> <strong>não for acessado</strong> por um período de tempo definido (geralmente alguns dias ou semanas), o sistema de Auto-Tiering o move automaticamente para o nível <strong>Infrequent Access (IA)</strong>.</li>
+<li>Essa transição reduz o custo de armazenamento do objeto, pois o nível IA é mais barato por GB que o Standard.</li>
+</ul>
+</li>
+<li>
+<ol start="4">
+<li>Reclassificação (Movimento de Volta)</li>
+</ol>
+<ul>
+<li>O ponto crucial do Auto-Tiering é que, se um objeto for acessado novamente (lido) enquanto estiver no nível <strong>IA</strong>, ele é <strong>movido de volta automaticamente</strong> para o nível <strong>Standard</strong>.</li>
+<li>Esse movimento garante que o objeto tenha o melhor desempenho e não incorra nas taxas de retirada do IA se for acessado frequentemente.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Vantagens do Auto-Tiering
+<ul>
+<li><strong>Otimização de Custo:</strong> Garante que você pague o preço mais baixo possível para cada objeto, sem intervenção manual.</li>
+<li><strong>Simplificação:</strong> Elimina a necessidade de criar e gerenciar políticas complexas de Ciclo de Vida do Objeto (Object Lifecycle Management) para migração entre Standard e IA.</li>
+<li><strong>Desempenho:</strong> Sempre que um objeto "frio" se torna "quente" (é acessado), ele é promovido ao Standard para garantir que os próximos acessos tenham baixa latência.</li>
+</ul>
+</li>
+<li>O que o Auto-Tiering Não Faz
+<ul>
+<li><strong>Não Inclui o Nível Archive:</strong> O Auto-Tiering só gerencia a transição entre <strong>Standard</strong> e <strong>Infrequent Access (IA)</strong>. Ele <strong>nunca</strong> move um objeto para o nível <strong>Archive</strong>, pois o Archive requer o processo de "restauração" e tem uma latência de acesso muito alta. Se você quiser usar o nível Archive, deve configurá-lo manualmente usando as regras de Ciclo de Vida do Objeto.</li>
+<li><strong>Não Há Período de Retenção Mínima:</strong> Ao usar o Auto-Tiering, as taxas de retenção mínima do nível IA (31 dias) <strong>não se aplicam</strong>. Você paga apenas pelo tempo real que o objeto fica no nível IA.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Transmition Data
+<ul>
+<li>Hot Tier</li>
+<li>Cool Tier 60% cheaper</li>
+</ul>
+</li>
+<li>Data Encryption
+<ul>
+<li>by Default</li>
+<li>Storage and Transmition</li>
+<li>can use own key or oracle key</li>
+</ul>
+</li>
+<li>Versionamento
+<ul>
+<li>Pode ser habilitado/desabilitado</li>
+</ul>
+</li>
+<li>Visibilidade
+<ul>
+<li>Privada/Pública (create a pre-autenticated request)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Security</p>
+<table>
+<thead>
+<tr>
+<th>Manages</th>
+<th style="text-align:center">On-premises</th>
+<th style="text-align:center">OCI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data</td>
+<td style="text-align:center">You</td>
+<td style="text-align:center">You</td>
+</tr>
+<tr>
+<td>Devices</td>
+<td style="text-align:center">You</td>
+<td style="text-align:center">You</td>
+</tr>
+<tr>
+<td>Accounts &amp; Identities</td>
+<td style="text-align:center">You</td>
+<td style="text-align:center">You</td>
+</tr>
+<tr>
+<td>Applications</td>
+<td style="text-align:center">You</td>
+<td style="text-align:center">You</td>
+</tr>
+<tr>
+<td>Network Controls</td>
+<td style="text-align:center">You</td>
+<td style="text-align:center">You</td>
+</tr>
+<tr>
+<td>Operating System</td>
+<td style="text-align:center">You</td>
+<td style="text-align:center">You</td>
+</tr>
+<tr>
+<td>Virtualization</td>
+<td style="text-align:center">You</td>
+<td style="text-align:center">Oracle</td>
+</tr>
+<tr>
+<td>Physical Hosts</td>
+<td style="text-align:center">You</td>
+<td style="text-align:center">Oracle</td>
+</tr>
+<tr>
+<td>Physical Network</td>
+<td style="text-align:center">You</td>
+<td style="text-align:center">Oracle</td>
+</tr>
+<tr>
+<td>Physical Datacenter</td>
+<td style="text-align:center">You</td>
+<td style="text-align:center">Oracle</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>Security Services Layers<br>
+<img src="image-21.png" alt="alt text"><br>
+<img src="image-22.png" alt="alt text"></p>
+<ol>
+<li>Detection and Remediation
+<ul>
+<li>Use Cases
+<ul>
+<li>Security posture management</li>
+<li>Secure Enclave</li>
+<li>Security Advisor</li>
+<li>Vulnerability and exposure scanning</li>
+</ul>
+</li>
+<li>Security Services
+<ul>
+<li>Cloud Guard</li>
+<li>Security Zones</li>
+<li>Threat Intelligence</li>
+<li>Vulnerability Scanning</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Data Protection
+<ul>
+<li>Use Cases
+<ul>
+<li>Encryption for data at rest and in transit</li>
+<li>Centralized key storage and management</li>
+<li>Rotate, manage, and retrieve secrets</li>
+<li>Discover, classify, and protect data</li>
+</ul>
+</li>
+<li>Security Services
+<ul>
+<li>Vault Key Management</li>
+<li>Vault Secrets Management</li>
+<li>Data Safe</li>
+<li>Certificates</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>OS and Workload Protection
+<ul>
+<li>Use Cases
+<ul>
+<li>Secure Boot, Measured Boot, TPM</li>
+<li>Workload isolation</li>
+<li>Managed Bastion</li>
+<li>OS patch and package management</li>
+</ul>
+</li>
+<li>Security Services
+<ul>
+<li>Shielded Instances</li>
+<li>Dedicated Host</li>
+<li>Bastion</li>
+<li>OS Management</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Identity and Access Management
+<ul>
+<li>Use Cases
+<ul>
+<li>Manage user access and policies</li>
+<li>Manage multi-factor authentication</li>
+<li>Single sign-on to identity providers</li>
+<li>Record API calls automatically</li>
+</ul>
+</li>
+<li>Security Services
+<ul>
+<li>IAM</li>
+<li>MFA</li>
+<li>Federation</li>
+<li>Audit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Infrastructure Protection
+<ul>
+<li>Use Cases
+<ul>
+<li>DDoS protection</li>
+<li>Network security controls</li>
+<li>Virtual firewalls</li>
+<li>Filter malicious web traffic</li>
+</ul>
+</li>
+<li>Security Services
+<ul>
+<li>DDoS Protection</li>
+<li>Web Application Firewall</li>
+<li>Security Lists/NSG</li>
+<li>Network Firewall</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>Cloud Guard<br>
+<img src="image-23.png" alt="alt text"><br>
+<img src="image-24.png" alt="alt text"><br>
+<img src="image-25.png" alt="alt text"></p>
+<ul>
+<li><strong>O que faz:</strong> Monitora continuamente sua <em>tenancy</em> (locação) da OCI e todos os seus Compartimentos em busca de atividades de risco e falhas de configuração.</li>
+<li><strong>Como funciona:</strong> Ele usa "Detectores" para identificar problemas (ex: um <em>bucket</em> de Object Storage tornado público) e "Respondedores" para tomar ações automáticas (ex: alertar um administrador ou até mesmo tornar o <em>bucket</em> privado novamente).</li>
+<li><strong>Propósito:</strong> Fornece visibilidade em tempo real do seu <strong>nível de risco de segurança</strong>.</li>
+<li>Steps:
+<ol>
+<li>Monitor and Identify</li>
+<li>Potential Security Issues</li>
+<li>Remediate Them</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>Security Zone<br>
+<img src="image-26.png" alt="alt text"><br>
+<img src="image-28.png" alt="alt text"></p>
+<ul>
+<li>can not disable security</li>
+<li><strong>O que faz:</strong> Impõe políticas de segurança pré-configuradas e baseadas nas <strong>melhores práticas da Oracle</strong> (Cloud Guard).</li>
+<li><strong>Como funciona:</strong> Você designa um Compartimento para ser uma Security Zone. Qualquer recurso que você tente criar nesse Compartimento deve <strong>cumprir rigorosamente</strong> as políticas da Security Zone. Se um recurso violar uma política (ex: tentar criar um Block Volume sem criptografia), a OCI <strong>bloqueia a criação</strong> do recurso.</li>
+<li><strong>Propósito:</strong> <strong>Previne proativamente</strong> falhas de segurança <em>antes</em> que os recursos sejam implantados.</li>
+</ul>
+</li>
+<li>
+<p>Security Advisor<br>
+<img src="image-27.png" alt="alt text"></p>
+<ul>
+<li><strong>O que faz:</strong> Ajuda a analisar e lidar com as descobertas de segurança feitas pelo <strong>Cloud Guard</strong>.</li>
+<li><strong>Como funciona:</strong> Ele fornece uma visão unificada e acionável dos problemas detectados (ex: quais falhas de configuração persistem, quais violações de políticas foram resolvidas).</li>
+<li><strong>Propósito:</strong> Oferece um guia prático para <strong>corrigir problemas de segurança</strong> identificados e manter a conformidade.</li>
+<li>Gerencia/Corrige:
+<ul>
+<li>Security Zone</li>
+<li>Cloud Guard</li>
+<li>Other security services</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Encryption Basics<br>
+<img src="image-29.png" alt="alt text"><br>
+<img src="image-30.png" alt="alt text"><br>
+<img src="image-31.png" alt="alt text"><br>
+<img src="image-32.png" alt="alt text"></p>
+<ul>
+<li>
+<p>AES (Advanced Encryption Standard) symetric keys</p>
+<ul>
+<li><strong>Descrição:</strong> O <strong>AES</strong> é o algoritmo de criptografia <strong>simétrica</strong> mais amplamente utilizado no mundo, sendo o padrão adotado pelo governo dos EUA.</li>
+<li><strong>O que faz:</strong> Garante a <strong>confidencialidade</strong> (privacidade) dos dados.</li>
+<li><strong>Como funciona:</strong> É um algoritmo <strong>simétrico</strong>, o que significa que ele usa <strong>uma única chave secreta</strong> tanto para criptografar (embaralhar) quanto para descriptografar (desembaralhar) os dados.</li>
+<li><strong>Uso Ideal:</strong> Criptografia de grandes volumes de dados (dados em repouso, como Block Volumes, Object Storage, ou dados em trânsito, como o tráfego HTTPS), onde a <strong>velocidade</strong> é crucial.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Característica</th>
+<th style="text-align:left">Detalhe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Tipo</strong></td>
+<td style="text-align:left">Criptografia <strong>Simétrica</strong> (Chave Única).</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Função</strong></td>
+<td style="text-align:left">Confidencialidade e Privacidade.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Vantagem</strong></td>
+<td style="text-align:left"><strong>Extremamente rápido</strong> e eficiente.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The same key encrypts and decrypts data</li>
+<li>It cannot be used for digital signing</li>
+</ul>
+</li>
+<li>
+<p>RSA (Rivest–Shamir–Adleman) (asymetric keys)</p>
+<ul>
+<li><strong>Descrição:</strong> O <strong>RSA</strong> é o algoritmo de criptografia <strong>assimétrica</strong> mais tradicional e popular.</li>
+<li><strong>O que faz:</strong> Garante a <strong>troca segura de chaves</strong> e a <strong>assinatura digital</strong>.</li>
+<li><strong>Como funciona:</strong> É um algoritmo <strong>assimétrico</strong> (ou de chave pública), utilizando um par de chaves:
+<ol>
+<li><strong>Chave Pública:</strong> Compartilhada abertamente e usada para <strong>criptografar</strong> dados ou <strong>verificar assinaturas</strong>.</li>
+<li><strong>Chave Privada:</strong> Mantida em segredo pelo proprietário e usada para <strong>descriptografar</strong> dados ou <strong>criar assinaturas</strong>.</li>
+</ol>
+</li>
+<li><strong>Uso Típico:</strong> No HTTPS, o RSA é usado para criptografar o AES Key (a chave simétrica) antes de enviá-la ao cliente, estabelecendo o canal seguro. Também é amplamente usado para assinaturas digitais e chaves SSH.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Característica</th>
+<th style="text-align:left">Detalhe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Tipo</strong></td>
+<td style="text-align:left">Criptografia <strong>Assimétrica</strong> (Chave Pública/Privada).</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Função</strong></td>
+<td style="text-align:left">Troca de Chaves e Assinatura Digital.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Desvantagem</strong></td>
+<td style="text-align:left"><strong>Lento</strong> para grandes volumes de dados.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>A public key encrypts and private key decrypts data</li>
+<li>It can be used for digital signing</li>
+</ul>
+</li>
+<li>
+<p>ECDSA (Elliptic Curve Digital Signature Algorithm) (digital signing keys)</p>
+<ul>
+<li><strong>Descrição:</strong> O <strong>ECDSA</strong> é o algoritmo de <strong>assinatura digital</strong> baseado em Criptografia de Curva Elíptica (ECC).</li>
+<li><strong>O que faz:</strong> Garante <strong>autenticidade</strong> (prova de origem) e <strong>integridade</strong> (prova de que não foi alterado).</li>
+<li><strong>Como funciona:</strong> Usa a matemática das curvas elípticas. Assim como o RSA, ele usa pares de chaves pública/privada, mas gera uma <strong>assinatura digital</strong> muito mais curta e eficiente para o mesmo nível de segurança.</li>
+<li><strong>Uso Ideal:</strong> É o substituto moderno do RSA em muitos casos, especialmente em certificados digitais (HTTPS/TLS) e criptomoedas, pois oferece segurança comparável com <strong>tamanhos de chave muito menores</strong> (e, portanto, é mais rápido e exige menos poder computacional).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Característica</th>
+<th style="text-align:left">Detalhe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Tipo</strong></td>
+<td style="text-align:left">Assinatura Digital <strong>Assimétrica</strong> (baseado em ECC).</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Função</strong></td>
+<td style="text-align:left">Autenticidade e Integridade.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Vantagem</strong></td>
+<td style="text-align:left"><strong>Alta segurança</strong> com <strong>chaves menores</strong> e processamento mais rápido que o RSA.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Can be used only for digital signing, not encryption and decryption of data</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Hardware Security Module (HSM)</p>
+<ul>
+<li>
+<p>É um dispositivo de hardware físico projetado especificamente para proteger e gerenciar <strong>chaves criptográficas digitais</strong>.</p>
+</li>
+<li>
+<p>Pense nele como um "cofre digital" à prova de adulteração (tamper-proof) e altamente seguro para os seus segredos mais importantes, especialmente as chaves de criptografia.</p>
+</li>
+<li>
+<p>O Que é e Como Funciona</p>
+<ul>
+<li>Propósito Principal: Proteção de Chaves: O HSM não é apenas um dispositivo de armazenamento; ele é projetado para:
+<ol>
+<li><strong>Geração Segura de Chaves:</strong> Criar chaves aleatórias e de alta qualidade dentro do hardware seguro.</li>
+<li><strong>Proteção de Chaves:</strong> Armazenar chaves privadas e mestras em um ambiente isolado e à prova de adulteração.</li>
+<li><strong>Execução Criptográfica:</strong> Executar operações criptográficas (como criptografar, descriptografar ou assinar) <strong>dentro do próprio dispositivo</strong>, de modo que a chave privada nunca precise deixar o ambiente seguro do HSM.</li>
+</ol>
+</li>
+<li>Segurança Física e Lógica: Os HSMs são construídos com recursos avançados de segurança:
+<ul>
+<li><strong>Anti-Tampering:</strong> Eles são projetados para serem resistentes a ataques físicos. Se for detectada qualquer tentativa de violação (como perfuração ou alteração de temperatura), o HSM pode imediatamente <strong>apagar todas as chaves</strong> que armazena (mecanismo de <em>zeroization</em>).</li>
+<li><strong>Isolamento:</strong> Ele isola as chaves do sistema operacional do host e de vulnerabilidades de software.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Casos de Uso Comuns do HSM: Os HSMs são essenciais para qualquer cenário que exija o mais alto nível de confiança e conformidade regulatória:</p>
+<ol>
+<li><strong>Serviços de Certificados Digitais (PKI):</strong> Proteção da chave privada da Autoridade de Certificação (CA), que é usada para assinar todos os certificados digitais (incluindo certificados SSL/TLS para HTTPS).</li>
+<li><strong>Serviços de Criptografia em Nuvem (OCI Vault):</strong> Provedores de nuvem como a OCI usam HSMs para proteger as <strong>chaves mestras</strong> que, por sua vez, criptografam todas as outras chaves e dados dos clientes.</li>
+<li><strong>Serviços de Pagamento (Financeiro):</strong> Usado para proteger as chaves usadas para processar transações com cartão de crédito e débito (PCI-DSS).</li>
+<li><strong>Assinatura de Código:</strong> Usado para assinar software e garantir que o código não foi adulterado após a compilação.</li>
+</ol>
+</li>
+<li>
+<p>HSM vs. Software Key Storage: A principal vantagem de um HSM é a garantia de que a chave privada de alto valor <strong>nunca</strong> é exposta ao ambiente de software.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Característica</th>
+<th style="text-align:left">Hardware Security Module (HSM)</th>
+<th style="text-align:left">Armazenamento de Chave em Software</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Proteção da Chave</strong></td>
+<td style="text-align:left">Protegida por hardware físico, com <strong>zeroization</strong> em caso de violação.</td>
+<td style="text-align:left">Protegida por criptografia, mas reside no disco ou memória do servidor.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Ambiente de Operação</strong></td>
+<td style="text-align:left">Operações criptográficas ocorrem <strong>dentro</strong> do módulo seguro.</td>
+<td style="text-align:left">Operações criptográficas ocorrem no <strong>CPU do host</strong> (exposto ao SO).</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Custo e Complexidade</strong></td>
+<td style="text-align:left">Alto custo e alta complexidade (alto nível de segurança).</td>
+<td style="text-align:left">Baixo custo e menor complexidade.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+<li>
+<p>Vault<br>
+<img src="image-33.png" alt="alt text"><br>
+<img src="image-35.png" alt="alt text"></p>
+<ul>
+<li>Secrets
+<ul>
+<li>Passwords</li>
+<li>Certificates</li>
+<li>SSH-keys</li>
+<li>Auth Tokens</li>
+</ul>
+</li>
+<li>Master Security key protected by
+<ul>
+<li>HSM
+<ul>
+<li>Stored in HSM Device</li>
+<li>Can not be exported from HSM</li>
+</ul>
+</li>
+<li>Software
+<ul>
+<li>Stored in Server</li>
+<li>Can be exported from Server</li>
+<li>Operations allowed on Clients</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Algorithms
+<ul>
+<li>AES, RSA, ECDSA</li>
+</ul>
+</li>
+<li>Key integrated in OCI</li>
+<li>Rotare your master keys</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Governance and Administration</p>
+<ul>
+<li>Pricing
+<ul>
+<li>Modules
+<ul>
+<li>Pay as you go (PAYG)
+<ul>
+<li>Charged only for the resource consumed</li>
+<li>No upfront commitement</li>
+<li>No minumum service period</li>
+<li>Usage metered</li>
+</ul>
+</li>
+<li>Annual Uiversal Credits
+<ul>
+<li>Commit to an annual pool of funds</li>
+<li>Significant savings</li>
+<li>Must use credits with in 12 months</li>
+<li>Discounts based on size of deal and term of deal</li>
+</ul>
+</li>
+<li>Bring Your Own Licence (BYOL)
+<ul>
+<li>Apply your current on-premises Oracle licences to equivalent, highly automated Oracle IaaS &amp; PaaS services in the cloud</li>
+<li>Complete licence mobility with on-premises</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Impact
+<ul>
+<li>Resource Size: Bigger cost more</li>
+<li>Resource Type: VMs vs BMs, VMs vs Functions, BYOL vs managed DBs</li>
+<li>Data Transfer: No ingress cost, careful with egress cost<br>
+<img src="image-39.png" alt="alt text"></li>
+<li>All OCI regions have the same pricing</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Cost Management
+<ul>
+<li>Create budget and alerts</li>
+<li>Analysis</li>
+<li>Usage Reports</li>
+<li>Limits, Quotas and Usage</li>
+</ul>
+</li>
+<li>Tagging<br>
+<img src="image-40.png" alt="alt text">
+<ul>
+<li>key-value pair to
+<ul>
+<li>resource organization</li>
+<li>cost management</li>
+<li>access control</li>
+</ul>
+</li>
+<li>Name convention
+<ul>
+<li><code>&lt;namespace&gt;.&lt;key&gt;=&lt;value&gt;</code></li>
+<li><code>Opertions.Enviroment="Prodution"</code></li>
+<li>Tag Namespace: is a container for a set of tag keys with tag key definitions</li>
+<li>Tag Key definition specifies its key and what types of values are allowed</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Cloud Advisor
+<ul>
+<li>Overview</li>
+<li>Recomendations</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Obs</p>
+<ul>
+<li>Redundância Local = Região / Availability Domain (&gt;=1&lt;=3) / Fault Domain (3)</li>
+<li>Redundância Geográfica ???</li>
+<li>Desaster Recovery precisa de 2 Regiões</li>
+<li>Data guard replica DB entre AD entre FD é nativo</li>
+<li>Polices são sempre dadas a grupos de users para compartments de resources</li>
+<li>Polices são apenas de permissão pois tudo já está negado</li>
+<li>Um recurso só pode estar em um compartment</li>
+<li>Tenancy e Compartments são construções globais (multi regiões)</li>
+<li>Tenancy pode estar associado a uma região mas opera em todas</li>
+<li>Tenancy é seu Id na cloud</li>
+<li>compartments permite &lt;=6 nívels de hierarquias
+<ul>
+<li>quotas</li>
+<li>orçamentos</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="ia">IA </h2>
+<p><a href="https://mylearn.oracle.com/ou/learning-path/become-a-oci-ai-foundations-associate-2025/147781">https://mylearn.oracle.com/ou/learning-path/become-a-oci-ai-foundations-associate-2025/147781</a></p>
+<hr>
+<p>faça esses 2 cursos com certificação gratuíta</p>
+<p><a href="https://mylearn.oracle.com/ou/learning-path/become-an-oci-foundations-associate-2025/148056/?source=:pm:qr:::::RC_CORP250813P00041:OracleCertificationsWorkshopTIM_QRCodeOCIFoundations">https://mylearn.oracle.com/ou/learning-path/become-an-oci-foundations-associate-2025/148056/?source=:pm:qr:::::RC_CORP250813P00041:OracleCertificationsWorkshopTIM_QRCodeOCIFoundations</a><br>
+<a href="https://mylearn.oracle.com/ou/learning-path/become-a-oci-ai-foundations-associate-2025/147781">https://mylearn.oracle.com/ou/learning-path/become-a-oci-ai-foundations-associate-2025/147781</a></p>
+<p>e aproveite para estudar muiiiito que, até dia 30/10, poderá tirar certificação Oracle Professional Gratuíta</p>
+<h3 id="dicas">Dicas </h3>
+<ul>
+<li><strong>Dados bons são dados limpos e organizados.</strong></li>
+<li><strong>Algoritmo</strong> é uma sequência de passos que transforma dados (ingredientes) em um resultado útil (<strong>café pronto</strong>).</li>
+<li><strong>Modelo de classificação</strong> atribui categorias a novos dados com base em padrões previamente aprendidos.</li>
+<li><strong>Modelo de regressão</strong> estima valores contínuos com base em dados históricos.</li>
+<li><strong>Modelo de clusterização</strong> agrupa dados semelhantes com base em suas características, sem a necessidade de rótulos pré-definidos.</li>
+<li><strong>Modelo de Aprendizado por Reforço</strong> aprende a tomar decisões interagindo com o ambiente.</li>
+<li><strong>Deep learning</strong> utiliza camadas de redes neurais profundas para aprender automaticamente padrões complexos dos dados.</li>
+<li><strong>CNN</strong> é uma rede neural que identifica padrões em imagens.</li>
+<li><strong>RNN</strong> processa dados sequencialmente, mas possui memória fraca, retendo informações apenas por curtos períodos.</li>
+<li><strong>Transformers</strong> possuem mecanismos de atenção, identificando rapidamente quais partes da frase são mais importantes para entender o contexto.</li>
+<li><strong>IA responsável</strong> envolve o desenvolvimento de sistemas de inteligência artificial éticos, justos, transparentes e seguros.</li>
+<li><strong>RAG</strong> combina a busca por informações externas com a geração de texto.</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  
+    </body></html>

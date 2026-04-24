@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69px"
+	height="16px">
+	<foreignObject width="100%" height="100%">
+		<style>
+			/* */
+			.box .group {
+			margin-right: 4px;
+			float: left;
+			--radius: 3px;
+			--padding: 7px;
+			font-family: arial;
+			font-size: small;
+			font-weight: bold;
+			}
+			.box .item,
+			.box .value {
+			padding-left: var(--padding);
+			padding-right: var(--padding);
+			text-shadow: 1px 1px 2px #111;
+			color: #FFF;
+			clear: left;
+			}
+			.box .item {
+			border-radius: var(--radius) 0 0 var(--radius);
+			}
+			.box .value {
+			border-radius: 0 var(--radius) var(--radius) 0;
+			}
+
+			/*colors*/
+			.box .black{
+			background-image: linear-gradient(#333, #111);
+			}
+			.box .gray{
+			background-image: linear-gradient(#555, #333);
+			}
+			.box .green{
+			background-image: linear-gradient(#0D0, #050);
+			}
+			.box .blue{
+			background-image: linear-gradient(#00D, #005);
+			}
+			.box .cyan{
+			background-image: linear-gradient(#618ce7, #4c7bdf);
+			}
+			.box .yellow{
+			background-image: linear-gradient(#f0d123, #bba632);
+			}
+			.box .orange{
+			background-image: linear-gradient(#f77e2d, #b3632e);
+			}
+			.box .red{
+			background-image: linear-gradient(#e2291b, #9c2f27);
+			}
+		</style>
+		<div
+			xmlns="http://www.w3.org/1999/xhtml">
+			<div class='box'>
+				<span class='group'>
+					<span class='item gray'>SVG</span><span class='value cyan'>2.0</span>
+				</span>
+			</div>
+		</div>
+	</foreignObject>
+</svg>

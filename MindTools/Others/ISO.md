@@ -1,0 +1,25 @@
+# ISO
+
+A ISO, Organização Internacional de Normalização, oferece uma série de normas que impactam as empresas brasileiras em diversos setores.
+
+Estas normas não são apenas ferramentas de conformidade, mas também podem oferecer vantagens competitivas ao melhorar a eficiência, a reputação e a sustentabilidade das empresas no mercado global. Cada norma ISO possui um conjunto específico de requisitos que as empresas devem atender para obter e manter a certificação. A implementação dessas normas pode ajudar as empresas brasileiras a se destacarem em um mercado cada vez mais competitivo e regulado.
+
+Aqui estão algumas das certificações ISO mais relevantes para empresas no Brasil:
+
+1. **ISO 9001 - Sistema de Gestão da Qualidade**: Talvez a mais conhecida das normas ISO, esta certificação se concentra em sistemas de gestão da qualidade (SGQ) e ajuda as empresas a garantir que seus produtos e serviços atendam consistentemente aos requisitos de qualidade do cliente e às regulamentações aplicáveis.
+2. **ISO 13485 - Dispositivos Médicos**: Essa norma é específica para a indústria de dispositivos médicos e estabelece requisitos para sistemas de gestão da qualidade, garantindo a conformidade com regulamentações aplicáveis e a entrega de dispositivos médicos seguros e eficazes.
+3. **ISO 14001 - Sistema de Gestão Ambiental**: Esta norma fornece um framework para as empresas gerenciarem seus impactos ambientais. É especialmente relevante para empresas que desejam melhorar sua sustentabilidade e reduzir sua pegada ambiental.
+4. **ISO 14064 - Gestão de Gases de Efeito Estufa**: Esta norma fornece orientações para organizações que desejam quantificar e relatar suas emissões de gases de efeito estufa (GEE) e suas atividades de redução ou compensação de emissões.
+5. **ISO 19011 Diretrizes para Auditoria de Sistemas de Gestão**: é uma norma internacional que fornece diretrizes para a auditoria de sistemas de gestão. Ela abrange aspectos como os princípios de auditoria, a gestão de programas de auditoria, a realização de auditorias em sistemas de gestão e a avaliação da competência dos envolvidos no processo de auditoria.
+6. **ISO 20000 - Gestão de Serviços de TI**: Essencial para empresas que fornecem serviços de TI, esta norma ajuda as organizações a demonstrar sua excelência e conformidade com as melhores práticas na prestação de serviços de TI.
+7. **ISO 22000 - Sistema de Gestão de Segurança de Alimentos**: Essencial para empresas na indústria de alimentos e bebidas, esta norma garante a segurança dos produtos alimentícios ao longo de toda a cadeia de suprimentos.
+8. **ISO 22301 - Segurança e Resiliência - Sistemas de gestão da continuidade dos negócios**: Importante para qualquer empresa que deseja garantir a continuidade das operações diante de interrupções inesperadas, esta norma fornece uma estrutura para manter e recuperar operações críticas durante e após uma crise.
+9. **ISO 26000 - Responsabilidade Social Corporativa**: Embora não seja uma certificação de conformidade, a ISO 26000 fornece diretrizes sobre responsabilidade social corporativa (RSC). Ela ajuda as organizações a entender e implementar práticas socialmente responsáveis em suas operações e interações com partes interessadas.
+10. **ISO 27001 - Sistema de Gestão de Segurança da Informação**: Fundamental para empresas que lidam com grandes volumes de dados, esta certificação ajuda a proteger informações contra acessos não autorizados.
+11. **ISO 27701 - Proteção de privacidade**: Uma extensão da ISO 27001, esta norma é voltada para a gestão da informação da privacidade, complementando a ISO 27001 no que se refere à segurança de dados pessoais.
+12. **ISO 31000 - Gestão de Riscos**: Embora não seja uma certificação, esta norma fornece diretrizes sobre como as empresas podem gerenciar riscos de forma eficaz para maximizar oportunidades e minimizar perdas.
+13. **ISO 37001 - Gestão Antissuborno**: Esta norma estabelece os requisitos para sistemas de gestão antissuborno, ajudando as organizações a prevenir, detectar e lidar com o suborno em suas operações e relações comerciais.
+14. **ISO 39001 - Sistemas de gestão da segurança no trânsito**: Voltada para organizações que querem reduzir e, eventualmente, eliminar a ocorrência e o risco de mortes e ferimentos graves derivados de acidentes de trânsito.
+15. **ISO 45001 - Sistema de Gestão de Saúde e Segurança Ocupacional**: Substituindo a OHSAS 18001, esta norma ajuda as empresas a criar um ambiente de trabalho seguro, reduzindo o risco de acidentes e doenças relacionadas ao trabalho.
+16. **ISO 50001 - Sistemas de Gestão de Energia**: Esta norma é relevante para empresas que buscam reduzir seu consumo de energia e custos operacionais, além de contribuir para a preservação ambiental.
+17. **ISO 55001 - Gestão de Ativos**: Foca na gestão efetiva de ativos dentro de uma organização. Essencial para empresas que dependem significativamente de ativos físicos para suas operações, esta norma ajuda a maximizar o valor dos ativos ao longo de sua vida útil.

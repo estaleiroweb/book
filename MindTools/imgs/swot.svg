@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="167.59904mm"
+   height="136.86954mm"
+   viewBox="0 0 167.59904 136.86954"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="swot.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.69670057"
+     inkscape:cx="477.96717"
+     inkscape:cy="139.94534"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="103"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-26.346344,-73.68963)">
+    <rect
+       style="fill:#00aad4;stroke:#ffffff;stroke-width:0.4;stroke-miterlimit:0;stroke-opacity:0.1"
+       id="rect5"
+       width="74.652802"
+       height="50.484627"
+       x="42.981453"
+       y="107.93159"
+       ry="0.39044562" />
+    <rect
+       style="fill:#89a02c;stroke:#ffffff;stroke-width:0.4;stroke-miterlimit:0;stroke-opacity:0.1"
+       id="rect16"
+       width="74.652802"
+       height="50.484627"
+       x="119.09258"
+       y="107.93159"
+       ry="0.39044562" />
+    <rect
+       style="fill:#ff7f2a;stroke:#ffffff;stroke-width:0.4;stroke-miterlimit:0;stroke-opacity:0.1"
+       id="rect17"
+       width="74.652802"
+       height="50.484627"
+       x="42.981453"
+       y="159.87454"
+       ry="0.39044562" />
+    <rect
+       style="fill:#c83737;stroke:#ffffff;stroke-width:0.4;stroke-miterlimit:0;stroke-opacity:0.1"
+       id="rect18"
+       width="74.652802"
+       height="50.484627"
+       x="119.09258"
+       y="159.87454"
+       ry="0.39044562" />
+    <rect
+       style="fill:#b3b3b3;stroke:#ffffff;stroke-width:0.180664;stroke-miterlimit:0;stroke-opacity:0.1"
+       id="rect19"
+       width="15.196115"
+       height="50.593861"
+       x="26.436676"
+       y="107.82192"
+       ry="0.39129046" />
+    <rect
+       style="fill:#b3b3b3;stroke:#ffffff;stroke-width:0.180664;stroke-miterlimit:0;stroke-opacity:0.1"
+       id="rect20"
+       width="15.196115"
+       height="50.593861"
+       x="26.436676"
+       y="159.87497"
+       ry="0.39129046" />
+    <rect
+       style="fill:#b3b3b3;stroke:#ffffff;stroke-width:0.208962;stroke-miterlimit:0;stroke-opacity:0.1"
+       id="rect21"
+       width="74.747871"
+       height="13.760226"
+       x="42.885937"
+       y="93.184258"
+       ry="0.10642091" />
+    <rect
+       style="fill:#b3b3b3;stroke:#ffffff;stroke-width:0.208962;stroke-miterlimit:0;stroke-opacity:0.1"
+       id="rect22"
+       width="74.747871"
+       height="13.760226"
+       x="119.09303"
+       y="93.184258"
+       ry="0.10642091" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+       x="79.998848"
+       y="103.92824"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#4d4d4d;stroke-width:0.264583"
+         x="79.998848"
+         y="103.92824">Positivos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+       x="156.17766"
+       y="103.92824"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#4d4d4d;stroke-width:0.264583"
+         x="156.17766"
+         y="103.92824">Negativos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.5321px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#999999;stroke-width:0.388306"
+       x="77.831078"
+       y="136.98616"
+       id="text3"
+       transform="scale(1.5209137,0.6574995)"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="fill:#999999;stroke-width:0.388306"
+         x="77.831078"
+         y="136.98616">F a t o r e s</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+       x="-133.1026"
+       y="37.760056"
+       id="text4"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#4d4d4d;stroke-width:0.264583"
+         x="-133.1026"
+         y="37.760056">Internos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+       x="-185.43686"
+       y="37.760056"
+       id="text5"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#4d4d4d;stroke-width:0.264583"
+         x="-185.43686"
+         y="37.760056">Externos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+       x="114.4123"
+       y="137.20264"
+       id="text6"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+         x="114.4123"
+         y="137.20264"
+         id="tspan7">(força)</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+         x="114.4123"
+         y="146.02208"
+         id="tspan29">Strengths</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+         x="114.4123"
+         y="154.84154"
+         id="tspan8">Pontos Fortes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+       x="190.52348"
+       y="137.20264"
+       id="text10"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+         x="190.52348"
+         y="137.20264"
+         id="tspan9">(fraquezas)</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+         x="190.52348"
+         y="146.02208"
+         id="tspan30">Weaknesses</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+         x="190.52348"
+         y="154.84154"
+         id="tspan10">Pontos Fracos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+       x="114.44759"
+       y="196.34227"
+       id="text12"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+         x="114.44759"
+         y="196.34227"
+         id="tspan11">Oportunities</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+         x="114.44759"
+         y="205.16171"
+         id="tspan12">Oportunidades</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+       x="190.55876"
+       y="196.34227"
+       id="text14"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+         x="190.55876"
+         y="196.34227"
+         id="tspan13">Threats</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+         x="190.55876"
+         y="205.16171"
+         id="tspan14">Ameaças</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.206px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:start;text-anchor:start;fill:#ffffff;stroke-width:1.05515"
+       x="44.431435"
+       y="141.10451"
+       id="text25"><tspan
+         sodipodi:role="line"
+         id="tspan25"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:start;text-anchor:start;fill:#ffffff;stroke-width:1.05515"
+         x="44.431435"
+         y="141.10451">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.7307px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:start;text-anchor:start;fill:#ffffff;stroke-width:0.943268"
+       x="136.41708"
+       y="125.68214"
+       id="text26"
+       transform="scale(0.89396659,1.11861)"><tspan
+         sodipodi:role="line"
+         id="tspan26"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:start;text-anchor:start;fill:#ffffff;stroke-width:0.943268"
+         x="136.41708"
+         y="125.68214">W</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.206px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:start;text-anchor:start;fill:#ffffff;stroke-width:1.05515"
+       x="44.122307"
+       y="193.04747"
+       id="text27"><tspan
+         sodipodi:role="line"
+         id="tspan27"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:start;text-anchor:start;fill:#ffffff;stroke-width:1.05515"
+         x="44.122307"
+         y="193.04747">O</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.206px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:start;text-anchor:start;fill:#ffffff;stroke-width:1.05515"
+       x="121.16082"
+       y="192.53226"
+       id="text28"><tspan
+         sodipodi:role="line"
+         id="tspan28"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:start;text-anchor:start;fill:#ffffff;stroke-width:1.05515"
+         x="121.16082"
+         y="192.53226">T</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.7556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:0.3;stroke-width:0.264583"
+       x="113.70676"
+       y="126.27359"
+       id="text31"><tspan
+         sodipodi:role="line"
+         id="tspan31"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.7556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:0.3;stroke-width:0.264583"
+         x="113.70676"
+         y="126.27359">P</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.7556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:0.3;stroke-width:0.264583"
+       x="189.81795"
+       y="126.27359"
+       id="text32"><tspan
+         sodipodi:role="line"
+         id="tspan32"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.7556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:0.3;stroke-width:0.264583"
+         x="189.81795"
+         y="126.27359">P</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.7556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:0.3;stroke-width:0.264583"
+       x="113.89019"
+       y="178.37164"
+       id="text33"><tspan
+         sodipodi:role="line"
+         id="tspan33"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.7556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:0.3;stroke-width:0.264583"
+         x="113.89019"
+         y="178.37164">O</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.7556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:0.3;stroke-width:0.264583"
+       x="189.18295"
+       y="178.25876"
+       id="text34"><tspan
+         sodipodi:role="line"
+         id="tspan34"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.7556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:0.3;stroke-width:0.264583"
+         x="189.18295"
+         y="178.25876">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+       x="118.63457"
+       y="81.394562"
+       id="text35"><tspan
+         sodipodi:role="line"
+         id="tspan35"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#4d4d4d;stroke-width:0.264583"
+         x="118.63457"
+         y="81.394562">Matriz SWOP/PPOA</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+# Gestão de Riscos
+
+O risco do projeto é um evento ou condição incerta que, se ocorrer, provocará um efeito positivo ou negativo em um ou mais objetivos do projeto, tais como escopo, cronograma, custo e qualidade.
+
+- Definição
+  - Causa Raiz + Evento + Efeito= Risco
+    - Causa Raiz: [6M](../Causa_Efeito/6M.md)
+    - Evento: Milestones
+    - Efeito: [Tríplice Restrição](../Matrizes/triplice_restricao.md)
+  - Ilustrações
+- Fases
+  - Ilustrações
+  - Identificação
+    - Identificar riscos e compreender suas características para serem analisadas
+  - Análise
+    - Qualitativa
+      - Compreender a importância do risco através de escalas médias de impacto e probabilidade
+      - Impacto
+        - Risco Ruim=Ameaças
+          - 🟥 🔴 Alta Criticidade/Prioridade
+            - Exigem resposta imediata
+            - São os primeiros analisados ou ação gerencial
+          - 🟧 🟠 Média Criticidade/Prioridade
+            - São tratados após os Críticos
+          - 🟩 🟢 Não Críticos/Não Prioritários
+            - Serão revisados durante a monitoração e controle de riscos
+        - Risco Bom=Oportunidades
+          - 🟦 🔵 Almejados/Oportunidades
+          - 🟧 🟠 Possíveis Oportunidades
+          - 🟩 🟢 Não Oportunidade
+      - URGÊNCIA
+        - Avaliação sobre a necessidade de atuar imediatamente sobre determinado risco
+      - Ilustrações
+    - Quantitativa
+      - Investigar o impacto e efeitos do risco com precisão numérica
+      - $PxI$
+        - Probabilidade x Impacto = Risco
+        - Probabilidade `[0.10-0.90]`
+        - Impacto `[0.05,0.10,0.20,0.40,0.80]`
+        - Risco
+          - Alto > 0.15
+          - Médio <=0.15 >=0.08
+          - Baixo <0.08
+        - Risco Geral
+      - Ilustrações
+  - Planejamento de Respostas
+    - Decidir como lidar com cada risco considerando a tolerância ou aversão a riscos predominante
+    - Respostas
+      - Negativos
+        - Eliminar
+        - Mitigar
+          - probabilidade
+          - impacto
+          - Mitigar riscos consiste em diminuir a probabilidade e/ou o impacto do risco. Assim, a mitigação tenta trazer o VME do risco a valores aceitáveis utilizando de ações de prevenção (no início do projeto) e contingência (durante o projeto, caso ocorra o risco)
+        - Transferir
+          - Entender essa estratégia como a adoção de seguros, terceirizações e empregos de cláusulas contratuais que descartem a responsabilidade sobre o risco identificado.
+        - Aceitar
+          - Passivo: aceita-se sua ocorrência sem maiores precauções porque a probabilidade é muito baixa
+          - Ativo: aceita-se sua ocorrência com devido monitoramento pois o impacto é alto
+      - Positivos
+        - Explorar
+        - Compartilhar
+        - Melhorar
+        - Aceitar
+          - Passivo
+          - Ativo
+    - VME
+      - Valor Monetário Esperado
+      - VME=Valor Evento (positivo/negativo) \* Probabilidade (percentual positivo)
+    - Ilustrações
+  - Monitoramento
+    - Acompanhar o comportamento dos riscos no tempo e adequação do nível de exposição existente
