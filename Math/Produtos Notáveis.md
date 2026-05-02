@@ -4,53 +4,86 @@
 
 ### Quadrado da soma
 
-$$(a + b)^2=a^2 + 2ab +b^2$$
+$$
+(a + b)^2=a^2 + 2ab +b^2
+$$
 
 ### Quadrado da diferença
 
-$$(a - b)^2=a^2 - 2ab +b^2$$
+$$
+(a - b)^2=a^2 - 2ab +b^2
+$$
 
 ### Soma dos quadrados
 
-$$a^2+b^2=(a+b)^2-2ab$$
+$$
+a^2+b^2=(a+b)^2-2ab
+$$
 
 ### Diferênça dos quadrados
 
-$$a^2 - b^2=(a + b)(a - b)$$
+$$
+a^2 - b^2=(a + b)(a - b)
+$$
 
 ### Produto em função da soma
 
-$$ab=\frac{(a+b)^2-a^2-b^2}{2}$$
+$$
+ab=\frac{(a+b)^2-a^2-b^2}{2}
+$$
 
 ### Diferença entre quadrados de soma e diferença
 
-$$(a+b)^2-(a-b)^2=4ab$$
+$$
+(a+b)^2-(a-b)^2=4ab
+$$
 
 ### Soma dos quadrados da soma e diferença
 
-$$(a+b)^2+(a-b)^2=2(a^2+b^2)$$
+$$
+(a+b)^2+(a-b)^2=2(a^2+b^2)
+$$
 
 ## Cubo de 2 termos
 
 ### Cubo da soma
 
 $$
-(a+b)^3= a^3+3a^2b+3ab^2+b^3\\
+(a+b)^3= a^3+3a^2b+3ab^2+b^3
+$$
+
+$$
 (a + b)^3=a^3 + b^3 + 3ab(a + b)
 $$
 
 ### Cubo da diferênça
 
 $$
-(a-b)^3= a^3-3a^2b+3ab^2-b^3\\
-(a - b)^3=a^3 - b^3 + 3ab(b-a)\\
-\quad\\
-(-a+b)^3=(b-a)^3= b^3-3ab^2+3a^2b-a^3\\
-(-a+b)^3= -a^3+3a^2b-3ab^2+b^3\\
-(-a+b)^3= b^3-a^3 + 3ab(a-b)\\
-\quad\\
-(-a-b)^3= -(a+b)^3= -a^3-3a^2b-3ab^2-b^3\\
-(-a-b)^3= -a^3-b^3 - 3ab(a+b)\\
+(a-b)^3= a^3-3a^2b+3ab^2-b^3
+$$
+
+$$
+(a - b)^3=a^3 - b^3 + 3ab(b-a)
+$$
+
+$$
+(-a+b)^3=(b-a)^3= b^3-3ab^2+3a^2b-a^3
+$$
+
+$$
+(-a+b)^3= -a^3+3a^2b-3ab^2+b^3
+$$
+
+$$
+(-a+b)^3= b^3-a^3 + 3ab(a-b)
+$$
+
+$$
+(-a-b)^3= -(a+b)^3= -a^3-3a^2b-3ab^2-b^3
+$$
+
+$$
+(-a-b)^3= -a^3-b^3 - 3ab(a+b)
 $$
 
 ### Soma de Cubos
@@ -62,15 +95,23 @@ $$
 ### Diferênça de Cubos
 
 $$
-a^3-b^3= (a-b)(a^2+ab+b^2)\\
+a^3-b^3= (a-b)(a^2+ab+b^2)
+$$
 
-\quad\\
--a^3+b^3= b^3-a^3= (b-a)(b^2+ab+a^2)\\
--a^3+b^3= -(a-b)(a^2+ab+b^2)\\
+$$
+-a^3+b^3= b^3-a^3= (b-a)(b^2+ab+a^2)
+$$
 
-\quad\\
--a^3-b^3= -(a^3+b^3)= -(a+b)(a^2-ab+b^2)\\
--a^3-b^3= (-a-b)(a^2-ab+b^2)\\
+$$
+-a^3+b^3= -(a-b)(a^2+ab+b^2)
+$$
+
+$$
+-a^3-b^3= -(a^3+b^3)= -(a+b)(a^2-ab+b^2)
+$$
+
+$$
+-a^3-b^3= (-a-b)(a^2-ab+b^2)
 $$
 
 ## 3 Termos
@@ -103,7 +144,9 @@ $$
 
 ### Potência quarta
 
-$$(a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4$$
+$$
+(a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4
+$$
 
 ### Identidades clássicas
 
