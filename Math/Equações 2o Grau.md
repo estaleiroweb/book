@@ -167,7 +167,7 @@ $$
 ### 16. Produto notável relacionado
 
 $$
-(x + p)^2 = x^2 + 2px + p^2
+(a + b)^2 = a^2 + 2ab + b^2
 $$
 
 ### 17. Condição para raízes iguais
