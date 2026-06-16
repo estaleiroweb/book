@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 420" width="100%" height="100%">
+  <defs>
+    <style>
+      .axis { stroke: #4A5568; stroke-width: 2; marker-end: url(#arrow); }
+      .grid-dash { stroke: #CBD5E0; stroke-width: 1.5; stroke-dasharray: 4 4; }
+      .curve-p { stroke: #3182CE; stroke-width: 2.5; fill: none; }
+      .line-q { stroke: #DD6B20; stroke-width: 2.5; fill: none; }
+      .result-ray { stroke: #2F855A; stroke-width: 5; fill: none; }
+      
+      .text-title { font-family: 'Segoe UI', sans-serif; font-size: 15px; font-weight: bold; fill: #1A202C; }
+      .text-label { font-family: 'Segoe UI', sans-serif; font-size: 14px; font-weight: bold; fill: #2D3748; }
+      .text-axis { font-family: 'Segoe UI', sans-serif; font-size: 12px; fill: #718096; }
+      
+      .sign-pos { fill: #38A169; font-weight: bold; font-size: 18px; text-anchor: middle; }
+      .sign-neg { fill: #E53E3E; font-weight: bold; font-size: 18px; text-anchor: middle; }
+      
+      .dot-closed { fill: #2D3748; stroke: #2D3748; stroke-width: 1; }
+      .dot-open { fill: #FFF; stroke: #E53E3E; stroke-width: 2.5; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#4A5568" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#F8FAFC" rx="8" />
+  
+  <text x="325" y="35" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18px" font-weight="bold" fill="#2B6CB0">Análise de Sinais da Inequação Racional: (x² - 4x + 3) / (x - 4) ≤ 0</text>
+
+  <g transform="translate(0, 20)">
+    <text x="40" y="65" class="text-label">P(x) = x² - 4x + 3</text>
+    <line x1="180" y1="70" x2="580" y2="70" class="axis" />
+    <path d="M 210,25 Q 320,130 430,25" class="curve-p" />
+    <text x="220" y="60" class="sign-pos">+</text>
+    <text x="320" y="85" class="sign-neg">-</text>
+    <text x="420" y="60" class="sign-pos">+</text>
+    <text x="520" y="60" class="sign-pos">+</text>
+  </g>
+
+  <g transform="translate(0, 130)">
+    <text x="40" y="65" class="text-label">Q(x) = x - 4</text>
+    <line x1="180" y1="70" x2="580" y2="70" class="axis" />
+    <line x1="220" y1="120" x2="540" y2="20" class="line-q" />
+    <text x="220" y="90" class="sign-neg">-</text>
+    <text x="320" y="90" class="sign-neg">-</text>
+    <text x="420" y="90" class="sign-neg">-</text>
+    <text x="530" y="60" class="sign-pos">+</text>
+  </g>
+
+  <g transform="translate(0, 260)">
+    <text x="40" y="55" class="text-label">Quociente</text>
+    <text x="40" y="75" class="text-label">P(x) / Q(x) ≤ 0</text>
+    <line x1="180" y1="70" x2="580" y2="70" class="axis" />
+    
+    <line x1="180" y1="70" x2="260" y2="70" class="result-ray" />
+    <line x1="380" y1="70" x2="500" y2="70" class="result-ray" />
+    
+    <text x="220" y="95" class="sign-neg">-</text>
+    <text x="320" y="95" class="sign-pos">+</text>
+    <text x="420" y="95" class="sign-neg">-</text>
+    <text x="530" y="95" class="sign-pos">+</text>
+  </g>
+
+  <line x1="260" y1="80" x2="260" y2="330" class="grid-dash" />
+  <text x="260" y="350" class="text-axis">1</text>
+  <circle cx="260" cy="90" r="4" fill="#2D3748" />
+  <circle cx="260" cy="330" r="5" class="dot-closed" /> <line x1="380" y1="80" x2="380" y2="330" class="grid-dash" />
+  <text x="380" y="350" class="text-axis">3</text>
+  <circle cx="380" cy="90" r="4" fill="#2D3748" />
+  <circle cx="380" cy="330" r="5" class="dot-closed" /> <line x1="500" y1="190" x2="500" y2="330" class="grid-dash" />
+  <text x="500" y="350" class="text-axis">4</text>
+  <circle cx="500" cy="200" r="4" fill="#2D3748" />
+  <circle cx="500" cy="330" r="5" class="dot-open" /> </svg>

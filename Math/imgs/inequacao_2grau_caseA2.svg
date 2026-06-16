@@ -7,9 +7,9 @@
       .parabola_nok { stroke: #44444444; stroke-width: 3; fill: none; }
       .text-main { font-family: 'Segoe UI', sans-serif; font-size: 14px; fill: #2D3748; }
       .text-bold { font-family: 'Segoe UI', sans-serif; font-size: 16px; font-weight: bold; }
-      .sign-pos { fill: #38A169; font-weight: bold; font-size: 18px; }
-      .sign-neg { fill: #E53E3E; font-weight: bold; font-size: 18px; }
-      .root-point { fill: #38A169; stroke: #38A169; stroke-width: 2; }
+      .sign-pos { fill: green; font-weight: bold; font-size: 18px; }
+      .sign-neg { fill: red; font-weight: bold; font-size: 18px; }
+      .root-point { fill: green; stroke: green; stroke-width: 2; }
     </style>
     <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 1 L 10 5 L 0 9 z" fill="#2D3748"/>
