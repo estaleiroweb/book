@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 150" width="100%" height="100%">
+  <defs>
+    <style>
+      .axis { stroke: #2D3748; stroke-width: 2; marker-end: url(#arrow); }
+      .parabola { stroke: green; stroke-width: 3; fill: #00FF0040; }
+      .text-main { font-family: 'Segoe UI', sans-serif; font-size: 14px; fill: #2D3748; }
+      .text-bold { font-family: 'Segoe UI', sans-serif; font-size: 16px; font-weight: bold; }
+      .sign-pos { fill: green; font-weight: bold; font-size: 18px; }
+      .sign-neg { fill: red; font-weight: bold; font-size: 18px; }
+      .root-point { fill: green; stroke: green; stroke-width: 2; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2D3748"/>
+    </marker>
+  </defs>
+  <line x1="50" y1="70" x2="550" y2="70" class="axis"/>
+  <path d="m 180,12 c 10.259,22.227 20.518,41.605 30.777,58.131 L 389.434,69.793 C 399.622,53.34 409.811,34.076 420,12" class="parabola"/>
+  <circle cx="298" cy="70" r="5" class="root-point"/>
+  <circle cx="210" cy="70" r="5" class="root-point"/>
+  <circle cx="390" cy="70" r="5" class="root-point"/>
+  <text x="540" y="90" class="text-main" style="white-space: pre; font-size: 14px;">x</text>
+  <text x="300" y="42" text-anchor="middle" class="sign-pos" style="white-space: pre; font-size: 18px;">+</text>
+  <text x="300" y="115" text-anchor="middle" class="sign-neg" style="white-space: pre; font-size: 18px;">-</text>
+</svg>

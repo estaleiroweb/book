@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="100%" height="100%">
+  <defs>
+    <style>
+      .axis { stroke: #2D3748; stroke-width: 2; marker-end: url(#arrow); }
+      .parabola { stroke: #DD6B20; stroke-width: 3; fill: none; }
+      .text-main { font-family: 'Segoe UI', sans-serif; font-size: 13px; fill: #2D3748; }
+      .sign-pos { fill: #38A169; font-weight: bold; font-size: 16px; }
+      .sign-neg { fill: #E53E3E; font-weight: bold; font-size: 16px; }
+      .root-point { fill: #FFF; stroke: #DD6B20; stroke-width: 2; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2D3748" />
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#F8FAFC" rx="6" />
+  <line x1="40" y1="80" x2="360" y2="80" class="axis" />
+  <path d="M 80,160 Q 200,-70 320,160" class="parabola" />
+  <circle cx="135" cy="80" r="4" class="root-point" />
+  <text x="135" y="100" text-anchor="middle" class="text-main">x₁</text>
+  <circle cx="265" cy="80" r="4" class="root-point" />
+  <text x="265" y="100" text-anchor="middle" class="text-main">x₂</text>
+  <text x="95" y="110" text-anchor="middle" class="sign-neg">-</text>
+  <text x="200" y="65" text-anchor="middle" class="sign-pos">+</text>
+  <text x="305" y="110" text-anchor="middle" class="sign-neg">-</text>
+</svg>

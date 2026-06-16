@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="100%" height="100%">
+  <defs>
+    <style>
+      .axis { stroke: #2D3748; stroke-width: 2; marker-end: url(#arrow); }
+      .parabola_ok { stroke: green; stroke-width: 3; fill: none; }
+      .parabola_nok { stroke: #44444444; stroke-width: 3; fill: none; }
+      .text-main { font-family: 'Segoe UI', sans-serif; font-size: 14px; fill: #2D3748; }
+      .text-bold { font-family: 'Segoe UI', sans-serif; font-size: 16px; font-weight: bold; }
+      .sign-pos { fill: #38A169; font-weight: bold; font-size: 18px; }
+      .sign-neg { fill: #E53E3E; font-weight: bold; font-size: 18px; }
+      .root-point { fill: #FFF; stroke: #3182CE; stroke-width: 2; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2D3748"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#F7FAFC" rx="8"/>
+  <text x="300" y="40" text-anchor="middle" class="text-bold" style="white-space: pre;">Cenário: a &lt; 0 e Δ &gt; 0</text>
+  <line x1="50" y1="150" x2="550" y2="150" class="axis"/>
+  <text x="540" y="170" class="text-main" style="white-space: pre;">x</text>
+  <path d="M 120 260 C 150.298 211.186 180.597 174.697 210.895 150.533" class="parabola_ok"/>
+  <path d="M 388.68 150.194 C 419.12 174.356 449.56 210.958 480 260" class="parabola_ok"/>
+  <path d="M 210.895 150.533 C 270.157 103.269 329.418 103.156 388.68 150.194" class="parabola_nok"/>
+  <circle cx="210" cy="150" r="5" class="root-point"/>
+  <text x="210" y="175" text-anchor="middle" class="text-main" style="white-space: pre;">x₁</text>
+  <circle cx="390" cy="150" r="5" class="root-point"/>
+  <text x="390" y="175" text-anchor="middle" class="text-main" style="white-space: pre;">x₂</text>
+  <text x="150" y="190" text-anchor="middle" class="sign-neg" style="white-space: pre;">-</text>
+  <text x="300" y="110" text-anchor="middle" class="sign-pos" style="white-space: pre;">+</text>
+  <text x="450" y="190" text-anchor="middle" class="sign-neg" style="white-space: pre;">-</text>
+</svg>
