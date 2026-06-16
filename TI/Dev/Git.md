@@ -9,7 +9,7 @@
     git config --global user.email "helbert@dockweb.com.br"
     git config --global user.name "estaleiroweb"
 
-    git config --global github.email "helbertfernandes@dockweb.com.br"
+    git config --global github.email "helbert@dockweb.com.br"
     git config --global github.name "HelbertFernandes"
     git config --global github.token "xxxxxxxxxxxx"
 
