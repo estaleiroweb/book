@@ -81,9 +81,11 @@ Gráficos Vetoriais, Estudo de Sinais com exemplos práticos para cada cenário 
       2. **Positiva ou Negativa**: Positivo
 4. **Esboço**:
    ```text
+      +   +   +   +       -   -   -   -   -   +   +   +   +   +
    ====================○--------------------○==================== (x² > 0)
    -∞                  x1                   x2                  +∞
 
+      +   +   +   +       -   -   -   -   -   +   +   +   +   +
    ====================●--------------------●==================== (x² ≥ 0)
    -∞                  x1                   x2                  +∞
    ```
@@ -121,9 +123,11 @@ Gráficos Vetoriais, Estudo de Sinais com exemplos práticos para cada cenário 
       2. **Positiva ou Negativa**: Negativo
 4. **Esboço**:
    ```text
+      +   +   +   +       -   -   -   -   -   +   +   +   +   +
    --------------------○====================○-------------------- (x² < 0)
    -∞                  x1                   x2                  +∞
 
+      +   +   +   +       -   -   -   -   -   +   +   +   +   +
    --------------------●====================●-------------------- (x² ≤ 0)
    -∞                  x1                   x2                  +∞
    ```
@@ -159,9 +163,11 @@ Gráficos Vetoriais, Estudo de Sinais com exemplos práticos para cada cenário 
       2. **Positiva ou Negativa**: Positivo
 4. **Esboço**:
    ```text
+      -   -   -   -      +   +   +   +   +     -   -   -   -   -
    ====================○--------------------○==================== (-x² > 0)
    -∞                  x1                   x2                  +∞
 
+      -   -   -   -      +   +   +   +   +     -   -   -   -   -
    ====================●--------------------●==================== (-x² ≥ 0)
    -∞                  x1                   x2                  +∞
    ```
@@ -195,9 +201,11 @@ Gráficos Vetoriais, Estudo de Sinais com exemplos práticos para cada cenário 
       2. **Positiva ou Negativa**: Positivo
 4. **Esboço**:
    ```text
+      -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
    -------------------------------○------------------------------ (-x² > 0)
    -∞                           x1=x2 ∆=0                       +∞
 
+      -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
    -------------------------------●------------------------------ (-x² ≥ 0)
    -∞                           x1=x2 ∆=0                       +∞
    ```
@@ -232,6 +240,7 @@ Gráficos Vetoriais, Estudo de Sinais com exemplos práticos para cada cenário 
       2. **Positiva ou Negativa**: Positivo
 4. **Esboço**:
    ```text
+      -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
    -------------------------------------------------------------- (-x² > 0, -x² ≥ 0)
    -∞                        x1=x2=i ∆=-                       +∞
    ```

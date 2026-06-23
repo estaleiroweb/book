@@ -23,6 +23,7 @@ A regra de sinais para a divisão é idêntica à da multiplicação:
 - $\frac{(+)}{(+)} = +$
 - $\frac{(-)}{(-)} = +$
 - $\frac{(+)}{(-)} = -$
+- $\frac{(-)}{(+)} = -$
 
 Portanto, analisar o sinal do quociente $\frac{P(x)}{Q(x)}$ é equivalente a analisar o sinal do produto $P(x) \cdot Q(x)$.
 
