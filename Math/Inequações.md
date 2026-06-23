@@ -115,10 +115,10 @@ Para mapear e resolver qualquer inequação do 1º ou 2º grau, siga este fluxo 
 3. **Sinais**:
    1. **Sinal de $a$**: Verifique o sinal do coeficiente $a$.
 
-      | Sinal de $a$ | 1º Grau    | 2º Grau | Boca     |
-      | ------------ | ---------- | ------- | -------- |
-      | $a>0$        | $\nearrow$ | $\cup$  | Feliz 🙂  |
-      | $a<0$        | $\searrow$ | $\cap$  | Triste 🙁 |
+      | Sinal de $a$ | 1º Grau    | 2º Grau | Boca   |
+      | ------------ | ---------- | ------- | ------ |
+      | $a>0$        | $\nearrow$ | $\cup$  | Feliz  |
+      | $a<0$        | $\searrow$ | $\cap$  | Triste |
 
    2. **Sinal de $f(x)$**: Verifique se o sinal de $f(x)$
       1. **Marcador**: tem igualdade ou não.
