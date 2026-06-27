@@ -74,6 +74,11 @@
     git commit -m 'Mudança de old para normal Retirada do exit'
     git push [-u orign nova_branch]
     ```
+- Ignorar o local e sincronizar com remoto
+    ```bash
+    git fetch origin
+    git reset --hard origin/main
+    ```
 
 ## Zerando histórico do git
 
