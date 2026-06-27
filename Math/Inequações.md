@@ -161,9 +161,10 @@ Para mapear e resolver qualquer inequação do 1º ou 2º grau, siga este fluxo 
 
 > **Atenção aos Sinais de Inclusão ($\le$ ou $\ge$):** > Lembre-se de utilizar **bolas cheias** (intervalo fechado) nos pontos críticos se a inequação incluir a igualdade, e **bolas vazias** (intervalo aberto) caso use desigualdades estritas ($<$ ou $>$).
 
-## Links
+## Links de Inequações
 
 - [Gráficos 1o e 2o Grau](<graph_svg.md>)
-- [Inequações 1o Grau](<Inequações 1o Grau.md>)
-- [Inequações 2o Grau](<Inequações 2o Grau.md>)
-- [Inequações Racionais](<Inequações Racional.md>)
+- [1o Grau](<Inequações 1o Grau.md>)
+- [2o Grau](<Inequações 2o Grau.md>)
+- [Racionais](<Inequações Racional.md>)
+- [Modulares](<Inequações Modulares.md>)

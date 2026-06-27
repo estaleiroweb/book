@@ -2,16 +2,19 @@
 
 ## Propriedades
 
-- **Para $a \ge 0$**
-  - **Menor que** ($|x| < a$): Significa que a distância de $x$ até a origem é menor que $a$. Portanto, $x$ está entre $-a$ e $a$.
-    $|x| < a \iff -a < x < a$
+> **Para $a \ge 0$**
+>
+> 1. **Menor que** ($|x| < a$): Significa que a distância de $x$ até a origem é menor que $a$. Portanto, $x$ está entre $-a$ e $a$.
+>    $|x| < a \iff -a < x < a$
+>
+> 2. **Maior que** ($|x| > a$): Significa que a distância de $x$ até a origem é maior que $a$. Portanto, $x$ está à esquerda de $-a$ ou à direita de $a$.
+>    $|x| > a \iff x < -a \text{ ou } x > a$
+---
 
-  - **Maior que** ($|x| > a$): Significa que a distância de $x$ até a origem é maior que $a$. Portanto, $x$ está à esquerda de $-a$ ou à direita de $a$.
-    $|x| > a \iff x < -a \text{ ou } x > a$
-
-- **Para $a < 0$ (Casos Especiais e Cuidados)**
-  - $|x| < -3 \implies S = \emptyset$ (Vazio, pois um módulo nunca é menor que um número negativo).
-  - $|x| > -3 \implies S = \mathbb{R}$ (Universal, pois qualquer módulo é sempre maior ou igual a zero, logo, maior que qualquer negativo).
+> **Para $a < 0$ (Casos Especiais e Cuidados)**
+>
+> - $|x| < -3 \implies S = \emptyset$ (Vazio, pois um módulo nunca é menor que um número negativo).
+> - $|x| > -3 \implies S = \mathbb{R}$ (Universal, pois qualquer módulo é sempre maior ou igual a zero, logo, maior que qualquer negativo).
 
 ## Representação Visual
 
@@ -95,7 +98,7 @@ $$
 
 ### Exemplo 1: $|2x - 3| < 5$
 
-Aplicando a **Propriedade 1**:
+> Aplicando a **Propriedade 1**
 
 1. Desmonte o módulo transformando em uma inequação simultânea ou em duas inequações separadas:
    - simultânea: $-5 < 2x - 3 < 5$
@@ -132,7 +135,7 @@ Aplicando a **Propriedade 1**:
 
 ### Exemplo 2: $|3x + 2| \ge 8$
 
-Aplicando a **Propriedade 2**:
+> Aplicando a **Propriedade 2**
 
 1. Separe em dois casos distintos unidos pela conjunção "ou":
    $3x + 2 \le -8 \quad \cup \quad 3x + 2 \ge 8$
@@ -156,3 +159,92 @@ Aplicando a **Propriedade 2**:
    - $S = \{x \in \mathbb{R} \mid x \le -\frac{10}{3} \text{ ou } x \ge 2\}$
    - $S = ]-\infty, -\frac{10}{3}] \cup [2, +\infty[$
    - $S = (-\infty, -\frac{10}{3}] \cup [2, +\infty)$
+
+### Exemplo 3: $|x²  -3x - 4| > 6$
+
+> Aplicando a **Propriedade 2**
+
+1. Separe em dois casos distintos unidos pela conjunção "ou":
+   $x² - 3x - 4 < -6 \quad \cup \quad x² - 3x - 4 > 6$
+2. Resolva as inequações:
+   - Para $x² - 3x - 4 < -6$:
+   $$
+      x² - 3x + 2 < 0\\
+      (x-1)(x-2) < 0\\
+      1 < x < 2
+   $$
+   - Para $x² - 3x - 4 > 6$:
+   $$
+      x² - 3x - 10 > 0\\
+      (x-5)(x+2) > 0\\
+      x < -2 \quad \text{ou} \quad x > 5
+   $$
+3. Esboço do varal:
+
+   ```text
+      +  +  +  +  -  -  -  -  -  -  -  -  -  -  -  -  -  -  +  +  +
+      ==========○-----○-----------------------------------○========= (x < -2 ∪ x > 5)
+      -∞       -2     0                                   5       +∞ 
+
+      +  +  +  +  +  +  +  +  -  -  -  -  -  -  +  +  +  +  +  +  +
+      -----------------------○=================○-------------------- (1 < x < 2)
+      -∞                     1                 2                  +∞ 
+
+      ==========○-----○------○=================○----------○========= (S = x < -2 ∪ 1 < x < 2 ∪ x > 5)
+      -∞       -2     0      1                 2          5       +∞ 
+   ```
+
+4. Solução:
+   - $S = \{x \in \mathbb{R} \mid x < -2 \text{ ou } 1 < x < 2 \text{ ou } x > 5\}$
+   - $S = ]-\infty, -2[ \cup ]1, 2[ \cup ]5, +\infty[$
+   - $S = (-\infty, -2) \cup (1, 2) \cup (5, +\infty)$
+
+### Exemplo 4: $|x² - 4x| -3x \le -6$
+
+> Aplicando a **Propriedade 1**
+
+1. Isolando o módulo:
+   $$
+      |x² - 4x| - 3x \le -6\\
+      |x² - 4x| \le 3x -3
+   $$
+
+2. Separe em dois casos distintos unidos pela conjunção "e":
+   - Caso 1: $x^2 - 4x \le 3x - 3$
+   - Caso 2: $-(x^2 - 4x) \le 3x - 3 \implies -x^2 + 4x \le 3x - 3 \implies -x^2 + x + 3 \le 0$
+   - Resolvendo cada caso:
+   $$
+      |x^2 - 4x| - 3x \le -6\\
+      |x^2 - 4x| - 3x + 6 \le 0
+   $$
+   - Caso 1:
+   $$
+      x^2 - 4x - 3x + 3 \le 0\\
+      x^2 - 7x + 3 \le 0\\
+      \Delta = 49 - 12 = 37\\
+      x = \frac{7 \pm \sqrt{37}}{2}
+   $$
+   $$
+      x^2 - 4x - 3x + 6 \le 0\\
+      x^2 - 7x + 6 \le 0\\
+      \Delta = 49 - 24 = 25\\
+      x = \frac{7 \pm 5}{2}\\
+      x_1 = 1, x_2 = 6
+   $$
+   - Caso 2:
+   $$
+      -x^2 + x + 3 \le 0\\
+      x^2 - x - 3 \ge 0\\
+      \Delta = 1 + 12 = 13\\
+      x = \frac{1 \pm \sqrt{13}}{2}
+   $$
+   $$
+      -(x^2 - 4x) - 3x + 6 \le 0\\
+      -x^2 + 4x - 3x + 6 \le 0\\
+      -x^2 + x + 6 \le 0\\
+      x^2 - x - 6 \ge 0\\
+      \Delta = 1 + 24 = 25\\
+      x = \frac{1 \pm 5}{2}\\
+      x_1 = -2, x_2 = 3
+   $$
+
