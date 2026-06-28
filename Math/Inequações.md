@@ -163,7 +163,7 @@ Para mapear e resolver qualquer inequação do 1º ou 2º grau, siga este fluxo 
 
 ## Links de Inequações
 
-- [Gráficos 1o e 2o Grau](<graph_svg.md>)
+- [Gráficos 1o e 2o Grau](<Inequações graph_svg.md>)
 - [1o Grau](<Inequações 1o Grau.md>)
 - [2o Grau](<Inequações 2o Grau.md>)
 - [Racionais](<Inequações Racional.md>)

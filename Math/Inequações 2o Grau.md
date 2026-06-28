@@ -176,11 +176,9 @@ Gráficos Vetoriais, Estudo de Sinais com exemplos práticos para cada cenário 
      - Para $f(x) > 0$ (não inclui Zero, raízes não pertencem à solução):
        - $\varnothing$
        - $\{x \in \mathbb{R} \mid \text{sem solução}\}$
-       - ![e](imgs/inequacao_2grau_caseC1.svg)
      - Para $f(x) \ge 0$ (inclui Zero, raízes pertencem à solução):
        - $\{1, 3\}$
        - $\{x \in \mathbb{R} \mid x = 1 \text{ ou } x = 3\}$
-       - ![e](imgs/inequacao_2grau_caseC2.svg)
 
 ### Caso D: $a < 0$ e $\Delta = 0$ e ($f(x) > 0$ ou $f(x) \ge 0$)
 
