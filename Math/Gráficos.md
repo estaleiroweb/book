@@ -2,6 +2,8 @@
 
 ![Exemplo](https://graphsketch.com/render.php?eqn1_eqn=x^2&eqn2_eqn=-2*x-1&eqn1_color=1&eqn2_color=2&eqn3_color=3&eqn4_color=4&eqn5_color=5&eqn6_color=6&x_min=-5&x_max=5&y_min=-1.5&y_max=10.5&x_tick=.5&y_tick=1&x_label_freq=2&y_label_freq=2&do_grid=0&do_grid=1&bold_labeled_lines=0&bold_labeled_lines=1&line_width=4&image_w=850&image_h=525)
 
+<a src="https://graphsketch.com/render.php?eqn1_eqn=x^2&eqn2_eqn=-2*x-1&eqn1_color=1&eqn2_color=2&eqn3_color=3&eqn4_color=4&eqn5_color=5&eqn6_color=6&x_min=-5&x_max=5&y_min=-1.5&y_max=10.5&x_tick=.5&y_tick=1&x_label_freq=2&y_label_freq=2&do_grid=0&do_grid=1&bold_labeled_lines=0&bold_labeled_lines=1&line_width=4&image_w=850&image_h=525" />
+
 ![Exemplo2](https://graphsketch.com/render.php?eqn1_eqn=x^2&eqn1_color=1&eqn2_eqn=-2*x-1)
 
 - ?eqn1_eqn=x^2
