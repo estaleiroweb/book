@@ -1,2 +1,1 @@
 # Atumações com IA
-
