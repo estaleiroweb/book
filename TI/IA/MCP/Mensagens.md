@@ -384,9 +384,9 @@ sequenceDiagram
     Agent-->>User: resposta formatada
 ```
 
-Para um MCP Server REST corporativo (TIM/eVoice/TANGO)
+Para um MCP Server REST corporativo
 
-Eu recomendaria expor pelo menos estas tools:
+É recomendável expor pelo menos estas tools:
 
 ```text
 inventory.search
@@ -423,4 +423,4 @@ rag://
 
 Isso permite que Copilot, Claude Desktop, VSCode Agent, OpenAI Agents e praticamente qualquer cliente MCP descubram automaticamente suas capacidades sem conhecer previamente sua API REST.
 
-O próximo nível, que considero ideal para o seu cenário TABLE/eVoice/TANGO, é desenhar o mapa completo de métodos MCP (initialize, ping, tools/, resources/, prompts/, roots/, sampling/, elicitation/, subscriptions/*) e mostrar exatamente quais endpoints REST cada um deveria acionar no backend.
+O próximo nível, que considero ideal para o cenário API TABLE, é desenhar o mapa completo de métodos MCP (initialize, ping, tools/, resources/, prompts/, roots/, sampling/, elicitation/, subscriptions/*) e mostrar exatamente quais endpoints REST cada um deveria acionar no backend.

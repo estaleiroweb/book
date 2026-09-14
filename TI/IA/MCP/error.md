@@ -145,20 +145,20 @@ A especificação reserva: -32768 até -32000
 
 ## 3. Erros de servidor (comumente utilizados)
 
-O JSON-RPC deixa uma faixa para erros do servidor:
-
--32099 até -32000
+O JSON-RPC deixa uma faixa para erros do servidor: -32099 até -32000
 
 Os nomes não são obrigatórios.
 
 Implementações costumam usar:
 
-error.code error.message Exemplo-32000 Server error Erro genérico
--32001 Server busy Servidor sobrecarregado
--32002 Service unavailable API fora do ar
--32003 Request timeout Timeout
--32004 Rate limit exceeded Limite excedido
--32005 Authentication failed Falha de autenticação
+| error.code | error.message         | Exemplo                 |
+| ---------- | --------------------- | ----------------------- |
+| -32000     | Server error          | Erro genérico           |
+| -32001     | Server busy           | Servidor sobrecarregado |
+| -32002     | Service unavailable   | API fora do ar          |
+| -32003     | Request timeout       | Timeout                 |
+| -32004     | Rate limit exceeded   | Limite excedido         |
+| -32005     | Authentication failed | Falha de autenticação   |
 
 ## 4. Erros MCP típicos
 
@@ -166,13 +166,15 @@ MCP não impõe uma tabela oficial única para todas as ferramentas.
 
 Normalmente aparece algo como:
 
-error.code error.message Aplicação-32601 Tool not found tools/call
--32602 Invalid tool arguments tools/call
--32602 Resource not found resources/read
--32602 Prompt not found prompts/get
--32005 Sampling not supported sampling
--32005 Elicitation not supported elicitation
--32005 Capability not supported initialize
+| error.code | error.message             | Aplicação      |
+| ---------- | ------------------------- | -------------- |
+| -32601     | Tool not found            | tools/call     |
+| -32602     | Invalid tool arguments    | tools/call     |
+| -32602     | Resource not found        | resources/read |
+| -32602     | Prompt not found          | prompts/get    |
+| -32005     | Sampling not supported    | sampling       |
+| -32005     | Elicitation not supported | elicitation    |
+| -32005     | Capability not supported  | initialize     |
 
 ## 5. Sugestão para seu TABLE-MCP
 
@@ -182,27 +184,47 @@ Eu criaria uma faixa própria:
 
 para erros funcionais.
 
-Inventário
-code message1001 Device not found
-1002 Inventory unavailable
-1003 Device ambiguity
-Alarmes
-code message1101 Alarm not found
-1102 Alarm source unavailable
-1103 Alarm query timeout
-KPI
-code message1201 KPI not found
-1202 KPI source unavailable
-ITSM
-code message1301 Change not found
-1302 Incident not found
-1303 Ticket creation failed
-Segurança
-code message1401 Authentication required
-1402 Invalid credentials
-1403 Permission denied
-1404 User not authorized
-Modelo que recomendo
+### Inventário
+
+| code | message               |
+| ---- | --------------------- |
+| 1001 | Device not found      |
+| 1002 | Inventory unavailable |
+| 1003 | Device ambiguity      |
+
+### Alarmes
+
+| code | message                  |
+| ---- | ------------------------ |
+| 1101 | Alarm not found          |
+| 1102 | Alarm source unavailable |
+| 1103 | Alarm query timeout      |
+
+### KPI
+
+| code | message                |
+| ---- | ---------------------- |
+| 1201 | KPI not found          |
+| 1202 | KPI source unavailable |
+
+### ITSM
+
+| code | message                  |
+| ---- | ------------------------ |
+| 1301 | Change not found         |
+| 1302 | Incident not found       |
+| 1303 | Ticket creation failed   |
+
+### Segurança
+
+| code | message                  |
+| ---- | ------------------------ |
+| 1401 | Authentication required  |
+| 1402 | Invalid credentials      |
+| 1403 | Permission denied        |
+| 1404 | User not authorized      |
+
+## Modelo recomendado
 
 Sempre retornar:
 ```json
@@ -223,15 +245,16 @@ Sempre retornar:
 
 Onde:
 
-Campo Funçãocode Código tratável pela aplicação
-message Mensagem curta padronizada
-data Detalhes técnicos para diagnóstico
-id Requisição que gerou o erro
+| Campo   | Função                             |
+| ------- | ---------------------------------- |
+| code    | Código tratável pela aplicação     |
+| message | Mensagem curta padronizada         |
+| data    | Detalhes técnicos para diagnóstico |
+| id      | Requisição que gerou o erro        |
 
-Para um MCP corporativo como o TABLE/eVoice, costuma ser uma boa prática manter:
+Para um MCP corporativo como o API TABLE, costuma ser uma boa prática manter:
 
--32700 até -32000 -> JSON-RPC / infraestrutura
-
-1000 até 9999 -> regras de negócio da API
+- `-32700 até -32000 -> JSON-RPC / infraestrutura`
+- `1000 até 9999 -> regras de negócio da API`
 
 porque facilita bastante o tratamento no Copilot, Claude Desktop, VSCode Agent e em logs de observabilidade.
