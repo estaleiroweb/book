@@ -19,15 +19,15 @@ sequenceDiagram
 **Request**:
 ```json
 {
-  "jsonrpc": "2.0",
-  "id": 1,
-  "method": "initialize",
+  "jsonrpc": "2.0",                // Versão do protocolo JSON-RPC utilizado pelo MCP
+  "id": 1,                         // Identificador único da requisição para correlacionar request/response
+  "method": "initialize",          // Método MCP chamado para iniciar a sessão e negociar capacidades
   "params": {
-    "protocolVersion": "2026-07-28",
-    "capabilities": {},
+    "protocolVersion": "2026-07-28", // Versão do protocolo MCP suportada pelo cliente
+    "capabilities": {},              // Capacidades MCP implementadas pelo cliente (o que ele sabe fazer)
     "clientInfo": {
-      "name": "Copilot",
-      "version": "1.0"
+      "name": "Copilot",             // Nome do cliente MCP que está conectando
+      "version": "1.0"               // Versão do cliente MCP
     }
   }
 }
@@ -36,22 +36,33 @@ sequenceDiagram
 **Response**:
 ```json
 {
-  "jsonrpc": "2.0",
-  "id": 1,
+  "jsonrpc": "2.0",                // Versão do protocolo JSON-RPC utilizada na comunicação
+  "id": 1,                         // Mesmo ID recebido na requisição para correlacionar request/response
   "result": {
-    "protocolVersion": "2026-07-28",
+    "protocolVersion": "2026-07-28", // Versão MCP aceita e negociada pelo servidor
     "capabilities": {
-      "tools": {},
-      "resources": {},
-      "prompts": {},
-      "logging": {},
-      "elicitation": {},
-      "sampling": {}
+      "tools": {},                 // O servidor disponibiliza ferramentas executáveis (tools/list, tools/call)
+      "resources": {},             // O servidor disponibiliza recursos consultáveis (resources/list, resources/read)
+      "prompts": {},               // O servidor disponibiliza prompts reutilizáveis (prompts/list, prompts/get)
+      "logging": {},               // O servidor pode enviar mensagens de log/status/notificações operacionais
+      "elicitation": {},           // O servidor pode solicitar informações adicionais ao usuário através do cliente
+      "sampling": {}               // O servidor pode solicitar ao cliente que utilize o LLM para gerar ou processar conteúdo
     },
     "serverInfo": {
-      "name": "TABLE-MCP",
-      "version": "1.0"
+      "name": "TABLE-MCP",         // Nome do MCP Server
+      "version": "1.0"            // Versão do MCP Server
     }
+  }
+}
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "error": {
+    "code": -32600,
+    "message": "Unsupported JSON-RPC version. Expected 2.0."
   }
 }
 ```
@@ -121,13 +132,13 @@ sequenceDiagram
 
     Exemplo no seu caso:
 
+    ```text
     network.get_alarm
     inventory.search
     itsm.search_change
+    ```
 
-    Quando usar
-
-    Sempre que o MCP for acionar algo.
+    Quando usar: Sempre que o MCP for acionar algo.
 
     Por exemplo:
 
@@ -137,7 +148,7 @@ sequenceDiagram
     Executar diagnóstico
     ```
 
-    resources
+    ### resources
 
     Indica que existem recursos consultáveis.
 
@@ -158,25 +169,31 @@ sequenceDiagram
 
     Permite:
 
+    ```text
     resources/list
     resources/read
+    ```
 
     Exemplo:
 
+    ```text
     alarm://
     kpi://
     inventory://
     wiki://
+    ```
 
-    subscribe
+    ### subscribe
 
     Indica que o cliente pode assinar eventos.
 
+    ```text
     resource atualizado
     novo KPI
     novo alarme
+    ```
 
-    listChanged
+    ### listChanged
 
     O servidor consegue avisar:
 
@@ -186,7 +203,7 @@ sequenceDiagram
 
     Nova documentação Ericsson adicionada
 
-    prompts
+    ### prompts
 
     Indica prompts reutilizáveis.
 
@@ -213,7 +230,7 @@ sequenceDiagram
     analise_mgw
     analise_ericsson
 
-    logging
+    ### logging
 
     Permite envio de mensagens operacionais.
 
@@ -238,7 +255,7 @@ sequenceDiagram
     }
     ```
 
-    sampling
+    ### sampling
 
     Uma das capacidades mais interessantes.
 
@@ -286,7 +303,7 @@ sequenceDiagram
 
        MCP-->>Agent: resultado
 
-    elicitation
+    ### elicitation
 
     Permite ao MCP solicitar informações adicionais ao usuário.
 
@@ -324,7 +341,7 @@ sequenceDiagram
        Agent->>MCP: Crítica
     ```
 
-    roots
+    ### roots
 
     Muito útil para RAG.
 
@@ -352,7 +369,7 @@ sequenceDiagram
 
     O MCP utiliza esses locais para buscar documentos.
 
-    subscriptions
+    ### subscriptions
 
     Nas versões mais recentes aparece associado aos recursos.
 
@@ -364,7 +381,7 @@ sequenceDiagram
     KPI alterado
     Change criada
 
-    completion
+    ### completion
 
     Alguns clientes suportam autocompletar parâmetros.
 
@@ -398,29 +415,28 @@ sequenceDiagram
     Depois evoluir para:
 
     ```json
-
     {
-    "capabilities": {
-       "tools": {
-          "listChanged": true
-       },
-       "resources": {
-          "subscribe": true,
-          "listChanged": true
-       },
-       "logging": {},
-       "elicitation": {}
+      "capabilities": {
+         "tools": {
+            "listChanged": true
+         },
+         "resources": {
+            "subscribe": true,
+            "listChanged": true
+         },
+         "logging": {},
+         "elicitation": {}
+      }
     }
-    }
-    ```json
+    ```
 
 
     E somente numa terceira fase adicionar:
 
     ```json
     {
-    "sampling": {},
-    "roots": {}
+      "sampling": {},
+      "roots": {}
     }
     ```
 
