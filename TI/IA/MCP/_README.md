@@ -117,9 +117,11 @@ flowchart LR
 
 ou
 
+```text
 buscar_cep()
 consultar_chg()
 abrir_incidente()
+```
 
 Seu exemplo do MCP Portal Telco segue exatamente este modelo.
 
@@ -129,21 +131,21 @@ Seu exemplo do MCP Portal Telco segue exatamente este modelo.
 
 **Possui**:
 
-Instruções
-Conhecimento
-Ferramentas
-Memória (dependendo da plataforma)
+- Instruções
+- Conhecimento
+- Ferramentas
+- Memória (dependendo da plataforma)
 
 **Quando usar**: Quando existe um papel claro.
 
-Exemplo:
-
-Agente de Redes Telecomunicações
+**Exemplo**: Agente de Redes Telecomunicações
 
 Perguntas:
 
+```text
 Qual o status deste Node?
 Qual Change afeta esta ERB?
+```
 
 ## 6. Subagente
 
@@ -153,19 +155,23 @@ Qual Change afeta esta ERB?
 
 Exemplo:
 
+```text
 Agente Principal
     ├─ Subagente Redes
     ├─ Subagente ITSM
     └─ Subagente Segurança
+```
 
 Fluxo:
 
+```text
 Usuário → Agente Principal
 
 Pergunta sobre Network
 
 → encaminha para Subagente Redes
 → devolve resposta
+```
 
 Isso se alinha ao conceito de um agente chamar outro agente discutido no seu fórum AIOps.
 
@@ -179,21 +185,19 @@ Historicamente era o mecanismo utilizado por ChatGPT, Copilot e outras plataform
 
 Para conectar:
 
-Jira
-GitHub
-ServiceNow
-SAP
-Salesforce
+- Jira
+- GitHub
+- ServiceNow
+- SAP
+- Salesforce
 
-Exemplo:
+**Exemplo**: Plugin Jira
 
-Plugin Jira
+**Permite**:
 
-Permite:
-
-Criar tarefa
-Consultar sprint
-Atualizar ticket
+- Criar tarefa
+- Consultar sprint
+- Atualizar ticket
 
 ## 8. Tool (Ferramenta)
 
@@ -203,18 +207,22 @@ Atualizar ticket
 
 Exemplo:
 
+```json
 {
   "name": "consultar_chg",
   "input": {
     "chg": "CHG12345"
   }
 }
+```
 
 ou
 
+```json
 {
   "name": "abrir_incidente"
 }
+```
 
 No seu ambiente você já citou Tools ligadas a APIs e MCP Servers.
 
@@ -228,107 +236,52 @@ No Copilot Studio pode ser associado a agentes para executar processos.
 
 Exemplo:
 
-Change criada
-      ↓
-Validar
-      ↓
-Aprovar?
-  Sim / Não
-      ↓
-Executar
-      ↓
-Notificar
+```mermaid
+flowchart LR
+
+a[Aprovar?]
+n[Notificar]
+
+c[Change criada] -->
+Validar -->
+a -- Sim --> Executar --> n
+a -- Não --> n
+```
 
 ou
 
-Alarme Zabbix
-    ↓
-Abrir ticket
-    ↓
-Executar diagnóstico
-    ↓
-Enviar e-mail
+```mermaid
+flowchart LR
+a[Alarme Zabbix] --> b[Abrir ticket] --> c[Executar diagnóstico] --> d[Enviar e-mail]
+```
 
-Comparação rápida
-Item Objetivo ExemploPrompt Dizer o que fazer "Analise esta Change"
-Skill Ensinar como fazer Processo de análise de Change
-Projeto Agrupar recursos Projeto Portal Telco AI
-MCP Conectar sistemas MCP → Portal Telco
-Agent Especialista Agente de Redes
-Subagente Especialista subordinado Agente ITSM
-Plugin Extensão da plataforma Jira Plugin
-Tool Ação executável consultar_chg()
-Workflow Processo automatizado Aprovação de Change
-Regra de bolso para sua arquitetura Portal Telco + Copilot
-Projeto
- └─ Agente Principal
-     ├─ Prompt
-     ├─ Conhecimento (RAG)
-     ├─ Skills
-     ├─ Workflows
-     ├─ MCP Portal Telco
-     │    └─ Tools
-     └─ Subagentes
-          ├─ Rede
-          ├─ ITSM
-          └─ Segurança
+Comparação rápida:
+
+| Item      | Objetivo                 | Exemplo                       |
+| --------- | ------------------------ | ----------------------------- |
+| Prompt    | Dizer o que fazer        | "Analise esta Change"         |
+| Skill     | Ensinar como fazer       | Processo de análise de Change |
+| Projeto   | Agrupar recursos         | Projeto Portal Telco AI       |
+| MCP       | Conectar sistemas        | MCP → Portal Telco            |
+| Agent     | Especialista             | Agente de Redes               |
+| Subagente | Especialista subordinado | Agente ITSM                   |
+| Plugin    | Extensão da plataforma   | Jira Plugin                   |
+| Tool      | Ação executável          | consultar_chg()               |
+| Workflow  | Processo automatizado    | Aprovação de Change           |
+
+Regra de bolso para sua arquitetura: Portal Telco + Copilot
+
+      Projeto
+      └─ Agente Principal
+         ├─ Prompt
+         ├─ Conhecimento (RAG)
+         ├─ Skills
+         ├─ Workflows
+         ├─ MCP Portal Telco
+         │    └─ Tools
+         └─ Subagentes
+               ├─ Rede
+               ├─ ITSM
+               └─ Segurança
 
 Essa arquitetura é a que mais se aproxima do roadmap que você vem discutindo para Copilot Studio + MCP + RAG + APIs Portal Telco.
-
----
-
-Item O que é Quando usar ExemploPrompt Instrução ou pedido enviado à IA Sempre que quiser executar uma tarefa específica "Analise esta Change e identifique riscos"
-Agent (Agente) Assistente especializado com identidade, instruções e conhecimento Quando há um papel recorrente "Agente de Operações Core", "Agente de Gestão de Changes"
-Subagente Agente especializado acionado por outro agente Quando uma tarefa pode ser dividida Agente Principal → chama Agente Zabbix → chama Agente ITSM
-Skill Procedimento ou receita reutilizável que ensina um agente a executar uma atividade Quando vários agentes precisam seguir o mesmo método Skill "Análise de Impacto de Change" usada por vários agentes
-Tool (Ferramenta) Função que executa uma ação real ou consulta dados Quando a IA precisa sair do texto e acessar algo externo Consultar API, SharePoint, Banco de Dados, ServiceNow, Zabbix
-Plugin Forma antiga/clássica de adicionar funcionalidades a um assistente Principalmente em sistemas legados ou compatibilidade Plugin que consulta clima ou ERP
-MCP (Model Context Protocol) Protocolo padrão para expor ferramentas, recursos e prompts para agentes Quando deseja integrar sistemas corporativos à IA Seu MCP Server Portal Telco expondo APIs, tabelas e comandos para o Copilot
-Workflow Fluxo automatizado de etapas, aprovações e ações Quando existe processo de negócio Detecta falha → abre incidente → envia e-mail → gera relatório
-Projeto (Project) Container que reúne agentes, prompts, skills, MCPs, workflows e documentação Quando precisa organizar uma solução completa Projeto "Automação de Changes Core"
-Tools MCP Ferramentas disponibilizadas por um MCP Server Quando a IA precisa executar operações no sistema integrado getDevice(), createChange(), getAlarm()
-Visualização rápida
-
-
-No seu projeto Portal Telco
-Projeto: Copilot Operações Core
-
-Agente:
-    Agente Operações Core
-
-Skills:
-    - Análise de Falha
-    - Cadastro de Change
-    - Análise de KPI
-
-Tools:
-    - Consultar Inventário
-    - Consultar KPI
-    - Abrir ITSM
-
-MCP:
-    - MCP Portal Telco
-
-Subagentes:
-    - Agente SBC
-    - Agente Ericsson
-    - Agente Zabbix
-
-Workflow:
-    Falha detectada
-       -> Consulta inventário
-       -> Consulta documentação
-       -> Gera diagnóstico
-       -> Abre incidente
-       -> Envia e-mail
-
-Em resumo:
-
-Prompt = pedido
- Agent = especialista
- Skill = método de trabalho
- Tool = ação executável
- MCP = ponte/protocolo para sistemas
- Subagente = especialista auxiliar
- Workflow = orquestração do processo
- Projeto = agrupador de tudo isso.
