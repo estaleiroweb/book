@@ -114,25 +114,25 @@ inventory://
 wiki://
 ```
 
-## subscribe
+!!! note subscribe
 
-Indica que o cliente pode assinar eventos.
+    Indica que o cliente pode assinar eventos.
+ 
+    ```text
+    resource atualizado
+    novo KPI
+    novo alarme
+    ```
 
-```text
-resource atualizado
-novo KPI
-novo alarme
-```
+!!! note listChanged
 
-## listChanged
+    O servidor consegue avisar:
 
-O servidor consegue avisar:
+    a lista de resources mudou
 
-a lista de resources mudou
+    Por exemplo:
 
-Por exemplo:
-
-Nova documentação Ericsson adicionada
+    Nova documentação Ericsson adicionada
 
 ## prompts
 
