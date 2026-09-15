@@ -5,34 +5,31 @@ A forma mais simples de visualizar é:
 ```mermaid
 flowchart LR
 
-    Usuário --> 
-    Prompt --> 
-    Agent --> 
-    LLM --> Conhecimento --> RAG & Projeto
-    LLM --> Skills & Workflows --> 
-    t["Tools / Plugins"] -->
-    m["MCP Server"] --> APIs & Bancos & Sistemas
+    U[Usuário]
+    P[Prompt]
+    A[Agent]
+    L[LLM]
+
+    K[Conhecimento]
+    R[RAG]
+
+    S[Skills]
+    W[Workflows]
+
+    SA[SubAgents]
+
+    T["Tools / Plugins"]
+    MCP["MCP Server"]
+
+    U -->
+    P -->
+    A --> L & R & S & W & T
+    R --> K
+    S & W -->
+    SA-->
+    T -->
+    MCP --> APIs & Bancos & Sistemas
 ```
-Usuário
-   |
- Prompt
-   |
- Agente Principal
-   |
- +-- Skill (como executar)
- |
- +-- Workflow (ordem das etapas)
- |
- +-- Subagente(s)
- |
- +-- Tool(s)
-        |
-        +-- MCP
-                |
-                +-- API Portal Telco
-                +-- Zabbix
-                +-- ITSM
-                +-- Banco de Dados
 
 - Prompt: instrução enviada para a IA
 - Skill: como faz
@@ -83,12 +80,12 @@ Skill: Analisar Change
 **Pode conter**:
 Pode conter:
 
-Prompts
-Agentes
-MCPs
-Documentação
-Workflows
-Conhecimento RAG
+- Prompts
+- Agentes
+- MCPs
+- Documentação
+- Workflows
+- Conhecimento RAG
 
 **Quando usar**: Quando a solução possui escopo definido.
 
@@ -110,13 +107,13 @@ Projeto: Portal Telco AI
 
 Exemplo:
 
-Copilot
-   ↓
-MCP
-   ↓
-Portal Telco
-   ↓
-MariaDB
+```mermaid
+flowchart LR
+    Copilot -->
+    MCP --> 
+    p[Portal Telco] -->
+    MariaDB
+```
 
 ou
 
