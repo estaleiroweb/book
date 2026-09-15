@@ -202,13 +202,12 @@ Fluxo:
 
 ```mermaid
 flowchart LR
-s[Server]
---> 
-c["Copilot, me ajude a resumir isso"]
---> 
-a[Cliente chama LLM]
---> 
-d[Devolve texto ao servidor]
+   s[Server]
+   c["Copilot"]
+   a[Cliente chama LLM]
+   d[Devolve texto ao servidor]
+
+   s --"me ajude a resumir isso"--> c --> a --> d
 ```
 
 Exemplo real
@@ -224,6 +223,33 @@ Resuma os alarmes
 Agrupe por severidade
 Explique os impactos
 ```
+
+!!! note Sem sampling
+
+    Seu MCP recebe:
+    
+    ```text
+    "Liste os alarmes críticos"
+    ```
+
+    ```mermaid
+    sequenceDiagram
+       
+         participant User
+         participant Agent
+         participant MCP
+         participant API
+          
+         User->>Agent: Liste os alarmes críticos
+         Agent->>MCP: tools/call
+         MCP->>API: GET /alarmes
+         API-->>MCP: JSON
+         MCP-->>Agent: JSON
+    ```
+
+    > O MCP apenas consulta a API.
+
+!!! note Com sampling
 
 para o LLM.
 
