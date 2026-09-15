@@ -152,14 +152,18 @@ Exemplo:
 
 Permite:
 
+```text
 prompts/list
 prompts/get
+```
 
 Exemplo:
 
+```text
 analise_rede
 analise_mgw
 analise_ericsson
+```
 
 ## logging
 
@@ -175,9 +179,11 @@ Permite envio de mensagens operacionais.
 
 Exemplo:
 
+```text
 Conectando API Ericsson
 Executando consulta KPI
 Timeout no banco
+```
 
 Mensagem:
 ```json
@@ -194,45 +200,46 @@ Ela permite que o servidor peça ao cliente para usar o LLM.
 
 Fluxo:
 
-Server
-↓
-"Copilot, me ajude a resumir isso"
-↓
-Cliente chama LLM
-↓
-Devolve texto ao servidor
+```mermaid
+flowchart LR
+s[Server]
+--> 
+c["Copilot, me ajude a resumir isso"]
+--> 
+a[Cliente chama LLM]
+--> 
+d[Devolve texto ao servidor]
+```
 
 Exemplo real
 
-Seu MCP consulta:
-
-500 alarmes
+Seu MCP consulta: 500 alarmes
 
 O MCP não quer devolver tudo.
 
 Pode pedir:
 
+```text
 Resuma os alarmes
 Agrupe por severidade
 Explique os impactos
+```
 
 para o LLM.
 
 Fluxo:
 
+```mermaid
 sequenceDiagram
-
    participant Agent
    participant MCP
    participant LLM
 
    Agent->>MCP: tools/call
-
    MCP->>LLM: sampling
-
    LLM-->>MCP: resumo
-
    MCP-->>Agent: resultado
+```
 
 ## elicitation
 
@@ -260,15 +267,10 @@ Fluxo
 sequenceDiagram
 
    User->>Agent: Abrir ticket
-
    Agent->>MCP: create_ticket
-
    MCP-->>Agent: preciso da severidade
-
    Agent->>User: Qual severidade?
-
    User->>Agent: Crítica
-
    Agent->>MCP: Crítica
 ```
 
@@ -362,6 +364,15 @@ Depois evoluir para:
 ```
 
 E somente numa terceira fase adicionar:
+
+```json
+{
+  "capabilities": {
+     "sampling": {},
+     "roots": {}
+  }
+}
+```
 
 ```json
 {
