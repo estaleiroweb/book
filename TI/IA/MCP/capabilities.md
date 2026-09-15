@@ -227,7 +227,7 @@ Explique os impactos
 !!! note Sem sampling
 
     Seu MCP recebe:
-    
+
     ```text
     "Liste os alarmes críticos"
     ```
@@ -251,21 +251,40 @@ Explique os impactos
 
 !!! note Com sampling
 
-para o LLM.
+    Imagine que sua API devolve:
 
-Fluxo:
+    ```json
+    [
+       { "alarm":"A1", "severity":"CRITICAL" },
+       { "alarm":"A2", "severity":"MAJOR" },
+       ...
+    ]
+    ```
+    > 500 registros.
 
-```mermaid
-sequenceDiagram
-   participant Agent
-   participant MCP
-   participant LLM
+    Você não quer devolver tudo.
+    Então o MCP diz ao cliente:
 
-   Agent->>MCP: tools/call
-   MCP->>LLM: sampling
-   LLM-->>MCP: resumo
-   MCP-->>Agent: resultado
-```
+    ```text
+    Use sua LLM para resumir isso.
+    ```
+
+    ```mermaid
+    sequenceDiagram
+        participant Agent
+        participant LLM
+        participant MCP
+        participant API
+
+        Agent->>MCP: tools/call
+        MCP->>API: GET /alarmes
+        API-->>MCP: 500 alarmes
+        MCP->>Agent: sampling/createMessage
+        Agent->>LLM: resumir alarmes
+        LLM-->>Agent: resumo
+        Agent-->>MCP: resposta do sampling
+        MCP-->>Agent: resultado final
+    ```
 
 ## elicitation
 
@@ -273,19 +292,21 @@ Permite ao MCP solicitar informações adicionais ao usuário.
 
 Exemplo:
 
-Usuário fala:
-
-Abra um ticket
+Usuário fala: Abra um ticket
 
 O MCP precisa saber:
 
+```text
 Qual sistema?
 Qual severidade?
+```
 
 Então:
 
+```text
 MCP -> Cliente
 Solicite mais dados ao usuário
+```
 
 Fluxo
 
