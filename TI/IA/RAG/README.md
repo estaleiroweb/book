@@ -4,32 +4,41 @@ RAG significa **Retrieval-Augmented Generation**.
 
 O fluxo completo é, aproximadamente:
 
-**Indexação**
+**Indexação**:
 
+```mermaid
+flowchart LR
+    A[Documentos] --> B[Extração]
+    B --> C[Chunking]
+    C --> D[Embedding]
+    D --> E[Vector Database]
+```
 
-`Documentos → Extração → Chunking → Embedding → Vector Database`
+**Consulta**:
 
-**Consulta**
-
-`Pergunta → Embedding → Busca vetorial → Top-K chunks → Prompt → LLM → Resposta`
+```mermaid
+flowchart LR
+    Q[Pergunta] --> E[Embedding]
+    E --> V[Busca vetorial]
+    V --> T[Top-K chunks]
+    T --> P[Prompt]
+    P --> L[LLM]
+    L --> R[Resposta]
+```
 
 Um ponto importante:
 
-> O RAG não "ensina" os documentos ao LLM. Ele encontra, em tempo de consulta, os trechos mais relevantes e os entrega ao LLM como contexto.
-
-* * * *
-
-1\. O que é RAG
-===============
+> O RAG não "ensina" os documentos ao LLM.
+> Ele encontra, em tempo de consulta, os trechos mais relevantes e os entrega ao LLM como contexto.
 
 Ele combina duas capacidades:
 
 1. **Retrieval**
-        -   localizar informação relevante;
+   - localizar informação relevante;
 2. **Generation**
-        -   usar um LLM para construir a resposta com base na informação localizada.
+   - usar um LLM para construir a resposta com base na informação localizada.
 
-Imagine que você tenha milhares de documentos internos sobre Change Management, rede, OCCAS, procedimentos operacionais, APIs etc.
+Imagine que você tenha milhares de documentos internos sobre contratos, manuais, procedimentos operacionais, APIs etc.
 
 Você pergunta:
 
@@ -39,28 +48,22 @@ O LLM sozinho pode não conhecer essa regra interna.
 
 Com RAG, o sistema primeiro procura nos documentos:
 
-Pergunta
-   ↓
-Busca
-   ↓
-Documentação interna relacionada
-   ↓
-Trechos relevantes
-   ↓
-LLM
-   ↓
-Resposta
+```mermaid
+flowchart LR
+    Q[Pergunta] --> B[Busca]
+    B --> D[Documentação interna relacionada]
+    D --> T[Trechos relevantes]
+    T --> L[LLM]
+    L --> R[Resposta]
+```
 
-* * * *
-
-2\. Primeira fase: ingestão/indexação
-=====================================
+## 1. Primeira fase: ingestão/indexação
 
 Essa fase normalmente acontece **antes das perguntas**.
 
 Suponha que exista um documento:
 
-regras\_changes.md
+`regras_changes.md`
 
 com:
 
@@ -73,15 +76,13 @@ adicional.
 
 O primeiro passo é carregar o documento.
 
-* * * *
-
-3\. Extração do conteúdo
-========================
+## 2. Extração do conteúdo
 
 O RAG precisa transformar diferentes formatos em algo processável.
 
 Por exemplo:
 
+```text
 PDF
 DOCX
 HTML
@@ -91,29 +92,30 @@ Wiki
 Banco SQL
 E-mails
 APIs
+```
 
 podem acabar convertidos em texto + metadados:
-
+```json
 {
   "text": "A partir da segunda CHANGE com o mesmo NeId...",
-  "source": "regras\_changes.md",
+  "source": "regras_changes.md",
   "section": "Validações",
-  "updated\_at": "2026-10-20"
+  "updated_at": "2026-10-20"
 }
+```
 
 Os **metadados** são extremamente importantes porque posteriormente permitem filtros.
 
 Por exemplo:
 
+```text
 produto = "OCCAS"
 tipo = "procedimento"
 ano >= 2026
 status = "vigente"
+```
 
-* * * *
-
-4\. Chunking
-============
+## 3. Chunking
 
 Normalmente não fazemos embedding de um documento gigantesco inteiro.
 
@@ -164,10 +166,7 @@ realizada uma validação.
 
 Se a validação falhar, um alerta deverá ser enviado.
 
-* * * *
-
-5\. Aqui entra o EMBEDDING
-==========================
+## 4. Aqui entra o EMBEDDING
 
 Essa é uma das partes fundamentais do RAG.
 
@@ -208,10 +207,7 @@ f(texto)→Rnf(texto) \\rightarrow \\mathbb{R}^{n}
 
 onde `n` é a dimensionalidade definida pelo modelo.
 
-* * * *
-
-6\. O que aqueles números significam?
-=====================================
+## 5. O que aqueles números significam?
 
 Aqui está uma sutileza importante.
 
@@ -253,10 +249,7 @@ semanticamente tratam de conceitos muito próximos.
 
 Essa é uma das grandes vantagens do embedding em relação a uma busca simples com `LIKE '%palavra%'`.
 
-* * * *
-
-7\. Pense no embedding como coordenadas
-=======================================
+## 6. Pense no embedding como coordenadas
 
 Em duas dimensões seria fácil imaginar:
 
@@ -279,10 +272,7 @@ R^3072
 
 Não conseguimos visualizar facilmente, mas matematicamente podemos medir proximidade.
 
-* * * *
-
-8\. Embeddings semanticamente próximos
-======================================
+## 7. Embeddings semanticamente próximos
 
 Considere:
 
@@ -308,10 +298,7 @@ similaridade(A,C) → baixa
 
 Essa propriedade possibilita a **busca semântica**.
 
-* * * *
-
-9\. Armazenamento dos embeddings
-================================
+## 8. Armazenamento dos embeddings
 
 Cada chunk é armazenado junto com seu vetor.
 
@@ -349,20 +336,17 @@ SharePoint / Wiki / PDFs / APIs
              ↓
        índice vetorial
 
-* * * *
-
-10\. Termina a indexação
-========================
+## 9. Termina a indexação
 
 Depois disso, temos algo semelhante a:
 
-| ID | Chunk | Vetor |
-| --: | --- | --- |
-| 1 | Regras de CHANGE | `[0.21,...]` |
-| --: | --- | --- |
-| 2 | Procedimento OCCAS | `[0.78,...]` |
-| 3 | Escalonamento CGI | `[0.03,...]` |
-| 4 | Validação NeId | `[0.91,...]` |
+|   ID | Chunk              | Vetor        |
+| ---: | ------------------ | ------------ |
+|    1 | Regras de CHANGE   | `[0.21,...]` |
+|  --: | ---                | ---          |
+|    2 | Procedimento OCCAS | `[0.78,...]` |
+|    3 | Escalonamento CGI  | `[0.03,...]` |
+|    4 | Validação NeId     | `[0.91,...]` |
 
 Até aqui nenhum LLM precisou gerar uma resposta.
 
@@ -374,10 +358,7 @@ O embedding model encontra conteúdo semanticamente relacionado.
 
 O LLM interpreta os conteúdos encontrados e gera a resposta.
 
-* * * *
-
-11\. Segunda fase: chega uma pergunta
-=====================================
+## 10. Segunda fase: chega uma pergunta
 
 Agora o usuário pergunta:
 
@@ -396,10 +377,7 @@ alteração   != CHANGE
 
 Mas um embedding pode reconhecer a proximidade semântica.
 
-* * * *
-
-12\. A pergunta também vira embedding
-=====================================
+## 11. A pergunta também vira embedding
 
 A mesma família/modelo de embedding usada na indexação transforma a consulta:
 
@@ -424,10 +402,7 @@ comparar
         ↓
 Vetores dos chunks
 
-* * * *
-
-13\. Similaridade vetorial
-==========================
+## 12. Similaridade vetorial
 
 Uma métrica muito utilizada é **cosine similarity**.
 
@@ -462,10 +437,7 @@ Top-K = 3
 
 retornando os três chunks mais próximos.
 
-* * * *
-
-14\. Nearest Neighbor Search
-============================
+## 13. Nearest Neighbor Search
 
 Em milhões de vetores não seria eficiente calcular:
 
@@ -477,7 +449,7 @@ Por isso bancos vetoriais utilizam algoritmos/índices de **Approximate Nearest 
 
 Um muito conhecido é:
 
-**HNSW**
+**HNSW**:
 
 Hierarchical Navigable Small World.
 
@@ -496,10 +468,7 @@ velocidade
    ↕
 recall da busca
 
-* * * *
-
-15\. Top-K
-==========
+## 14. Top-K
 
 A busca retorna os `K` chunks mais próximos.
 
@@ -519,10 +488,7 @@ Isso **ainda não é necessariamente o contexto final enviado ao LLM**.
 
 Em RAG moderno costuma existir mais uma etapa.
 
-* * * *
-
-16\. Hybrid Search
-==================
+## 15. Hybrid Search
 
 Embedding é excelente, mas não resolve tudo.
 
@@ -573,10 +539,7 @@ ticket ID
 
 Eu evitaria uma arquitetura RAG corporativa de telecom baseada **somente em embeddings**.
 
-* * * *
-
-17\. Metadata filtering
-=======================
+## 16. Metadata filtering
 
 Antes ou depois da busca vetorial podemos restringir:
 
@@ -598,10 +561,7 @@ LIMIT 10
 
 Isso reduz muito conteúdo irrelevante.
 
-* * * *
-
-18\. Reranker
-=============
+## 17. Reranker
 
 Uma arquitetura RAG robusta pode fazer:
 
@@ -638,10 +598,7 @@ LLM           → recebe 8
 
 Os números não são universais. São parâmetros que precisam ser avaliados para o corpus e a aplicação.
 
-* * * *
-
-19\. Construção do prompt
-=========================
+## 18. Construção do prompt
 
 Agora aparecem os chunks que realmente serão fornecidos ao LLM.
 
@@ -671,10 +628,7 @@ no mesmo equipamento?
 
 Finalmente entra o LLM.
 
-* * * *
-
-20\. O LLM gera a resposta
-==========================
+## 19. O LLM gera a resposta
 
 O LLM lê:
 
@@ -692,10 +646,7 @@ O LLM **não precisou memorizar a regra durante treinamento**.
 
 A regra foi recuperada pelo RAG e colocada no contexto.
 
-* * * *
-
-21\. O ciclo inteiro
-====================
+## 20. O ciclo inteiro
 
 Portanto existem dois pipelines.
 
@@ -743,10 +694,7 @@ Resposta
    ↓
 Citações/fontes
 
-* * * *
-
-22\. Embedding não é tokenização
-================================
+## 21. Embedding não é tokenização
 
 Essa confusão é comum.
 
@@ -774,20 +722,17 @@ embedding final
 
 Portanto:
 
-**tokens**
+**tokens**:
 
 são unidades que o modelo processa.
 
 Enquanto:
 
-**embedding**
+**embedding**:
 
 é uma representação vetorial numérica do significado/conteúdo usado para comparação.
 
-* * * *
-
-23\. Embedding também não é resumo
-==================================
+## 22. Embedding também não é resumo
 
 Se tivermos:
 
@@ -811,10 +756,7 @@ O embedding serve para **localizar** o texto.
 
 Depois de localizado, o sistema recupera o texto original para entregá-lo ao LLM.
 
-* * * *
-
-24\. Embedding também não é treinamento
-=======================================
+## 23. Embedding também não é treinamento
 
 Outra distinção muito importante.
 
@@ -842,10 +784,7 @@ RAG já encontra a informação
 
 É uma vantagem enorme em ambientes corporativos.
 
-* * * *
-
-25\. O tamanho do chunk importa bastante
-========================================
+## 24. O tamanho do chunk importa bastante
 
 Chunk muito pequeno:
 
@@ -895,10 +834,7 @@ identificadores
 
 normalmente vale mais do que cortar cegamente a cada `500 tokens`.
 
-* * * *
-
-26\. Um exemplo completo
-========================
+## 25. Um exemplo completo
 
 Documento:
 
@@ -985,10 +921,7 @@ Então:
           ▼
        resposta
 
-* * * *
-
-27\. O conceito mais importante
-===============================
+## 26. O conceito mais importante
 
 Se precisar guardar uma única ideia sobre RAG, guarde esta:
 
